@@ -575,6 +575,21 @@ footer .social-desa h3 img {
         grid-column-start: 1;
         grid-column-end: 4;
     }
+    .contenido .accesorios .celulares .accesorio-celular:nth-child(5) {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contenido .accesorios .celulares .accesorio-celular:nth-child(6) {
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contenido .accesorios .celulares .accesorio-celular:nth-child(7) {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
     .contenido .accesorios .pc .accesorio-pc:nth-child(2) {
         background-color: rgb(74, 45, 179);
         grid-column-start: 1;
@@ -587,6 +602,21 @@ footer .social-desa h3 img {
     }
     .contenido .accesorios .pc .accesorio-pc:nth-child(4) {
         background-color: rgb(74, 45, 179);
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contenido .accesorios .pc .accesorio-pc:nth-child(5) {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contenido .accesorios .pc .accesorio-pc:nth-child(6) {
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contenido .accesorios .pc .accesorio-pc:nth-child(7) {
+        background-color: red;
         grid-column-start: 1;
         grid-column-end: 4;
     }

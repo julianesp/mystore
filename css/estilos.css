@@ -18,7 +18,7 @@ body {
     padding: 0;
     justify-items: center;
     align-items: center;
-    position: fixed;
+    position: sticky;
     z-index: 1;
 }
 
@@ -103,7 +103,6 @@ body {
     border: 1px solid black;
     height: 100%;
     margin: 20px 30px;
-    position: relative;
 }
 
 
@@ -111,7 +110,6 @@ body {
 
 .contenido .presentacion {
     border: 2px solid gray;
-    position: relative;
     margin-bottom: 30px;
 }
 

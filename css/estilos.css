@@ -280,7 +280,7 @@ body {
     padding-left: 100px;
     align-self: center;
     border: 1px solid grey;
-    background-color: rgb(199, 240, 247);
+    /* background-color: rgb(199, 240, 247); */
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {

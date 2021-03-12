@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #419CCA;
+    width: 100%;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-header .header1,
+.header2 {
+    align-items: center;
+}
+
+.contenedor-header .header1,
+.header2,
+a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-style: bold;
+}
+
+.contenedor-header .header1,
+.header2 a {
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+}
+
+.contenido {
+    margin: 0 80px;
+}
+
+.contenido .presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 80px;
+    padding: 10px;
+    height: auto;
+    justify-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.contenido .presentacion div {
+    align-self: center;
+    justify-self: center;
+    /* para centrar todo */
+    text-align: center;
+}
+
+.contenido .presentacion div img {
+    height: 420px;
+    /* box-shadow: 5px 5px 5px gray;*/
+    border-radius: 10px;
+}
+
+
+/* estilos para texto */
+
+
+/* estilo para todos los h2 de la página */
+
+h2 {
+    color: crimson;
+    font-weight: bolder;
+}
+
+.contenido .presentacion div h2,
+p {
+    justify-self: center;
+    align-items: center;
+    line-height: 50px;
+    padding: 0 30px 0 10px;
+}
+
+.contenido .tiempo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 120px 0;
+}
+
+.contenido .tiempo h2 {
+    display: inline-block;
+    position: relative;
+    justify-self: center;
+}
+
+
+/* lineas a los costados */
+
+.contenido .tiempo h2::after,
+.contenido .tiempo h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    background-color: #37FCDB;
+    top: .6em;
+}
+
+.contenido .tiempo h2::before {
+    left: -140px;
+}
+
+.contenido .tiempo h2::after {
+    right: -140px;
+}
+
+.contenido .tiempo .tiempo-dividido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades {
+    display: grid;
+    grid-template-rows: .2fr 1fr;
+    text-align: center;
+    justify-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #192b63;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades h4 {
+    color: #f7e564;
+    font-weight: bolder;
+    /* padding: 5px; */
+    width: 80px;
+    height: 1px;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades p {
+    color: white;
+    font-size: 1em;
+}
+
+
+/* contáctame */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    bottom: 0;
+    background-color: #419CCA;
+    /* para centrar elementos verticalmente */
+    align-items: center;
+}
+
+footer .desarrollador {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer .desarrollador h2 {
+    color: #EAB016;
+    font-weight: bolder;
+}
+
+footer .desarrollador h3 {
+    font-size: .9em;
+    color: white;
+    /* margin-left: 80px; */
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+footer .desarrollador a img {
+    width: 50px;
+    margin: 0 20px;
+}
+
+footer .desarrollador h3 img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+
+/* estilos para dispositivos de menos resolucion */
+
+@media screen and (max-width: 1024px) {
+    .contenedor-header {
+        height: 100px;
+        align-content: center;
+    }
+    .contenedor-header .header1,
+    .header2,
+    .header3,
+    a {
+        font-size: 1.5em;
+    }
+    .contenido .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contenido .presentacion img {
+        margin: 0;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades {
+        width: 100%;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades h4 {
+        font-size: 2em;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades p {
+        font-size: 28px;
+        padding: 10px;
+        margin: 20px;
+    }
+    footer .desarrollador h3 {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    footer .desarrollador h3 {
+        font-size: .2em;
+    }
+}

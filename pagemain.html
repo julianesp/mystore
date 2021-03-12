@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tienda de formato</title>
+
+    <!-- para trabajar con jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">enlace1</a>
+        <a href="#">enlace2</a>
+        <a href="#">enlace3</a>
+        <a href="#">enlace4</a>
+    </header>
+
+    <main class="contenido">
+
+        <div class="presentacion">
+            <div class="presentacion-contenedor">
+
+                <div class="preacce p1">
+                </div>
+
+                <div class="preacce p2">
+                </div>
+
+                <div class="preacce p3">
+                </div>
+
+                <div class="btn iz">
+                    &lt;
+                </div>
+
+                <div class="btn dere">
+                    &gt;
+                </div>
+
+                <ul class="page">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mi_trabajo">
+
+            <div class="formateo">
+
+                <div class="sistemas_operativos">
+
+                    <div class="titulo">
+                        <h3>Windows</h3>
+                    </div>
+                    <div class="windows">
+                        <div class="windows-distribuciones">
+                            <div class="sistemas">
+                                <h4>Windows 7</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Windows 8.1</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Windows 10</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="titulo">
+                        <h3>Linux</h3>
+                    </div>
+                    <div class="linux">
+                        <div class="linux-distribuciones">
+                            <div class="sistemas">
+                                <h4>Linux</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Linux</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Linux</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Linux</h4>
+                            </div>
+                            <div class="sistemas">
+                                <h4>Linux</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programas">
+                    <div class="titulo">
+                        <h3>Programas b&aacute;sicos</h3>
+                    </div>
+                    <div class="programas-contenedor">
+
+                        <div class="programas-varios c1">
+                        </div>
+
+                        <div class="programas-varios c2">
+                        </div>
+
+                        <div class="programas-varios c3">
+                        </div>
+
+                        <div class="boton izquierda">
+                            &lt;
+                        </div>
+
+                        <div class="boton derecha">
+                            &gt;
+                        </div>
+
+                        <ul class="paginacion">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accesorios">
+            <div class="celulares">
+                <div class="titulo">Accesorios para celular</div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-celular">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+            </div>
+
+            <div class="pc">
+
+                <div class="titulo">Accesorios para computadores</div>
+
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+                <div class="accesorio-pc">
+                    <h3>accesorios</h3>
+                    <img src="" alt="">
+                    <a href="">Lo quiero</a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        var indi = 0;
+
+        $(".page li").eq(indi).css("background-color", "orange");
+
+        $(".page li").click(function() {
+            indi = $(this).index();
+            $(".page li").css("background-color", "yellow");
+            $(this).css("background-color", "orange");
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+        });
+
+        $(".derecha").click(function() {
+            indi++;
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        });
+        $(".iz").click(function() {
+            indi--;
+            if (indi < 0) {
+                indi = 2;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        });
+
+        setInterval(() => {
+            indi++;
+            // condicional para volver a la imagen 0
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        }, 4000);
+
+        $(".dere").click(function() {
+            indi++;
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        });
+
+        $(".iz").click(function() {
+            indi--;
+
+            if (indi < 0) {
+                indi = 2;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        });
+
+        //======================
+
+
+
+        var indice = 0;
+
+        $(".paginacion li").eq(indice).css("background-color", "orange");
+
+        $(".paginacion li").click(function() {
+            indice = $(this).index();
+            $(".paginacion li").css("background-color", "yellow");
+            $(this).css("background-color", "orange");
+            $(".accesorio-compu").hide();
+            $(".accesorio-compu").eq(indice).fadeIn();
+        });
+
+        // para que las imagenes se pasen automaticamente
+        // setInterval(() => {
+        //     indice++;
+
+        //     if (indice > 2) {
+        //         indice = 0;
+        //     }
+        //     $(".accesorio-compu").hide();
+        //     $(".accesorio-compu").eq(indice).fadeIn();
+        //     $(".paginacion li").css("background-color", "yellow");
+        //     $(".paginacion li").eq(indice).css("background-color", "orange");
+        // }, 2000);
+
+        $(".derecha").click(function() {
+            indice++;
+            // condicional para volver a la imagen 0
+            if (indice > 2) {
+                indice = 0;
+            }
+            $(".accesorio-compu").hide();
+            $(".accesorio-compu").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+        $(".izquierda").click(function() {
+            indice--;
+            // condicional para volver a la imagen 0
+            if (indice < 0) {
+                indice = 2;
+            }
+            $(".accesorio-compu").hide();
+            $(".accesorio-compu").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+
+        // slide automatico para programas
+        var indice = 0;
+
+        $(".paginacion li").eq(indice).css("background-color", "orange");
+
+        $(".paginacion li").click(function() {
+            indice = $(this).index();
+            $(".paginacion li").css("background-color", "yellow");
+            $(this).css("background-color", "orange");
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+        });
+
+        //slide para programas basicos
+        // para que las imagenes se pasen automaticamente
+        setInterval(() => {
+            indice++;
+            // condicional para volver a la imagen 0
+            if (indice > 2) {
+                indice = 0;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        }, 4000);
+
+        $(".derecha").click(function() {
+            indice++;
+            // condicional para volver a la imagen 0
+            if (indice > 2) {
+                indice = 0;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+        $(".izquierda").click(function() {
+            indice--;
+            // condicional para volver a la imagen 0
+            if (indice < 0) {
+                indice = 2;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+    </script>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo magnam quas eligendi nesciunt quis cumque ad, excepturi facilis consequatur animi molestiae adipisci minima, soluta ducimus quaerat earum tenetur porro.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quo magnam quas eligendi nesciunt quis cumque ad, excepturi facilis consequatur animi molestiae adipisci minima, soluta ducimus quaerat earum tenetur porro.</p>
+    </footer>
+</body>
+
+</html>

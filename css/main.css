@@ -1,0 +1,164 @@
+@import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
+
+/* inicio de diseño */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.home-body {
+    font-family: 'Roboto mono', monospace;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    /* position: static; */
+    background-image: url('../assets/img/guitar1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* quitar scroll vertical */
+    overflow: hidden;
+    /* height: 100%; */
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .2fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.home-main img {
+    margin: 0 10px;
+    padding: 20px 0;
+    width: 200px;
+    height: 50px;
+    grid-column: 1;
+    grid-row: 3;
+    align-items: left;
+    justify-self: start;
+}
+
+.home-main p {
+    grid-area: 2;
+    grid-column: 2;
+    grid-row: 1;
+    /* display: block; */
+    align-items: center;
+    font-family: 'Roboto mono', monospace;
+    font-size: 3em;
+    font-weight: 700px;
+    /* espacio entre letras */
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 3px 5px 2px gray;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.home-main .enlaces {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.home-main .enlaces:nth-of-type(5) {
+    width: 100%;
+}
+
+.home-body .home-main .enlaces button {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #e6182191;
+    border: 2px solid white;
+    /* box-shadow: 5px 5px 5px gray; */
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.home-body .home-main .enlaces button a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* vista para tablets y smartphones */
+
+@media screen and (max-width: 1080px) {
+    /* para que en los móviles ocupe todo el viewport, se debe colocar esto */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        /* no se debe repetir el mismo código */
+    }
+    .home-body .home-main {
+        /* position: fixed; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .home-body .home-main img {
+        width: 450px;
+        height: 70px;
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+        justify-self: center;
+    }
+    .home-body .home-main p {
+        font-size: 5em;
+        /* border: 5px solid white;
+        box-shadow: 15px 15px 15px gray;
+        border-radius: 50px; */
+        padding: 30px;
+    }
+    .home-body .home-main .enlaces {
+        text-align: center;
+    }
+    .home-body .home-main .enlaces button {
+        width: 300px;
+        height: 100px;
+        /* margin-bottom: 100px; */
+        /* background-color: #e6182191;
+        border: 2px solid white;
+        box-shadow: 15px 15px 15px gray;
+        border-radius: 20px; */
+        margin-bottom: 30px;
+    }
+    .home-body .home-main .enlaces button a {
+        font-size: 3.6em;
+        text-decoration: none;
+    }
+}
+
+
+/* 
+@media screen and (max-width: 768px) {
+    .home-main {
+        
+    }
+    .home-main .enlaces button {
+        margin-bottom: 150px;
+    }
+    .home-main .enlaces button a {
+        font-size: 1.5em;
+    }
+    .home-main img {
+        height: 200px;
+        width: 600px;
+    }
+
+    .home-main p {
+        font-size: .5em;
+    }
+} */

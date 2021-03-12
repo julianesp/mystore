@@ -14,8 +14,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #419CCA;
     border: 2px solid black;
+    margin: 0;
+    padding: 0;
     justify-items: center;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 
 .header #menu-h {
@@ -57,7 +61,7 @@ body {
 }
 
 .header #menu-h ul li a {
-    font-size: 20px;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
 }
@@ -99,6 +103,7 @@ body {
     border: 1px solid black;
     height: 100%;
     margin: 20px 30px;
+    position: relative;
 }
 
 
@@ -413,15 +418,27 @@ body {
 
 .contenido .accesorios .celulares .accesorio-celular {
     display: grid;
-    grid-template-rows: .3fr 1fr .3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 250px 60px;
     border: 1px solid black;
     width: 90%;
-    height: 300px;
+    height: 400px;
     margin: 15px 0;
+}
+
+.contenido .accesorios .celulares .accesorio-celular h3 {
+    font-size: 1.5rem;
+}
+
+.contenido .accesorios .celulares .accesorio-celular img {
+    width: inherit;
+    height: 80%;
+    justify-self: center;
 }
 
 .contenido .accesorios .celulares .accesorio-celular a {
     align-self: center;
+    grid-row: 3;
 }
 
 

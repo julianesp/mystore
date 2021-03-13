@@ -10,7 +10,7 @@ particlesJS({
         },
         "color": {
             /*color de la nieve*/
-            "value": "#fff"
+            "value": "#000"
         },
         "shape": {
             //para type a image para colocar una imagen de animación    

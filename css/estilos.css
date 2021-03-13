@@ -1,9 +1,15 @@
 /* tipo de letra */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     margin: 0;
-    background-color: #D6D7D7;
+    /* background-color: #D6D7D7; */
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
@@ -18,7 +24,7 @@ body {
     padding: 0;
     justify-items: center;
     align-items: center;
-    position: sticky;
+    position: relative;
     z-index: 1;
 }
 
@@ -109,37 +115,42 @@ body {
 /* presentacion de articulos */
 
 .contenido .presentacion {
+    position: relative;
     border: 2px solid gray;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.contenido .presentacion .presentacion-contenedor {
+    width: 500px;
+    margin: 0 auto;
 }
 
 .contenido .presentacion .presentacion-contenedor .preacce {
     text-align: center;
-    padding: 200px 150px;
+    padding: 150px 150px;
     background-size: cover;
     background-repeat: no-repeat;
-    color: yellow;
 }
 
 .contenido .presentacion .presentacion-contenedor .p1 {
-    background-image: url('../assets/img/ArticulosCali/MouseM90/1.png');
-    background-size: 30%;
+    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/1.png');
+    background-size: 20%;
     background-position: center;
     margin: auto;
 }
 
 .contenido .presentacion .presentacion-contenedor .p2 {
     display: none;
-    background-image: url('../assets/img/ArticulosCali/Bateríaportátil/2.png');
-    background-size: 30%;
+    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
+    background-size: 50%;
     background-position: center;
     margin: auto;
 }
 
 .contenido .presentacion .presentacion-contenedor .p3 {
     display: none;
-    background-image: url('../assets/img/ArticulosCali/RouterTP-LinkWR940N/3.png');
-    background-size: 30%;
+    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/3.png');
+    background-size: 50%;
     background-position: center;
     margin: auto;
 }
@@ -393,6 +404,7 @@ body {
 /*estilos para accesorios celulares*/
 
 .contenido .accesorios {
+    position: relative;
     text-align: center;
     margin: 40px 0;
 }
@@ -482,10 +494,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    position: relative;
     background-color: #419CCA;
     border: 1px solid black;
     text-align: center;
-    margin: 0;
+    margin-top: 100px;
     padding: 10px 15px;
     gap: 20px;
 }
@@ -532,10 +545,11 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
-    .contenido .presentacion .presentacion-contenedor .p1 {
-        width: 400px;
+    /* .contenido .presentacion .presentacion-contenedor .p1 {
+        width: 200px;
         margin: 0;
-    }
+        padding: 0;
+    } */
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;
     }
@@ -661,7 +675,7 @@ footer .social-desa h3 img {
     }
 }
 
-@media screen and (max-width: 831px) {
+@media screen and (max-width: 768px) {
     .header #menu-h img {
         width: 60%;
         /* margin-top: 30px; */

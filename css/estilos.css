@@ -113,10 +113,6 @@ body {
     margin-bottom: 30px;
 }
 
-.contenido .presentacion .presentacion-contenedor {
-    /* justify-self: center; */
-}
-
 .contenido .presentacion .presentacion-contenedor .preacce {
     text-align: center;
     padding: 200px 150px;
@@ -158,17 +154,19 @@ body {
     cursor: pointer;
 }
 
-.contenido .presentacion .presentacion-contenedor .preacce .btn:hover {
+.contenido .presentacion .presentacion-contenedor .btn:hover {
     color: yellowgreen;
     background-color: rgba(0, 0, 0, .9);
     transition: .7s;
 }
 
 .contenido .presentacion .presentacion-contenedor .iz {
+    display: none;
     left: 10px;
 }
 
 .contenido .presentacion .presentacion-contenedor .dere {
+    display: none;
     right: 10px;
 }
 
@@ -197,6 +195,11 @@ body {
 .contenido .mi_trabajo .formateo {
     position: relative;
     text-align: center;
+}
+
+.contenido .mi_trabajo .formateo .title {
+    font-size: 1.5em;
+    color: #c28604;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos {
@@ -277,13 +280,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    padding-top: 30px;
-    padding-right: 100px;
-    padding-bottom: 30px;
-    padding-left: 100px;
+    padding: 0 20px;
     align-self: center;
-    border: 1px solid grey;
-    /* background-color: rgb(199, 240, 247); */
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
@@ -418,6 +416,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 250px 60px;
+    align-items: center;
     border: 1px solid black;
     width: 90%;
     height: 400px;
@@ -429,7 +428,7 @@ body {
 }
 
 .contenido .accesorios .celulares .accesorio-celular img {
-    width: inherit;
+    width: 60%;
     height: 80%;
     justify-self: center;
 }
@@ -533,6 +532,10 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
+    .contenido .presentacion .presentacion-contenedor .p1 {
+        width: 400px;
+        margin: 0;
+    }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;
     }
@@ -544,8 +547,19 @@ footer .social-desa h3 img {
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
         width: 50%;
     }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+        height: 250px;
+    }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-        margin: 0 50px;
+        width: 150px;
+        height: 180px;
+        margin: 0 10px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+        width: 50%;
+    }
+    footer .social-desa h3 {
+        font-size: .9em;
     }
 }
 

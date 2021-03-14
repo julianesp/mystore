@@ -544,6 +544,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
+    #particles-js {
+        display: none;
+    }
     .contenido .presentacion .presentacion-contenedor .p1 {
         width: 200px;
         margin: 0;

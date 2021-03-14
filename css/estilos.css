@@ -115,30 +115,32 @@ body {
 
 .contenido .presentacion {
     position: relative;
-    border: 2px solid gray;
-    /* margin-bottom: 30px; */
+    border-bottom: 5px solid gray;
+    border-bottom-style: dotted;
+    /* border-collapse: separate;
+    box-shadow: 5px 5px 5px black; */
 }
 
-.contenido .presentacion .presentacion-contenedor {
+.contenido .presentacion {
     width: 500px;
     margin: 0 auto;
 }
 
-.contenido .presentacion .presentacion-contenedor .preacce {
+.contenido .presentacion .preacce {
     text-align: center;
     padding: 150px 150px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.contenido .presentacion .presentacion-contenedor .p1 {
+.contenido .presentacion .p1 {
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/1.png');
     background-size: 20%;
     background-position: center;
     margin: auto;
 }
 
-.contenido .presentacion .presentacion-contenedor .p2 {
+.contenido .presentacion .p2 {
     display: none;
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
     background-size: 50%;
@@ -146,7 +148,7 @@ body {
     margin: auto;
 }
 
-.contenido .presentacion .presentacion-contenedor .p3 {
+.contenido .presentacion .p3 {
     display: none;
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/3.png');
     background-size: 50%;
@@ -154,7 +156,7 @@ body {
     margin: auto;
 }
 
-.contenido .presentacion .presentacion-contenedor .btn {
+.contenido .presentacion .btn {
     color: white;
     font-size: 50px;
     position: absolute;
@@ -164,23 +166,23 @@ body {
     cursor: pointer;
 }
 
-.contenido .presentacion .presentacion-contenedor .btn:hover {
+.contenido .presentacion .btn:hover {
     color: yellowgreen;
     background-color: rgba(0, 0, 0, .9);
     transition: .7s;
 }
 
-.contenido .presentacion .presentacion-contenedor .iz {
+.contenido .presentacion .iz {
     display: none;
     left: 10px;
 }
 
-.contenido .presentacion .presentacion-contenedor .dere {
+.contenido .presentacion .dere {
     display: none;
     right: 10px;
 }
 
-.contenido .presentacion .presentacion-contenedor .page {
+.contenido .presentacion .page {
     position: absolute;
     text-align: center;
     left: 0px;
@@ -189,7 +191,7 @@ body {
     display: none;
 }
 
-.contenido .presentacion .presentacion-contenedor .page li {
+.contenido .presentacion .page li {
     display: inline-block;
     list-style: none;
     width: 25px;
@@ -201,6 +203,10 @@ body {
 
 
 /* estilos trabajo */
+
+.contenido .mi_trabajo {
+    margin-top: 150px;
+}
 
 .contenido .mi_trabajo .formateo {
     position: relative;
@@ -414,7 +420,7 @@ body {
     grid-template-rows: .3fr 1fr 1fr;
     border: 1px solid black;
     justify-items: center;
-    margin-top: 20px;
+    margin-top: 250px;
 }
 
 .contenido .accesorios .celulares .titulo {
@@ -458,7 +464,7 @@ body {
     grid-template-rows: .3fr 1fr 1fr;
     border: 1px solid black;
     justify-items: center;
-    margin: 20px 0;
+    margin-top: 250px;
 }
 
 .contenido .accesorios .pc .titulo {
@@ -473,7 +479,7 @@ body {
     border: 1px solid black;
     width: 90%;
     height: 400px;
-    margin: 15px 0;
+    /* margin: 15px 0; */
 }
 
 .contenido .accesorios .pc .accesorio-pc img {

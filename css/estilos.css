@@ -9,7 +9,6 @@
 
 body {
     margin: 0;
-    /* background-color: #D6D7D7; */
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
@@ -257,8 +256,8 @@ body {
     width: 250px;
     height: 300px;
     margin: 0 20px;
-    border: 1px solid #fff;
-    box-shadow: -8px 10px 10px #fff;
+    border: 1px solid gray;
+    box-shadow: -8px 10px 10px #AEB2B2;
     border-radius: 20px;
 }
 
@@ -304,8 +303,8 @@ body {
     width: 250px;
     height: 300px;
     margin: 0 20px;
-    border: 1px solid #fff;
-    box-shadow: -10px 18px 15px 0px #fff;
+    border: 1px solid gray;
+    box-shadow: -10px 18px 15px 0px #AEB2B2;
     border-radius: 20px;
 }
 

@@ -329,7 +329,7 @@
         $(".iz").click(function() {
             indi--;
             if (indi < 0) {
-                indi = 2;
+                indi = 1;
             }
             $(".preacce").hide();
             $(".preacce").eq(indi).fadeIn();
@@ -349,7 +349,7 @@
             $(".page li").eq(indi).css("background-color", "orange");
         }, 4000);
 
-        $(".derecha").click(function() {
+        $(".dere").click(function() {
             indi++;
             if (indi > 2) {
                 indi = 0;

@@ -544,11 +544,11 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
-    /* .contenido .presentacion .presentacion-contenedor .p1 {
+    .contenido .presentacion .presentacion-contenedor .p1 {
         width: 200px;
         margin: 0;
         padding: 0;
-    } */
+    }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;
     }

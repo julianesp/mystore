@@ -547,9 +547,9 @@ footer .social-desa h3 img {
     #particles-js {
         display: none;
     }
-    .contenido .presentacion .presentacion-contenedor .p1 {
+    .contenido .presentacion .presentacion-contenedor {
         width: 200px;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {

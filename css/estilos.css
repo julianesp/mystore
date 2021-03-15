@@ -123,7 +123,7 @@ body {
 
 .contenido .presentacion {
     width: 500px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .contenido .presentacion .preacce {
@@ -137,7 +137,6 @@ body {
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/1.png');
     background-size: 20%;
     background-position: center;
-    margin: auto;
 }
 
 .contenido .presentacion .p2 {
@@ -145,7 +144,6 @@ body {
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
     background-size: 50%;
     background-position: center;
-    margin: auto;
 }
 
 .contenido .presentacion .p3 {
@@ -153,7 +151,6 @@ body {
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/3.png');
     background-size: 50%;
     background-position: center;
-    margin: auto;
 }
 
 .contenido .presentacion .btn {
@@ -553,10 +550,10 @@ footer .social-desa h3 img {
     #particles-js {
         display: none;
     }
-    .contenido .presentacion .presentacion-contenedor {
+    .contenido .presentacion {
         width: 200px;
-        margin: 0 auto;
-        padding: 0;
+        /* margin: 0 auto; */
+        /* padding: 0; */
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;

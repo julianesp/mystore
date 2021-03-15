@@ -637,24 +637,19 @@ footer .social-desa h3 img {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .header #menu-h:nth-child(1) {
-        width: 350px;
+    .header #menu-h {
+        width: 250px;
     }
     .header #menu-h:nth-child(2),
     #menu-h:nth-child(3),
     #menu-h:nth-child(4),
     #menu-h:nth-child(5) {
-        display: block;
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         position: fixed;
         z-index: 4;
         background-color: rgba(253, 171, 1, .7);
         right: 0;
         margin-top: 40px;
-    }
-    .header #menu-h:nth-child(2) {
-        grid-row: 3;
     }
     .contenido {
         grid-template-columns: 1fr;

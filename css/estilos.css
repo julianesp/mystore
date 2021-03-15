@@ -1,6 +1,37 @@
 /* tipo de letra */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -12,6 +43,21 @@ body {
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
+}
+
+.burger-button {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    right: 0;
 }
 
 .header {
@@ -117,13 +163,9 @@ body {
     position: relative;
     border-bottom: 5px solid gray;
     border-bottom-style: dotted;
+    width: 500px;
     /* border-collapse: separate;
     box-shadow: 5px 5px 5px black; */
-}
-
-.contenido .presentacion {
-    width: 500px;
-    /* margin: 0 auto; */
 }
 
 .contenido .presentacion .preacce {
@@ -549,6 +591,9 @@ footer .social-desa h3 img {
 @media screen and (max-width: 480px) {
     #particles-js {
         display: none;
+    }
+    .header {
+        padding-top: 20px;
     }
     .contenido .presentacion {
         width: 200px;

@@ -161,15 +161,16 @@ body {
 /* presentacion de articulos */
 
 .contenido .presentacion {
+    display: grid;
+    justify-content: center;
     position: relative;
     border-bottom: 5px solid gray;
     border-bottom-style: dotted;
-    width: 500px;
-    /* border-collapse: separate;
-    box-shadow: 5px 5px 5px black; */
+    width: 100%;
 }
 
 .contenido .presentacion .preacce {
+    width: 10%;
     text-align: center;
     padding: 150px 150px;
     background-size: cover;
@@ -299,8 +300,8 @@ body {
     align-items: center;
     text-align: center;
     justify-items: center;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin: 0 20px;
     border: 1px solid gray;
     box-shadow: -8px 10px 10px #AEB2B2;
@@ -346,8 +347,8 @@ body {
     align-items: center;
     text-align: center;
     justify-items: center;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin: 0 20px;
     border: 1px solid gray;
     box-shadow: -10px 18px 15px 0px #AEB2B2;
@@ -646,7 +647,7 @@ footer .social-desa h3 img {
     #menu-h:nth-child(5) {
         grid-template-rows: repeat(4, 1fr);
         position: fixed;
-        z-index: 4;
+        z-index: 3;
         background-color: rgba(253, 171, 1, .7);
         right: 0;
         margin-top: 40px;

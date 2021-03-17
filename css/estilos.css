@@ -176,15 +176,16 @@ body {
 .contenido .presentacion .preacce {
     width: 0;
     text-align: center;
-    padding: 150px 150px;
+    padding: 200px 100px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contenido .presentacion .p1 {
-    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/1.png');
-    background-size: 20%;
+    background-image: url('../assets/img/ArticulosCali/MouseM90/1.png');
+    background-size: 50%;
     background-position: center;
+    width: 200px;
 }
 
 .contenido .presentacion .p2 {
@@ -192,13 +193,23 @@ body {
     background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
     background-size: 50%;
     background-position: center;
+    width: 200px;
 }
 
 .contenido .presentacion .p3 {
     display: none;
-    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/3.png');
+    background-image: url('../assets/img/ArticulosChina/Microfono/1.jpg');
     background-size: 50%;
     background-position: center;
+    width: 200px;
+}
+
+.contenido .presentacion .p4 {
+    display: none;
+    background-image: url('../assets/img/ArticulosChina/Ratóninalámbrico/2.png');
+    background-size: 50%;
+    background-position: center;
+    width: 200px;
 }
 
 .contenido .presentacion .btn {
@@ -633,6 +644,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        background-color: #EEF0F0;
+    }
     .burger-button {
         display: block;
     }
@@ -661,6 +675,8 @@ footer .social-desa h3 img {
     }
     .contenido .presentacion {
         grid-template-columns: 1fr;
+        padding: 20px;
+        width: 80%;
     }
     .contenido .accesorios .celulares .accesorio-celular:nth-child(2) {
         background-color: darkkhaki;

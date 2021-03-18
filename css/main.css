@@ -92,20 +92,18 @@ body {
 
 @media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 768px) {
-    .home-main .home-main-text {
-        font-size: 2em;
-    }
-    .home-main .enlaces .home-main-button {
-        /* width: 10px; */
-    }
-    .home-main .enlaces .home-main-button a {
-        /* font-size: 10 em; */
-    }
-}
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 1024px) {
     .home-main .home-main-text {
+        font-size: 3.5rem;
+    }
+    .home-main .enlaces .home-main-button {
+        width: 200px;
+        height: 70px;
+        margin: 30px 0;
+    }
+    .home-main .enlaces .home-main-button a {
         font-size: 2rem;
     }
 }

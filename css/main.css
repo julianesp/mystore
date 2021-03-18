@@ -6,9 +6,6 @@ html,
 body {
     margin: 0;
     height: 100%;
-}
-
-.home-body {
     font-family: 'Roboto mono', monospace;
     margin: 0;
     padding: 0;
@@ -19,7 +16,6 @@ body {
     background-size: 100% 100%;
     /* quitar scroll vertical */
     overflow: hidden;
-    /* height: 100%; */
 }
 
 .home-main {
@@ -29,8 +25,6 @@ body {
     gap: 10px;
     height: 100%;
 }
-
-.home-main:nth-child(7) {}
 
 .home-main img {
     margin: 0 10px;
@@ -76,7 +70,7 @@ body {
     width: 100%;
 }
 
-.home-body .home-main .enlaces button {
+.home-main .enlaces button {
     display: block;
     width: 120px;
     height: 50px;
@@ -87,7 +81,7 @@ body {
     margin: 10px 0;
 }
 
-.home-body .home-main .enlaces button a {
+.home-main .enlaces button a {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
@@ -99,19 +93,19 @@ body {
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width: 768px) {
-    .home-body .home-main .home-main-text {
+    .home-main .home-main-text {
         font-size: 2em;
     }
-    .home-body .home-main .enlaces .home-main-button {
-        width: 10px;
+    .home-main .enlaces .home-main-button {
+        /* width: 10px; */
     }
-    .home-body .home-main .enlaces .home-main-button a {
-        font-size: 10 em;
+    .home-main .enlaces .home-main-button a {
+        /* font-size: 10 em; */
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .home-body .home-main .home-main-text {
+    .home-main .home-main-text {
         font-size: 2rem;
     }
 }

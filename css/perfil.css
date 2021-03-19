@@ -19,12 +19,12 @@ body {
 
 .contenedor-header .header1:hover,
 .header2:hover {
-    background-color: red;
+    background-color: #088DD1;
 }
 
-.contenedor-header .header1,
-.header2 {
+.contenedor-header .header1 {
     align-items: center;
+    margin-left: 80px;
 }
 
 .contenedor-header .header1,
@@ -114,7 +114,7 @@ p {
     position: absolute;
     width: 120px;
     height: 5px;
-    background-color: #37FCDB;
+    background-color: #ed143d;
     top: .6em;
 }
 
@@ -135,64 +135,79 @@ p {
 
 .contenido .tiempo .tiempo-dividido .actividades {
     display: grid;
-    grid-template-rows: .2fr 1fr;
+    grid-template-rows: 35px 1fr;
     text-align: center;
     justify-items: center;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 10px;
-    background-color: #192b63;
+    background-color: #DEF3F3;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades h4 {
-    color: #f7e564;
-    font-weight: bolder;
-    /* padding: 5px; */
     width: 80px;
-    height: 1px;
+    color: #FDAE04;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades p {
-    color: white;
-    font-size: 1em;
+    color: #1B678C;
+    font-size: 1.2;
+    font-weight: bolder;
 }
-
-
-/* contáctame */
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    bottom: 0;
+    position: relative;
+    z-index: 5;
     background-color: #419CCA;
-    /* para centrar elementos verticalmente */
-    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px 15px;
+    gap: 20px;
 }
 
-footer .desarrollador {
+footer .info-desa {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: center;
-    margin: 10px 0;
+    /* justify-self: start; */
 }
 
-footer .desarrollador h2 {
+footer .info-desa h3 {
+    font-size: .9em;
+    color: white;
+    margin-left: 80px;
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+footer .info-desa h3 img {
+    width: 40px;
+}
+
+footer .social-desa {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+footer .social-desa h2 {
     color: #EAB016;
     font-weight: bolder;
 }
 
-footer .desarrollador h3 {
-    font-size: .9em;
-    color: white;
-    /* margin-left: 80px; */
-    /* box-shadow: 2px 2px 2px gray; */
-}
-
-footer .desarrollador a img {
+footer .social-desa a img {
     width: 50px;
     margin: 0 20px;
 }
 
-footer .desarrollador h3 img {
+footer .social-desa h3 {
+    color: white;
+}
+
+footer .social-desa h3 img {
     width: 30px;
     padding-right: 10px;
 }

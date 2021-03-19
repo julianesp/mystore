@@ -92,7 +92,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .home-main .home-main-text {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .home-main .enlaces .home-main-button {
         /* width: 400px;

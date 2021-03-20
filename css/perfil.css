@@ -215,14 +215,15 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
-@media screen and (max-width: 480px) {
+
+/* @media screen and (max-width: 480px) {
     .contenedor-header .header1 a .inicio {
         font-size: .1em;
     }
     footer .desarrollador h3 {
         font-size: .2em;
     }
-}
+} */
 
 @media screen and (max-width: 1024px) {
     .contenedor-header {
@@ -265,7 +266,7 @@ footer .social-desa h3 img {
     .contenido .tiempo h2::after {
         right: -180px;
     }
-    footer .desarrollador h3 {
+    footer .social-desa h3 {
         font-size: .8em;
     }
 }

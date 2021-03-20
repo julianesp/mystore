@@ -219,12 +219,6 @@ footer .social-desa h3 img {
     .contenedor-header .header1 a .inicio {
         font-size: .1em;
     }
-    .contenido .tiempo h2::before {
-        left: -180px;
-    }
-    .contenido .tiempo h2::after {
-        right: -180px;
-    }
     footer .desarrollador h3 {
         font-size: .2em;
     }
@@ -264,6 +258,12 @@ footer .social-desa h3 img {
         font-size: 28px;
         padding: 10px;
         margin: 20px;
+    }
+    .contenido .tiempo h2::before {
+        left: -180px;
+    }
+    .contenido .tiempo h2::after {
+        right: -180px;
     }
     footer .desarrollador h3 {
         font-size: .8em;

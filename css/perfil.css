@@ -216,8 +216,14 @@ footer .social-desa h3 img {
 /* estilos para dispositivos de menos resolucion */
 
 @media screen and (max-width: 480px) {
-    .contenedor-header .header1 {
-        font-size: 2em;
+    .contenedor-header .header1 a .inicio {
+        font-size: .1em;
+    }
+    .contenido .tiempo h2::before {
+        left: -180px;
+    }
+    .contenido .tiempo h2::after {
+        right: -180px;
     }
     footer .desarrollador h3 {
         font-size: .2em;

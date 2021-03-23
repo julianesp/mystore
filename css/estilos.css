@@ -48,7 +48,7 @@ body {
 .burger-button {
     display: none;
     position: fixed;
-    z-index: 2;
+    /* z-index: 2; */
     margin: 10px;
     width: 50px;
     height: 50px;
@@ -71,7 +71,7 @@ body {
     justify-items: center;
     align-items: center;
     position: relative;
-    z-index: 4;
+    z-index: 1;
 }
 
 .header #menu-h {
@@ -152,9 +152,10 @@ body {
 }
 
 .contenido {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    z-index: 3;
     height: 100%;
-    margin: 20px 30px;
+    margin: 20px 150px;
 }
 
 
@@ -164,7 +165,7 @@ body {
     display: grid;
     justify-content: center;
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     padding: 20px;
     width: 50%;
     margin: 10px auto;
@@ -554,7 +555,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     position: relative;
-    z-index: 5;
+    z-index: 2;
     background-color: #419CCA;
     border: 1px solid black;
     text-align: center;
@@ -664,7 +665,7 @@ footer .social-desa h3 img {
     #menu-h:nth-child(5) {
         grid-template-rows: repeat(4, 1fr);
         position: fixed;
-        z-index: 2;
+        z-index: -111;
         background-color: rgba(253, 171, 1, .7);
         right: 0;
         margin-top: 40px;

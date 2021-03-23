@@ -135,7 +135,7 @@ p {
 
 .contenido .tiempo .tiempo-dividido .actividades {
     display: grid;
-    grid-template-rows: 35px 1fr;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
     justify-items: center;
     border: 1px solid gray;
@@ -145,10 +145,11 @@ p {
 }
 
 .contenido .tiempo .tiempo-dividido .actividades h4 {
-    width: 80px;
+    /* width: 80px; */
     color: #FDAE04;
     font-size: 1.3rem;
     font-weight: bold;
+    grid-row: 1;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades p {
@@ -215,15 +216,14 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
-
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .contenedor-header .header1 a .inicio {
         font-size: .1em;
     }
-    footer .desarrollador h3 {
-        font-size: .2em;
+    footer .social-desa h3 {
+        font-size: .9em;
     }
-} */
+}
 
 @media screen and (max-width: 1024px) {
     .contenedor-header {

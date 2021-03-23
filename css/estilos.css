@@ -605,17 +605,18 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     #particles-js {
         display: none;
+    }
+    .burger-button {
+        z-index: 1;
     }
     .header {
         padding-top: 20px;
     }
     .contenido .presentacion {
         width: 200px;
-        /* margin: 0 auto; */
-        /* padding: 0; */
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;
@@ -644,7 +645,7 @@ footer .social-desa h3 img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     body {
         background-color: #EEF0F0;
     }
@@ -679,6 +680,10 @@ footer .social-desa h3 img {
         padding: 20px;
         width: 80%;
     }
+    .contenido .accesorios .celulares {
+        grid-template-rows: repeat(6, 1fr);
+    }
+    /*     
     .contenido .accesorios .celulares .accesorio-celular:nth-child(2) {
         background-color: darkkhaki;
         grid-column-start: 1;
@@ -738,7 +743,7 @@ footer .social-desa h3 img {
         background-color: red;
         grid-column-start: 1;
         grid-column-end: 4;
-    }
+    } */
     footer {
         font-size: .8em;
     }
@@ -766,10 +771,11 @@ footer .social-desa h3 img {
     }
 }
 
+
+/* 
 @media screen and (max-width: 768px) {
     .header #menu-h img {
         width: 60%;
-        /* margin-top: 30px; */
     }
     .header #menu-h ul li a {
         font-size: .9em;
@@ -780,7 +786,7 @@ footer .social-desa h3 img {
         margin: 5px;
         padding: 0;
     }
-}
+} */
 
 @media screen and (max-width: 920px) {
     .contenido .accesorios .celulares {

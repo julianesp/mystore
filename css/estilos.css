@@ -1,820 +1,706 @@
-/* tipo de letra */
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
-/* icono de menu  */
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?3ot2jt');
-    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-    content: "\e9bd";
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-}
-
-.burger-button {
-    display: none;
-    position: fixed;
-    /* z-index: 2; */
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    /* background-color: #fdab01; */
-    background-color: rgba(253, 171, 1, .7);
-    color: #fff;
-    line-height: 50px;
-    text-align: center;
-    right: 0;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #419CCA;
-    border: 2px solid black;
-    margin: 0;
-    padding: 0;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.header #menu-h {
-    text-align: center;
-}
-
-.header #menu-h img {
-    align-items: center;
-    width: 70%;
-}
-
-.header #menu-h a {
-    /* color del texto */
-    color: #fff;
-    color: #000;
-    display: block;
-    border: 1px solid white;
-    border-radius: 5px;
-    box-shadow: 2px 2px white;
-    margin-top: 3%;
-    padding: 5px;
-    font-size: 1em;
-}
-
-.header #menu-h a:hover {
-    color: white;
-    background-color: #088DD1;
-    margin-left: 0;
-}
-
-.header #menu-h ul {
-    list-style-type: none;
-}
-
-.header #menu-h ul ul {
-    display: none;
-    position: absolute;
-    transition: 1s;
-}
-
-.header #menu-h ul li a {
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-.header #menu-h ul li a:hover {
-    background-color: #088DD1;
-}
-
-.header #menu-h ul li ul {
-    margin: 0 0;
-}
-
-.header #menu-h ul li ul li:hover {
-    display: block;
-    position: absolute;
-}
-
-.header #menu-h ul ul li a {
-    /* margin: 15px 0; */
-    left: 0;
-    color: #1573a1;
-    background-color: rgba(235, 240, 217, 0.5);
-    margin: 15px 0;
-    /* padding-left: 0; */
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
-    justify-items: center;
-    margin: 10px 0;
-}
-
-.header a {
-    border: 1px solid brown;
-    padding: 5px 0;
-    margin: 10px 0;
-}
-
-.contenido {
-    /* border: 1px solid black; */
-    z-index: 3;
-    height: 100%;
-    margin: 20px 150px;
-}
-
-
-/* presentacion de articulos */
-
-.contenido .presentacion {
-    display: grid;
-    justify-content: center;
-    position: relative;
-    /* z-index: 10; */
-    padding: 20px;
-    width: 50%;
-    margin: 10px auto;
-    border: 2px solid #000;
-    box-shadow: 5px 5px 25px #419CCA;
-    border-radius: 50px;
-}
-
-.contenido .presentacion .preacce {
-    width: 0;
-    text-align: center;
-    padding: 200px 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.contenido .presentacion .p1 {
-    background-image: url('../assets/img/ArticulosCali/MouseM90/1.png');
-    background-size: 50%;
-    background-position: center;
-    width: 200px;
-}
-
-.contenido .presentacion .p2 {
-    display: none;
-    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
-    background-size: 50%;
-    background-position: center;
-    width: 200px;
-}
-
-.contenido .presentacion .p3 {
-    display: none;
-    background-image: url('../assets/img/ArticulosChina/Microfono/1.jpg');
-    background-size: 50%;
-    background-position: center;
-    width: 200px;
-}
-
-.contenido .presentacion .p4 {
-    display: none;
-    background-image: url('../assets/img/ArticulosChina/Ratóninalámbrico/2.png');
-    background-size: 50%;
-    background-position: center;
-    width: 200px;
-}
-
-.contenido .presentacion .btn {
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.contenido .presentacion .btn:hover {
-    color: yellowgreen;
-    background-color: rgba(0, 0, 0, .9);
-    transition: .7s;
-}
-
-.contenido .presentacion .iz {
-    left: 10px;
-}
-
-.contenido .presentacion .dere {
-    right: 10px;
-}
-
-.contenido .presentacion .page {
-    position: absolute;
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    bottom: 10px;
-    display: none;
-}
-
-.contenido .presentacion .page li {
-    display: inline-block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    background-color: yellowgreen;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-/* estilos trabajo */
-
-.contenido .mi_trabajo {
-    margin-top: 150px;
-}
-
-.contenido .mi_trabajo .formateo {
-    position: relative;
-    text-align: center;
-}
-
-.contenido .mi_trabajo .formateo .title {
-    font-size: 1.5em;
-    color: #c28604;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .2fr 1fr .2fr;
-    border: 1px solid black;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
-    align-self: center;
-    justify-self: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    height: 400px;
-    justify-items: center;
-    overflow-x: auto;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux .titulo {
-    justify-items: center;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0 20px;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
-    display: grid;
-    grid-template-rows: 50px 1fr;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    width: 200px;
-    height: 250px;
-    margin: 0 20px;
-    border: 1px solid gray;
-    box-shadow: -8px 10px 10px #AEB2B2;
-    border-radius: 20px;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas h4 {
-    color: #000;
-    font-size: 1.5rem;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
-    width: 80%;
-    text-align: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    height: 400px;
-    justify-items: center;
-    overflow-x: auto;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows .titulo {
-    justify-items: center;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0 20px;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-    display: grid;
-    grid-template-rows: 50px 1fr;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    width: 200px;
-    height: 250px;
-    margin: 0 20px;
-    border: 1px solid gray;
-    box-shadow: -10px 18px 15px 0px #AEB2B2;
-    border-radius: 20px;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas h4 {
-    color: #000;
-    font-size: 1.5rem;
-}
-
-.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
-    width: 80%;
-    text-align: center;
-}
-
-
-/* estilos para presentacion de programas */
-
-.contenido .mi_trabajo .programas {
-    position: relative;
-    height: 430px;
-    margin: 50px 0;
-}
-
-.contenido .mi_trabajo .programas .titulo {
-    padding: 5px 0;
-}
-
-.contenido .mi_trabajo .programas .programas-contenedor {
-    height: inherit;
-    border: 2px solid gray;
-}
-
-.contenido .mi_trabajo .programas .programas-varios {
-    text-align: center;
-    padding: 200px 150px;
-    background-size: cover;
-}
-
-.contenido .mi_trabajo .programas .c1 {
-    background-image: url('../img/1.png');
-}
-
-.contenido .mi_trabajo .programas .c2 {
-    background-image: url('../img/2.png');
-    display: none;
-}
-
-.contenido .mi_trabajo .programas .c3 {
-    background-image: url('../img/3.jpg');
-    display: none;
-}
-
-.contenido .mi_trabajo .programas .boton {
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.contenido .mi_trabajo .programas .boton:hover {
-    color: yellowgreen;
-    background-color: rgba(0, 0, 0, .9);
-    transition: .7s;
-}
-
-.contenido .mi_trabajo .programas .izquierda {
-    left: 10px;
-}
-
-.contenido .mi_trabajo .programas .derecha {
-    right: 10px;
-}
-
-.contenido .mi_trabajo .programas .paginacion {
-    position: absolute;
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    bottom: 10px;
-    display: none;
-}
-
-.contenido .mi_trabajo .programas .paginacion li {
-    display: inline-block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    background-color: yellowgreen;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-/*estilos para accesorios celulares*/
-
-.contenido .accesorios {
-    position: relative;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.contenido .accesorios .celulares {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .3fr 1fr 1fr;
-    border: 1px solid black;
-    justify-items: center;
-    margin-top: 250px;
-}
-
-.contenido .accesorios .celulares .titulo {
-    align-self: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.contenido .accesorios .celulares .accesorio-celular {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 250px 60px;
-    align-items: center;
-    border: 1px solid black;
-    width: 90%;
-    height: 400px;
-    margin: 15px 0;
-}
-
-.contenido .accesorios .celulares .accesorio-celular h3 {
-    font-size: 1.5rem;
-}
-
-.contenido .accesorios .celulares .accesorio-celular img {
-    width: 60%;
-    height: 80%;
-    justify-self: center;
-}
-
-.contenido .accesorios .celulares .accesorio-celular a {
-    align-self: center;
-    grid-row: 3;
-}
-
-
-/*estilos para accesorios computadores*/
-
-.contenido .accesorios .pc {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .3fr 1fr 1fr;
-    border: 1px solid black;
-    justify-items: center;
-    margin-top: 250px;
-}
-
-.contenido .accesorios .pc .titulo {
-    align-self: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.contenido .accesorios .pc .accesorio-pc {
-    display: grid;
-    grid-template-rows: .3fr 1fr .3fr;
-    border: 1px solid black;
-    width: 90%;
-    height: 400px;
-    /* margin: 15px 0; */
-}
-
-.contenido .accesorios .pc .accesorio-pc img {
-    width: 90%;
-    justify-self: center;
-}
-
-.contenido .accesorios .pc .accesorio-pc a {
-    height: 50px;
-    align-self: center;
-}
-
-
-/* estilos para los botones */
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    position: relative;
-    z-index: 2;
-    background-color: #419CCA;
-    border: 1px solid black;
-    text-align: center;
-    margin-top: 100px;
-    padding: 10px 15px;
-    gap: 20px;
-}
-
-footer .info-desa {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    /* justify-self: start; */
-}
-
-footer .info-desa h3 {
-    font-size: .9em;
-    color: white;
-    margin-left: 80px;
-    /* box-shadow: 2px 2px 2px gray; */
-}
-
-footer .info-desa h3 img {
-    width: 40px;
-}
-
-footer .social-desa {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-footer .social-desa h2 {
-    color: #EAB016;
-    font-weight: bolder;
-}
-
-footer .social-desa a img {
-    width: 50px;
-    margin: 0 20px;
-}
-
-footer .social-desa h3 {
-    color: white;
-}
-
-footer .social-desa h3 img {
-    width: 30px;
-    padding-right: 10px;
-}
-
-@media screen and (max-width: 425px) {
-    #particles-js {
-        display: none;
+    /* tipo de letra */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+    /* icono de menu  */
+    
+    @font-face {
+        font-family: 'icomoon';
+        src: url('../fonts/icomoon.eot?3ot2jt');
+        src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
     }
-    .burger-button {
-        z-index: 1;
+    
+    [class^="icon-"],
+    [class*=" icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
-    .header {
-        padding-top: 20px;
+    
+    .icon-menu:before {
+        content: "\e9bd";
     }
-    .contenido .presentacion {
-        width: 200px;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
-        height: 250px;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
-        width: 150px;
-        height: 180px;
-        margin: 0 10px;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
-        width: 50%;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
-        height: 250px;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-        width: 150px;
-        height: 180px;
-        margin: 0 10px;
-    }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
-        width: 50%;
-    }
-    footer .social-desa h3 {
-        font-size: .9em;
-    }
-}
-
-@media screen and (max-width: 768px) {
+    
     body {
+        margin: 0;
+        background-size: cover;
         background-color: #EEF0F0;
+        font-family: 'Ubuntu', sans-serif;
+        position: relative;
     }
+    
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
     .burger-button {
-        display: block;
-    }
-    .header {
-        grid-template-columns: 1fr;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .header #menu-h {
-        width: 250px;
-    }
-    .header #menu-h:nth-child(2),
-    #menu-h:nth-child(3),
-    #menu-h:nth-child(4),
-    #menu-h:nth-child(5) {
-        grid-template-rows: repeat(4, 1fr);
+        display: none;
         position: fixed;
-        z-index: -111;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
         background-color: rgba(253, 171, 1, .7);
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
         right: 0;
-        margin-top: 40px;
     }
-    .contenido {
-        grid-template-columns: 1fr;
-        margin: 5px;
+    
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #419CCA;
+        border: 2px solid black;
+        margin: 0;
+        padding: 0;
+        justify-items: center;
+        align-items: center;
+        position: relative;
     }
-    .contenido .presentacion {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        width: 80%;
+    
+    .header #menu-h {
+        text-align: center;
     }
-    .contenido .accesorios .celulares {
-        grid-template-rows: repeat(6, 1fr);
+    
+    .header #menu-h img {
+        align-items: center;
+        width: 70%;
     }
-    /*     
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(2) {
-        background-color: darkkhaki;
-        grid-column-start: 1;
-        grid-column-end: 4;
+    
+    .header #menu-h a {
+        /* color del texto */
+        color: #fff;
+        color: #000;
+        display: block;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 2px 2px white;
+        margin-top: 3%;
+        padding: 5px;
+        font-size: 1em;
     }
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(3) {
-        background-color: rgb(221, 38, 69);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(4) {
-        background-color: rgb(74, 45, 179);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(5) {
-        background-color: yellow;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(6) {
-        background-color: blue;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .celulares .accesorio-celular:nth-child(7) {
-        background-color: red;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(2) {
-        background-color: rgb(74, 45, 179);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(3) {
-        background-color: rgb(74, 45, 179);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(4) {
-        background-color: rgb(74, 45, 179);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(5) {
-        background-color: yellow;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(6) {
-        background-color: blue;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .contenido .accesorios .pc .accesorio-pc:nth-child(7) {
-        background-color: red;
-        grid-column-start: 1;
-        grid-column-end: 4;
-    } */
-    footer {
-        font-size: .8em;
-    }
-    footer .info-desa h3 {
+    
+    .header #menu-h a:hover {
+        color: white;
+        background-color: #088DD1;
         margin-left: 0;
     }
+    
+    .header #menu-h ul {
+        list-style-type: none;
+    }
+    
+    .header #menu-h ul ul {
+        display: none;
+        position: absolute;
+        transition: 1s;
+    }
+    
+    .header #menu-h ul li a {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .header #menu-h ul li a:hover {
+        background-color: #088DD1;
+    }
+    
+    .header #menu-h ul li ul {
+        margin: 0 0;
+    }
+    
+    .header #menu-h ul li ul li:hover {
+        display: block;
+        position: absolute;
+    }
+    
+    .header #menu-h ul ul li a {
+        /* margin: 15px 0; */
+        left: 0;
+        color: #1573a1;
+        background-color: rgba(235, 240, 217, 0.5);
+        margin: 15px 0;
+        /* padding-left: 0; */
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: 2px solid black;
+        justify-items: center;
+        margin: 10px 0;
+    }
+    
+    .header a {
+        border: 1px solid brown;
+        padding: 5px 0;
+        margin: 10px 0;
+    }
+    
+    .contenido {
+        height: 100%;
+        margin: 20px 150px;
+    }
+    /* presentacion de articulos */
+    
+    .contenido .presentacion {
+        display: grid;
+        justify-content: center;
+        position: relative;
+        padding: 20px;
+        width: 50%;
+        margin: 10px auto;
+        border: 2px solid #000;
+        box-shadow: 5px 5px 25px #419CCA;
+        border-radius: 50px;
+    }
+    
+    .contenido .presentacion .preacce {
+        width: 0;
+        text-align: center;
+        padding: 200px 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .contenido .presentacion .p1 {
+        background-image: url('../assets/img/ArticulosCali/MouseM90/1.png');
+        background-size: 50%;
+        background-position: center;
+        width: 200px;
+    }
+    
+    .contenido .presentacion .p2 {
+        display: none;
+        background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
+        background-size: 50%;
+        background-position: center;
+        width: 200px;
+    }
+    
+    .contenido .presentacion .p3 {
+        display: none;
+        background-image: url('../assets/img/ArticulosChina/Microfono/1.jpg');
+        background-size: 50%;
+        background-position: center;
+        width: 200px;
+    }
+    
+    .contenido .presentacion .p4 {
+        display: none;
+        background-image: url('../assets/img/ArticulosChina/Ratóninalámbrico/2.png');
+        background-size: 50%;
+        background-position: center;
+        width: 200px;
+    }
+    
+    .contenido .presentacion .btn {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
+    .contenido .presentacion .btn:hover {
+        color: yellowgreen;
+        background-color: rgba(0, 0, 0, .9);
+        transition: .7s;
+    }
+    
+    .contenido .presentacion .iz {
+        left: 10px;
+    }
+    
+    .contenido .presentacion .dere {
+        right: 10px;
+    }
+    
+    .contenido .presentacion .page {
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        bottom: 10px;
+        display: none;
+    }
+    
+    .contenido .presentacion .page li {
+        display: inline-block;
+        list-style: none;
+        width: 25px;
+        height: 25px;
+        background-color: yellowgreen;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* estilos trabajo */
+    
+    .contenido .mi_trabajo {
+        margin-top: 150px;
+    }
+    
+    .contenido .mi_trabajo .formateo {
+        position: relative;
+        text-align: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .title {
+        font-size: 1.5em;
+        color: #c28604;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr .2fr;
+        border: 1px solid black;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        height: 400px;
+        justify-items: center;
+        overflow-x: auto;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .titulo {
+        justify-items: center;
+        align-self: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0 20px;
+        align-self: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        width: 200px;
+        height: 250px;
+        margin: 0 20px;
+        border: 1px solid gray;
+        box-shadow: -8px 10px 10px #AEB2B2;
+        border-radius: 20px;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas h4 {
+        color: #000;
+        font-size: 1.5rem;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        height: 400px;
+        justify-items: center;
+        overflow-x: auto;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .titulo {
+        justify-items: center;
+        align-self: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0 20px;
+        align-self: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        width: 200px;
+        height: 250px;
+        margin: 0 20px;
+        border: 1px solid gray;
+        box-shadow: -10px 18px 15px 0px #AEB2B2;
+        border-radius: 20px;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas h4 {
+        color: #000;
+        font-size: 1.5rem;
+    }
+    
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+        width: 80%;
+        text-align: center;
+    }
+    /* estilos para presentacion de programas */
+    
+    .contenido .mi_trabajo .formateo .programas {
+        position: relative;
+        height: 430px;
+        margin: 100px 0;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .titulo h3 {
+        padding: 5px 0;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor {
+        width: 80%;
+        height: inherit;
+        border: 5px solid gray;
+        border-radius: 15px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-varios {
+        text-align: center;
+        padding: 200px 150px;
+        background-size: cover;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
+        background-image: url('../assets/img/sistemas/linux/arch.png');
+        width: 20%;
+        height: 10px;
+        text-align: center;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
+        background-image: url('../assets/img/sistemas/linux/arch.png');
+        display: none;
+        width: 10%;
+        height: 10px;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
+        background-image: url('../assets/img/sistemas/linux/arch.png');
+        display: none;
+        width: 10%;
+        height: 10px;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .boton:hover {
+        color: yellowgreen;
+        background-color: rgba(0, 0, 0, .9);
+        transition: .7s;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .izquierda {
+        left: 10px;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
+        right: 10px;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        bottom: 10px;
+        display: none;
+    }
+    
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
+        display: inline-block;
+        list-style: none;
+        width: 25px;
+        height: 25px;
+        background-color: yellowgreen;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /*estilos para accesorios celulares*/
+    
+    .contenido .accesorios {
+        position: relative;
+        text-align: center;
+        margin-top: 180px;
+    }
+    
+    .contenido .accesorios .celulares {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        overflow: scroll;
+        border: 3px solid gray;
+        padding: 10px;
+    }
+    
+    .contenido .accesorios .celulares .accesorio-celular {
+        display: grid;
+        grid-template-rows: 60px 250px 60px;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        margin: 15px 15px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #808080;
+    }
+    
+    .contenido .accesorios .celulares .accesorio-celular h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contenido .accesorios .celulares .accesorio-celular img {
+        width: 60%;
+        height: 80%;
+        justify-self: center;
+    }
+    
+    .contenido .accesorios .celulares .accesorio-celular a {
+        align-self: center;
+        grid-row: 3;
+    }
+    /*estilos para accesorios computadores*/
+    
+    .contenido .accesorios .pc {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        overflow: scroll;
+        border: 3px solid gray;
+        padding: 10px;
+    }
+    
+    .contenido .accesorios .pc .accesorio-pc {
+        display: grid;
+        grid-template-rows: 60px 250px 60px;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        margin: 15px 15px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #808080;
+    }
+    
+    .contenido .accesorios .titulo-computadores h2 {
+        margin-top: 110px;
+    }
+    
+    .contenido .accesorios .pc .accesorio-pc img {
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .contenido .accesorios .pc .accesorio-pc a {
+        height: 50px;
+        align-self: center;
+    }
+    /* estilos para los botones */
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: relative;
+        background-color: #419CCA;
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 100px;
+        padding: 10px 15px;
+        gap: 20px;
+    }
+    
+    footer .info-desa {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        /* justify-self: start; */
+    }
+    
+    footer .info-desa h3 {
+        font-size: .9em;
+        color: white;
+        margin-left: 80px;
+        /* box-shadow: 2px 2px 2px gray; */
+    }
+    
     footer .info-desa h3 img {
         width: 40px;
     }
+    
     footer .social-desa {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
+    
     footer .social-desa h2 {
-        grid-row: 1;
-        grid-column: 2;
+        color: #EAB016;
+        font-weight: bolder;
     }
-    footer .social-desa h3 {
-        grid-row: 2;
-        grid-column: 2;
-    }
+    
     footer .social-desa a img {
+        width: 50px;
+        margin: 0 20px;
+    }
+    
+    footer .social-desa h3 {
+        color: white;
+    }
+    
+    footer .social-desa h3 img {
         width: 30px;
-        margin: 0 10px;
+        padding-right: 10px;
     }
-}
-
-
-/* 
-@media screen and (max-width: 768px) {
-    .header #menu-h img {
-        width: 60%;
+    
+    @media screen and (max-width: 425px) {
+        body {
+            min-width: 400px;
+        }
+        #particles-js {
+            display: none;
+        }
+        .burger-button {}
+        .header {
+            padding-top: 20px;
+        }
+        .contenido {}
+        .contenido .presentacion {
+            min-width: 200px;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
+            height: 250px;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+            width: 150px;
+            height: 180px;
+            margin: 0 10px;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
+            width: 50%;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+            height: 250px;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+            width: 150px;
+            height: 180px;
+            margin: 0 10px;
+        }
+        .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+            width: 50%;
+        }
+        footer .social-desa h3 {
+            font-size: .9em;
+        }
     }
-    .header #menu-h ul li a {
-        font-size: .9em;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+    
+    @media screen and (max-width: 768px) {
+        body {
+            background-color: #EEF0F0;
+        }
+        .burger-button {
+            display: block;
+            z-index: 1;
+        }
+        .header {
+            grid-template-columns: 1fr;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .header #menu-h {
+            width: 250px;
+        }
+        .header #menu-h:nth-child(2),
+        #menu-h:nth-child(3),
+        #menu-h:nth-child(4),
+        #menu-h:nth-child(5) {
+            display: none;
+            grid-template-rows: repeat(4, 1fr);
+            position: fixed;
+            background-color: rgba(253, 171, 1, .7);
+            right: 0;
+            margin-top: 68px;
+        }
+        .contenido {
+            grid-template-columns: 1fr;
+            margin: 5px;
+        }
+        .contenido .presentacion {
+            grid-template-columns: 1fr;
+            padding: 20px;
+            width: 80%;
+        }
+        .contenido .accesorios .celulares {
+            display: flex;
+            overflow: scroll;
+        }
+        .contenido .accesorios .celulares .titulo {
+            display: none;
+        }
+        footer {
+            font-size: .8em;
+        }
+        footer .info-desa h3 {
+            margin-left: 0;
+        }
+        footer .info-desa h3 img {
+            width: 40px;
+        }
+        footer .social-desa {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        footer .social-desa h2 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        footer .social-desa h3 {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        footer .social-desa a img {
+            width: 30px;
+            margin: 0 10px;
+        }
     }
-    footer p {
-        margin: 5px;
-        padding: 0;
-    }
-} */
-
-@media screen and (max-width: 920px) {
-    .contenido .accesorios .celulares {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .contenido .accesorios .celulares .titulo {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .contenido .accesorios .celulares .accesorio-celular {
-        width: 90%;
-    }
-    .contenido .accesorios .pc {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .contenido .accesorios .pc .titulo {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .contenido .accesorios .pc .accesorio-pc {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-        /* width: 150px; */
-    }
-}

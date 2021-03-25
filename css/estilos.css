@@ -677,8 +677,8 @@
             width: 80%;
         }
         .contenido .accesorios .celulares {
-            display: flex;
-            overflow: scroll;
+            /* display: flex;
+            overflow: scroll; */
         }
         .contenido .accesorios .celulares .titulo {
             display: none;

@@ -60,17 +60,21 @@ a {
     box-shadow: 10px 10px 10px gray;
 }
 
-.contenido .presentacion div {
+.contenido .presentacion {
+    height: 600px;
     align-self: center;
     justify-self: center;
     /* para centrar todo */
     text-align: center;
+    position: relative;
 }
 
-.contenido .presentacion div img {
-    height: 420px;
-    /* box-shadow: 5px 5px 5px gray;*/
+.contenido .presentacion .img {
     border-radius: 10px;
+}
+
+.contenido .presentacion .img .img-photo {
+    /* width: 80%; */
 }
 
 
@@ -216,6 +220,16 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
+
+/*
+@media screen and (max-width: 425px) {
+    .contenido .tiempo .tiempo-dividido .actividades {
+        grid-template-rows: .2fr 1fr;
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     .contenedor-header .header1 a .inicio {
         font-size: .1em;
@@ -224,6 +238,8 @@ footer .social-desa h3 img {
         font-size: .9em;
     }
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .contenedor-header {
@@ -269,4 +285,4 @@ footer .social-desa h3 img {
     footer .social-desa h3 {
         font-size: .8em;
     }
-}
+} */

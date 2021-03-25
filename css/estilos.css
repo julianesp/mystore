@@ -110,7 +110,7 @@
     }
     
     .header #menu-h ul li a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #fff;
         text-decoration: none;
     }
@@ -151,8 +151,21 @@
     .contenido {
         height: 100%;
         margin: 20px 150px;
+        position: relative;
     }
-    /* presentacion de articulos */
+    
+    .contenido .slide-bienvenida {
+        background-color: aquamarine;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-rows: 1fr;
+        box-sizing: border-box;
+        margin-bottom: 70px;
+        text-align: center;
+        align-items: center;
+        position: sticky;
+    }
     
     .contenido .presentacion {
         display: grid;
@@ -162,7 +175,7 @@
         width: 50%;
         margin: 10px auto;
         border: 2px solid #000;
-        box-shadow: 5px 5px 25px #419CCA;
+        box-shadow: 15px 15px 10px #bababa;
         border-radius: 50px;
     }
     
@@ -381,13 +394,23 @@
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor {
-        width: 80%;
+        width: 50%;
         height: inherit;
         border: 5px solid gray;
         border-radius: 15px;
+        box-shadow: 15px 15px 10px #bababa;
+        border-radius: 50px;
         display: grid;
+        position: relative;
         justify-content: center;
     }
+    /* display: grid;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+     */
     
     .contenido .mi_trabajo .formateo .programas .programas-varios {
         text-align: center;
@@ -471,6 +494,7 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         overflow: scroll;
+        overflow-y: unset;
         border: 3px solid gray;
         padding: 10px;
     }
@@ -508,6 +532,7 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         overflow: scroll;
+        overflow-y: unset;
         border: 3px solid gray;
         padding: 10px;
     }
@@ -647,6 +672,7 @@
         .burger-button {
             display: block;
             z-index: 1;
+            cursor: pointer;
         }
         .header {
             grid-template-columns: 1fr;

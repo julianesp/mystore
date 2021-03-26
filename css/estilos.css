@@ -274,6 +274,7 @@
     .contenido .mi_trabajo .formateo .title {
         font-size: 1.5em;
         color: #c28604;
+        margin-top: 200px;
     }
     
     .contenido .mi_trabajo .formateo .sistemas_operativos {
@@ -385,8 +386,8 @@
     
     .contenido .mi_trabajo .formateo .programas {
         position: relative;
-        height: 430px;
-        margin: 100px 0;
+        height: 530px;
+        margin: 200px 0;
     }
     
     .contenido .mi_trabajo .formateo .programas .titulo h3 {
@@ -394,8 +395,9 @@
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor {
-        width: 50%;
+        width: 60%;
         height: inherit;
+        margin: 0 auto;
         border: 5px solid gray;
         border-radius: 15px;
         box-shadow: 15px 15px 10px #bababa;
@@ -404,39 +406,41 @@
         position: relative;
         justify-content: center;
     }
-    /* display: grid;
-    justify-content: center;
-    position: relative;
-    padding: 20px;
-    width: 50%;
-    margin: 10px auto;
-     */
     
     .contenido .mi_trabajo .formateo .programas .programas-varios {
         text-align: center;
-        padding: 200px 150px;
+        padding: 200px 280px;
+        margin: 0 auto;
         background-size: cover;
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
-        background-image: url('../assets/img/sistemas/linux/arch.png');
-        width: 20%;
         height: 10px;
-        text-align: center;
+        background-image: url('../assets/img/sistemas/linux/arch.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        align-self: center;
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
+        height: 10px;
         background-image: url('../assets/img/sistemas/linux/arch.png');
         display: none;
-        width: 10%;
-        height: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        align-self: center;
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
+        height: 10px;
         background-image: url('../assets/img/sistemas/linux/arch.png');
         display: none;
-        width: 10%;
-        height: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        align-self: center;
     }
     
     .contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
@@ -655,6 +659,18 @@
         }
         .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
             width: 50%;
+        }
+        .contenido .mi_trabajo .formateo .programas .programas-contenedor {
+            /* width: 100%; */
+            height: inherit;
+            /* margin: 0 auto; */
+            border: 5px solid gray;
+            border-radius: 15px;
+            box-shadow: 15px 15px 10px #bababa;
+            border-radius: 50px;
+            display: grid;
+            position: relative;
+            justify-content: center;
         }
         footer .social-desa h3 {
             font-size: .9em;

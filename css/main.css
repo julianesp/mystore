@@ -90,14 +90,9 @@ body {
 
 /* vista para tablets y smartphones */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     .home-main .home-main-text {
         font-size: 4rem;
-    }
-    .home-main .enlaces .home-main-button {
-        /* width: 400px;
-        height: 770px;
-        margin: 30px 0; */
     }
     .home-main img {
         grid-column: 2;
@@ -113,16 +108,22 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .home-main img {
+        height: 10rem;
+        width: 400px;
+        grid-row: 3;
+        grid-column: 2;
+    }
     .home-main .home-main-text {
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-top: 50px;
     }
     .home-main .enlaces .home-main-button {
-        width: 200px;
-        height: 70px;
-        margin: 30px 0;
+        width: 350px;
+        height: 100px;
+        margin: 70px 0;
     }
     .home-main .enlaces .home-main-button a {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }

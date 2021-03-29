@@ -143,13 +143,16 @@ p {
 .contenido .tiempo .tiempo-dividido {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     justify-items: center;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades {
+    width: 450px;
     display: grid;
-    grid-template-rows: 30px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
     text-align: center;
     justify-items: center;
     border: 1px solid gray;
@@ -170,6 +173,7 @@ p {
     color: #1B678C;
     font-size: 1.2;
     font-weight: bolder;
+    grid-row: 2;
 }
 
 footer {
@@ -231,17 +235,18 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
-
-/* 
 @media screen and (max-width: 425px) {
     body {
         margin: 0;
+    }
+    .contenedor-header .header1 {
+        height: 100px;
     }
     .contenido .presentacion {
         margin: 0 0;
         grid-template-rows: 1fr 1fr;
     }
-} */
+}
 
 
 /* 
@@ -259,12 +264,9 @@ footer .social-desa h3 img {
 } */
 
 @media screen and (max-width: 1024px) {
-    .contenido .presentacion {
+    /* .contenido .presentacion {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-    }
-    .contenido .descripcion {
-        text-align: center;
-    }
+    } */
 }

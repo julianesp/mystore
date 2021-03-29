@@ -264,4 +264,7 @@ footer .social-desa h3 img {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    .contenido .descripcion {
+        text-align: center;
+    }
 }

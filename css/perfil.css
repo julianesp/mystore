@@ -231,71 +231,30 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
-
-/*
 @media screen and (max-width: 425px) {
-    .contenido .tiempo .tiempo-dividido .actividades {
-        grid-template-rows: .2fr 1fr;
+    body {
+        margin: 0;
+    }
+    .contenido .presentacion {
+        margin: 0 0;
     }
 }
 
-
-
 @media screen and (max-width: 768px) {
+    .contenedor-header .header1 {
+        font-weight: bolder;
+        background-color: red;
+    }
     .contenedor-header .header1 a .inicio {
-        font-size: .1em;
+        font-size: 40px;
     }
     footer .social-desa h3 {
         font-size: .9em;
     }
 }
-*/
 
 @media screen and (max-width: 1024px) {
-    .contenedor-header {
-        height: 150px;
-        align-content: center;
-    }
-    .contenedor-header .header1 {
-        padding: 30px;
-    }
-    .contenedor-header .header3 {
-        padding: 30px;
-    }
-    .contenedor-header .header1,
-    .header2,
-    .header3,
-    a {
-        font-size: 1.5em;
-    }
-    .contenido .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .contenido .presentacion .img {
-        margin: 0;
-    }
     .contenido .presentacion .img .img-photo {
-        width: 100%;
-    }
-    .contenido .tiempo .tiempo-dividido .actividades {
-        width: 100%;
-    }
-    .contenido .tiempo .tiempo-dividido .actividades h4 {
-        font-size: 2em;
-    }
-    .contenido .tiempo .tiempo-dividido .actividades p {
-        font-size: 28px;
-        padding: 10px;
-        margin: 20px;
-    }
-    .contenido .tiempo h2::before {
-        left: -180px;
-    }
-    .contenido .tiempo h2::after {
-        right: -180px;
-    }
-    footer .social-desa h3 {
-        font-size: .8em;
+        /* width: 100%; */
     }
 }

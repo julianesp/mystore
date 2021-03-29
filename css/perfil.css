@@ -231,15 +231,20 @@ footer .social-desa h3 img {
 
 /* estilos para dispositivos de menos resolucion */
 
+
+/* 
 @media screen and (max-width: 425px) {
     body {
         margin: 0;
     }
     .contenido .presentacion {
         margin: 0 0;
+        grid-template-rows: 1fr 1fr;
     }
-}
+} */
 
+
+/* 
 @media screen and (max-width: 768px) {
     .contenedor-header .header1 {
         font-weight: bolder;
@@ -251,10 +256,12 @@ footer .social-desa h3 img {
     footer .social-desa h3 {
         font-size: .9em;
     }
-}
+} */
 
 @media screen and (max-width: 1024px) {
-    .contenido .presentacion .img .img-photo {
-        /* width: 100%; */
+    .contenido .presentacion {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }

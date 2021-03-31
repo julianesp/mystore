@@ -259,9 +259,14 @@ footer .social-desa h3 img {
     }
     .contenido .presentacion .descripcion p {
         color: #fff;
-        background-color: #baba;
+        background-color: #84b4ca;
         font-weight: bolder;
-        font-kerning: bolder;
+        text-align: center;
+        padding: 25px;
+        border-radius: 50px;
+    }
+    .contenido .presentacion .descripcion h2,
+    p {
         text-align: center;
     }
     .contenido .tiempo .tiempo-dividido {

@@ -1,1 +1,1 @@
-Este sitio está diseñando para publicar temas de mi interés en tecnología
+Este sitio está diseñando para publicar mi perfil como desarrolador, temas de mi interés y mi tienda

@@ -217,7 +217,7 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
     .contenedor-header {
         height: 110px;
     }

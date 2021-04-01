@@ -48,7 +48,7 @@ body {
 }
 
 .contenido .presentacion {
-    height: 450px;
+    height: max-content;
     background-color: #C4C4C6;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,6 +250,13 @@ footer .social-desa h3 img {
     .contenido .presentacion .descripcion {
         text-align: center;
         justify-content: center;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades {
+        width: 150px;
+        margin: 0;
+    }
+    .contenido .tiempo .tiempo-titulo {
+        justify-self: center;
     }
 }
 

@@ -235,23 +235,23 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
-
-/* estilos para dispositivos de menos resolucion */
-
-
-/* 
 @media screen and (max-width: 425px) {
-    body {
-        margin: 0;
+    .contenedor-header {
+        height: 70px;
     }
-    .contenedor-header .header1 {
-        height: 100px;
+    .contenedor-header .header1 a {
+        font-size: .8em;
     }
     .contenido .presentacion {
-        margin: 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-} */
+    .contenido .presentacion .descripcion {
+        text-align: center;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .contenedor-header .header1 {

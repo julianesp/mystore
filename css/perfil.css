@@ -251,12 +251,18 @@ footer .social-desa h3 img {
         text-align: center;
         justify-content: center;
     }
+    .contenido .tiempo .tiempo-dividido {
+        gap: 10px;
+    }
     .contenido .tiempo .tiempo-dividido .actividades {
-        width: 150px;
+        width: 10px;
         margin: 0;
     }
     .contenido .tiempo .tiempo-titulo {
         justify-self: center;
+    }
+    .contenido .tiempo .tiempo-titulo h2::before {
+        width: 60px;
     }
 }
 

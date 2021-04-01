@@ -23,7 +23,6 @@ body {
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    font-style: bold;
     padding: 6px;
     border: 1px solid white;
     border-radius: 5px;
@@ -220,7 +219,7 @@ footer .social-desa h3 img {
 
 @media screen and (max-width: 425px) {
     .contenedor-header {
-        height: 700px;
+        height: 110px;
     }
     .contenedor-header .header1 a {
         font-size: .8em;
@@ -255,6 +254,9 @@ footer .social-desa h3 img {
 @media screen and (max-width: 768px) {
     .contenedor-header .header1 {
         font-size: 1.2em;
+    }
+    .contenedor-header .header1 a {
+        font-size: 1.5em;
     }
     .contenido .presentacion .descripcion p {
         color: #fff;

@@ -252,12 +252,6 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 768px) {
-    .contenedor-header .header1 {
-        font-size: 1.2em;
-    }
-    .contenedor-header .header1 a {
-        font-size: 1.5em;
-    }
     .contenido .presentacion .descripcion p {
         color: #fff;
         background-color: #84b4ca;

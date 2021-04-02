@@ -276,15 +276,21 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 1024px) {
+    .contenedor-header .header1 a {
+        font-size: 1.2em;
+    }
     .contenido .presentacion .img .img-photo {
-        height: 300px;
+        height: 450px;
     }
     .contenido .presentacion .descripcion p {
-        font-size: 1em;
+        font-size: 1.3em;
         line-height: 30px;
     }
-    .contenido .tiempo .tiempo-titulo h2 {
-        font-size: 24px;
+    .contenido .presentacion .descripcion h2 {
+        font-size: 2em;
+    }
+    .contenido .tiempo .tiempo-dividido {
+        width: 700px;
     }
     .contenido .tiempo .tiempo-dividido .actividades {
         width: 300px;
@@ -304,13 +310,13 @@ footer .social-desa h3 img {
         align-content: center;
     }
     footer .info-desa h3 {
-        font-size: .8em;
-    }
-    footer .social-desa h2 {
         font-size: 1.2em;
     }
+    footer .social-desa h2 {
+        font-size: 1.4em;
+    }
     footer .social-desa h3 {
-        font-size: .8em;
+        font-size: 1.1em;
     }
     footer .social-desa a img {
         width: 40px;

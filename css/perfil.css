@@ -121,15 +121,21 @@ p {
 /* mi tiempo  */
 
 .contenido .tiempo .tiempo-dividido {
-    display: flex;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     justify-items: center;
-    justify-content: center;
+    justify-self: center;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades {
-    width: 250px;
+    width: 300px;
     height: 310px;
-    margin-right: 20px;
+    margin: 0;
+    padding: 0;
+    /* margin-right: 10px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr;
@@ -217,27 +223,20 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 480px) {
-    .contenedor-header {
-        height: 110px;
-    }
+@media screen and (max-width: 425px) {
     .contenedor-header .header1 a {
-        font-size: .8em;
+        font-size: 320px;
     }
     .contenido {
         margin: 0;
     }
     .contenido .presentacion {
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .contenido .presentacion .descripcion {
         text-align: center;
         justify-content: center;
-    }
-    .contenido .tiempo .tiempo-dividido {
-        gap: 10px;
     }
     .contenido .tiempo .tiempo-dividido .actividades {
         width: 10px;
@@ -268,15 +267,15 @@ footer .social-desa h3 img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-self: center;
-        gap: 20px;
+        gap: 10px;
     }
     footer .social-desa h3 {
         font-size: .9em;
     }
 }
 
-@media screen and (max-width: 1024px) {
+
+/* @media screen and (max-width: 1024px) {
     .contenido .presentacion .img .img-photo {
         height: 300px;
     }
@@ -311,4 +310,4 @@ footer .social-desa h3 img {
     footer .social-desa a img {
         width: 40px;
     }
-}
+} */

@@ -38,6 +38,7 @@ body {
     background-color: #C4C4C6;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: 10px;
     text-align: center;
 }
@@ -224,54 +225,9 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 425px) {
-    .contenedor-header .header1 a {
-        font-size: 320px;
-    }
-    .contenido {
-        margin: 0;
-    }
-    .contenido .presentacion {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-    .contenido .presentacion .descripcion {
-        text-align: center;
-        justify-content: center;
-    }
-    .contenido .tiempo .tiempo-dividido .actividades {
-        width: 10px;
-        margin: 0;
-    }
-    .contenido .tiempo .tiempo-titulo {
-        justify-self: center;
-    }
-    .contenido .tiempo .tiempo-titulo h2::before {
-        width: 60px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .contenido .presentacion .descripcion p {
-        color: #fff;
-        background-color: #84b4ca;
-        font-weight: bolder;
-        text-align: center;
-        padding: 25px;
-        border-radius: 50px;
-    }
-    .contenido .presentacion .descripcion h2,
-    p {
-        text-align: center;
-    }
-    .contenido .tiempo .tiempo-dividido {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-    }
-    footer .social-desa h3 {
-        font-size: .9em;
+    .contenedor-header {
+        height: 100px;
     }
 }
 
@@ -320,5 +276,29 @@ footer .social-desa h3 img {
     }
     footer .social-desa a img {
         width: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: red;
+    }
+    .contenido .presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contenido .presentacion .descripcion {
+        text-align: center;
+        justify-content: center;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades {
+        width: 10px;
+        margin: 0;
+    }
+    .contenido .tiempo .tiempo-titulo {
+        justify-self: center;
+    }
+    .contenido .tiempo .tiempo-titulo h2::before {
+        width: 60px;
     }
 }

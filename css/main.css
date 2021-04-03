@@ -44,7 +44,7 @@ body {
     /* display: block; */
     align-items: center;
     font-family: 'Roboto mono', monospace;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700px;
     /* espacio entre letras */
     letter-spacing: 10px;
@@ -74,7 +74,7 @@ body {
 
 .home-main .enlaces button {
     display: block;
-    width: 180px;
+    width: 160px;
     height: 70px;
     background-color: #e6182191;
     border: 2px solid white;
@@ -84,7 +84,7 @@ body {
 }
 
 .home-main .enlaces button a {
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-decoration: none;
     color: white;
 }

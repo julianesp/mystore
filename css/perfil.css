@@ -226,12 +226,10 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
-    body {
-        background-color: red;
-    }
     .contenido .presentacion {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .contenido .presentacion .descripcion {
         text-align: center;
@@ -253,10 +251,15 @@ footer .social-desa h3 img {
     .contenedor-header {
         height: 100px;
     }
+    .contenido .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contenido .presentacion .descripcion p {
+        font-size: 2em;
+    }
 }
 
-
-/* 
 @media screen and (max-width: 1024px) {
     .contenedor-header .header1 a {
         font-size: 1.2em;
@@ -303,4 +306,4 @@ footer .social-desa h3 img {
     footer .social-desa a img {
         width: 40px;
     }
-} */
+}

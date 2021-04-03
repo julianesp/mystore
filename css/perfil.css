@@ -9,18 +9,18 @@ body {
     height: max-content;
     background-color: #419CCA;
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 90px;
     align-items: center;
-    justify-self: center;
-    padding-left: 40px;
+    justify-content: right;
 }
 
 .contenedor-header .header1 {
-    align-items: center;
-    margin-left: 80px;
+    margin-right: 80px;
     font-weight: bolder;
-    justify-self: center;
+    text-align: center;
+    align-items: center;
+    justify-self: right;
 }
 
 .contenedor-header .header1 a {

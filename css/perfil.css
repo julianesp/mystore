@@ -226,6 +226,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 425px) {
+    .contenedor-header .header1 a {
+        font-size: 3em;
+    }
     .contenido .presentacion {
         display: grid;
         grid-template-columns: 1fr;

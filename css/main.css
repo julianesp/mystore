@@ -44,15 +44,17 @@ body {
     /* display: block; */
     align-items: center;
     font-family: 'Roboto mono', monospace;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 700px;
     /* espacio entre letras */
     letter-spacing: 10px;
     color: white;
+    background-color: rgba(187, 170, 187, .3);
+    border-radius: 20px;
     text-shadow: 3px 5px 2px gray;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 30px 0;
     align-self: center;
     justify-self: center;
     text-align: center;
@@ -72,17 +74,17 @@ body {
 
 .home-main .enlaces button {
     display: block;
-    width: 120px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
     background-color: #e6182191;
     border: 2px solid white;
     /* box-shadow: 5px 5px 5px gray; */
     border-radius: 20px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .home-main .enlaces button a {
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-decoration: none;
     color: white;
 }

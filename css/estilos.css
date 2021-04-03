@@ -621,12 +621,14 @@
     /* estilos para los botones */
     
     footer {
+        background-color: #419CCA;
+        border: 1px solid black;
+        box-shadow: -100px -100px -100px #baba;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         position: relative;
-        background-color: #419CCA;
-        border: 1px solid black;
+        z-index: 5;
         text-align: center;
         margin-top: 100px;
         padding: 10px 15px;
@@ -636,11 +638,11 @@
     footer .info-desa {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: center;
-        /* justify-self: start; */
     }
     
     footer .info-desa h3 {
-        font-size: 1.5rem;
+        font-size: 1em;
+        font-style: italic;
         color: white;
         margin-left: 80px;
         /* box-shadow: 2px 2px 2px gray; */
@@ -656,18 +658,22 @@
     }
     
     footer .social-desa h2 {
-        color: #EAB016;
+        color: #f3ff3b;
+        font-size: 1.3em;
+        font-style: italic;
+        letter-spacing: 5px;
         font-weight: bolder;
     }
     
     footer .social-desa a img {
-        width: 10%;
+        width: 50px;
         margin: 0 20px;
     }
     
     footer .social-desa h3 {
+        font-size: 1em;
+        font-style: italic;
         color: white;
-        font-size: 1.5rem;
     }
     
     footer .social-desa h3 img {

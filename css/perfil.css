@@ -51,6 +51,8 @@ body {
 .contenido .presentacion .img {
     border-radius: 10px;
     align-self: center;
+    transform: rotate(-25deg);
+    transition: .5s;
 }
 
 .contenido .presentacion .img .img-photo {
@@ -59,6 +61,12 @@ body {
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 10px gray;
+    transform: scale(.8);
+}
+
+.contenido .presentacion .img:hover {
+    transform: scale(1);
+    transform: rotate(0deg);
 }
 
 .contenido .descripcion {

@@ -322,7 +322,7 @@ body {
 .contenido .mi_trabajo .formateo .title {
     font-size: 1.5em;
     color: #c28604;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos {
@@ -333,6 +333,7 @@ body {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
+    margin-top: 20px;
     align-self: center;
     justify-self: center;
 }
@@ -342,7 +343,8 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    height: 400px;
+    height: 300px;
+    padding-bottom: 20px;
     justify-items: center;
     overflow-x: auto;
 }
@@ -389,7 +391,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    height: 400px;
+    height: 300px;
     justify-items: center;
     overflow-x: auto;
 }
@@ -417,7 +419,7 @@ body {
     height: 250px;
     margin: 0 20px;
     border: 1px solid gray;
-    box-shadow: -10px 18px 15px 0px #AEB2B2;
+    box-shadow: -10px 5px 15px 0px #AEB2B2;
     border-radius: 20px;
 }
 
@@ -548,13 +550,14 @@ body {
 }
 
 .contenido .accesorios .celulares {
+    height: 365px;
+    border: 3px solid gray;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     overflow: scroll;
     overflow-y: unset;
-    border: 3px solid gray;
-    padding: 10px;
 }
 
 .contenido .accesorios .celulares .accesorio-celular {
@@ -562,8 +565,8 @@ body {
     grid-template-rows: 60px 200px 80px;
     align-items: center;
     align-content: center;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 15px 15px;
     border: 1px solid black;
     border-radius: 20px;
@@ -595,21 +598,22 @@ body {
 /*estilos para accesorios computadores*/
 
 .contenido .accesorios .pc {
+    height: 365px;
+    border: 3px solid gray;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     overflow: scroll;
     overflow-y: unset;
-    border: 3px solid gray;
-    padding: 10px;
 }
 
 .contenido .accesorios .pc .accesorio-pc {
     display: grid;
     grid-template-rows: 60px 250px 60px;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin: 15px 15px;
     border: 1px solid black;
     border-radius: 20px;

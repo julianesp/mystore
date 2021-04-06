@@ -744,6 +744,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (max-width: 768px) {
+    #particles {
+        display: inline-block;
+    }
     body {
         background-color: #EEF0F0;
     }
@@ -756,6 +759,7 @@ footer .social-desa h3 img {
         grid-template-columns: 1fr;
         padding-top: 20px;
         padding-bottom: 20px;
+        /* position: unset; */
     }
     .header #menu-h {
         width: 250px;

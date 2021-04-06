@@ -70,9 +70,20 @@ body {
 }
 
 .contenido .descripcion {
+    animation-name: description;
+    animation-duration: 3s;
     margin-right: 80px;
     align-self: center;
     text-align: right;
+}
+
+@keyframes description {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .contenido .presentacion .descripcion h2 {

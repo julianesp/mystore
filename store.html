@@ -99,54 +99,23 @@
 
     <main class="contenido">
 
-        <div class="container">
-            <ul class="slider">
-                <li id="slide1">
-                    <h2>
-                        Bienvenidos a mi tienda
-                    </h2>
-                </li>
-                <li id="slide2">
-                    <img src="assets/img/Otros artículos/CargadorMotorla/4.png" alt="">
-                </li>
-                <li id="slide3">
-                    <img src="assets/img/Otros artículos/CargadorMotorla/3.png" alt="">
-                </li>
-            </ul>
-
-            <!-- numeracion -->
-
-            <ul class="menu">
-                <li>
-                    <a href="#slide1">1</a>
-                </li>
-                <li>
-                    <a href="#slide2">2</a>
-                </li>
-                <li>
-                    <a href="#slide3">3</a>
-                </li>
-            </ul>
-        </div>
         <div class="presentacion">
 
             <div class="preacce p1">
             </div>
-
             <div class="preacce p2">
             </div>
-
             <div class="preacce p3">
             </div>
-            <div class="preacce p4">
-            </div>
+
+            <!--             
             <div class="btn iz">
                 &lt;
             </div>
-
             <div class="btn dere">
                 &gt;
-            </div>
+            </div> 
+            -->
 
             <ul class="page">
                 <li>1</li>
@@ -166,7 +135,10 @@
                     <div class="accesorio-celular">
                         <h3>accesorios</h3>
                         <img src="assets/img/ArticulosCali/AdaptadorWifiUSB/3.png" alt="">
-                        <a href="https://www.facebook.com/alex.rio20/" target="_blank">Lo quiero</a>
+
+                        <div class="accesorio-celular-pago">
+                            <a href="https://www.facebook.com/alex.rio20/" target="_blank">Lo quiero</a>
+                        </div>
 
                     </div>
                     <div class="accesorio-celular">
@@ -333,12 +305,11 @@
                 </div>
             </div>
         </div>
-
-
-
     </main>
 
     <script>
+        // control para mostrar accesorios
+
         var indi = 0;
 
         $(".page li").eq(indi).css("background-color", "orange");
@@ -353,7 +324,7 @@
 
         $(".dere").click(function() {
             indi++;
-            if (indi > 3) {
+            if (indi > 2) {
                 indi = 0;
             }
             $(".preacce").hide();
@@ -375,7 +346,7 @@
         setInterval(() => {
             indi++;
             // condicional para volver a la imagen 0
-            if (indi > 3) {
+            if (indi > 2) {
                 indi = 0;
             }
             $(".preacce").hide();
@@ -386,7 +357,7 @@
 
         $(".dere").click(function() {
             indi++;
-            if (indi > 3) {
+            if (indi > 2) {
                 indi = 0;
             }
             $(".preacce").hide();

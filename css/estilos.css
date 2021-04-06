@@ -150,7 +150,7 @@ body {
 
 .contenido {
     height: 100%;
-    margin: 20px 150px;
+    margin: 20px 80px;
     position: relative;
 }
 
@@ -224,13 +224,13 @@ body {
 .contenido .presentacion {
     display: grid;
     justify-content: center;
-    position: relative;
+    /* position: absolute; */
     padding: 20px;
     width: 100%;
     margin: 10px auto;
     border: 2px solid #000;
     box-shadow: 15px 15px 10px #bababa;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .contenido .presentacion .preacce {
@@ -436,8 +436,8 @@ body {
 
 .contenido .mi_trabajo .formateo .programas {
     position: relative;
-    height: 530px;
-    margin: 200px 0;
+    height: 330px;
+    margin: 50px 0;
 }
 
 .contenido .mi_trabajo .formateo .programas .titulo h3 {
@@ -446,20 +446,21 @@ body {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor {
     width: 60%;
-    height: inherit;
+    height: 330px;
     margin: 0 auto;
-    border: 5px solid gray;
-    border-radius: 15px;
-    box-shadow: 15px 15px 10px #bababa;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #bababa;
     border-radius: 50px;
     display: grid;
     justify-content: center;
+    /*para dejar flechas dentro del contenedor*/
     position: relative;
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-varios {
     text-align: center;
-    padding: 200px 280px;
+    padding: 100px 180px;
     margin: 0 auto;
     background-size: cover;
 }
@@ -523,7 +524,7 @@ body {
     left: 0px;
     right: 0px;
     bottom: 10px;
-    display: none;
+    /* display: none; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
@@ -531,9 +532,10 @@ body {
     list-style: none;
     width: 25px;
     height: 25px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     border-radius: 50%;
     cursor: pointer;
+    display: none;
 }
 
 

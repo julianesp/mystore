@@ -565,7 +565,8 @@ body {
     /* justify-items: center; */
     width: 250px;
     margin: auto 15px;
-    border: 1px solid red;
+    border: 1px solid #bababa;
+    font-weight: bold;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #baba;
 }
@@ -594,6 +595,7 @@ body {
     color: #fff;
     font-weight: bolder;
     background-color: #bababa;
+    border-radius: 20px;
 }
 
 

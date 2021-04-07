@@ -549,8 +549,8 @@ body {
 
 .contenido .accesorios .celulares {
     height: 365px;
-    border: 3px solid gray;
     padding: 10px;
+    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
@@ -560,36 +560,40 @@ body {
 
 .contenido .accesorios .celulares .accesorio-celular {
     display: grid;
-    grid-template-rows: 60px 200px 80px;
+    grid-template-rows: 40px 200px 40px;
     align-items: center;
-    align-content: center;
+    /* justify-items: center; */
     width: 250px;
-    height: 250px;
-    margin: 15px 15px;
-    border: 1px solid black;
+    margin: auto 15px;
+    border: 1px solid red;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #808080;
+    box-shadow: 5px 5px 5px #baba;
 }
 
 .contenido .accesorios .celulares .accesorio-celular h3 {
+    line-height: 40px;
+    height: 40px;
     font-size: 1.5em;
+    margin: 0;
 }
 
 .contenido .accesorios .celulares .accesorio-celular img {
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 90%;
     justify-self: center;
 }
 
-.contenido .accesorios .celulares .accesorio-celular .accesorio-celular-pago {
-    height: 50px;
-    border: 2px solid blue;
-    margin-top: 50px;
+.contenido .accesorios .celulares .accesorio-celular a {
+    height: 40px;
+    margin-top: -5px;
+    text-decoration: none;
+    line-height: 40px;
 }
 
-.contenido .accesorios .celulares .accesorio-celular a {
-    align-self: center;
-    grid-row: 3;
+.contenido .accesorios .celulares .accesorio-celular a:hover {
+    color: #fff;
+    font-weight: bolder;
+    background-color: #bababa;
 }
 
 

@@ -37,7 +37,6 @@ body {
     background-size: cover;
     background-color: #EEF0F0;
     font-family: 'Ubuntu', sans-serif;
-    position: relative;
 }
 
 #particles-js {
@@ -151,7 +150,6 @@ body {
 .contenido {
     height: 100%;
     margin: 20px 80px;
-    position: relative;
 }
 
 .contenido .container {
@@ -224,7 +222,7 @@ body {
 .contenido .presentacion {
     display: grid;
     justify-content: center;
-    /* position: absolute; */
+    position: relative;
     padding: 20px;
     width: 100%;
     margin: 10px auto;
@@ -266,28 +264,28 @@ body {
 
 .contenido .presentacion .btn {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, .5);
+    top: 40%;
+    background-color: rgba(186, 186, 186, .9);
     padding: 0 10px;
     cursor: pointer;
 }
 
 .contenido .presentacion .btn:hover {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #E8B349;
     transition: .7s;
 }
 
-
-/* 
 .contenido .presentacion .iz {
     left: 10px;
+    border-radius: 50%;
 }
 
 .contenido .presentacion .dere {
     right: 10px;
-} */
+    border-radius: 50%;
+}
 
 .contenido .presentacion .page {
     position: absolute;
@@ -520,13 +518,14 @@ body {
     right: 10px;
 }
 
+
+/* 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
     position: absolute;
     text-align: center;
     left: 0px;
     right: 0px;
     bottom: 10px;
-    /* display: none; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
@@ -534,11 +533,10 @@ body {
     list-style: none;
     width: 25px;
     height: 25px;
-    /* background-color: yellowgreen; */
     border-radius: 50%;
     cursor: pointer;
     display: none;
-}
+} */
 
 
 /*estilos para accesorios celulares*/

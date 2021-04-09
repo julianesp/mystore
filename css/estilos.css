@@ -262,6 +262,8 @@ body {
     width: 200px;
 }
 
+
+/* 
 .contenido .presentacion .btn {
     color: white;
     font-size: 70px;
@@ -275,7 +277,7 @@ body {
 .contenido .presentacion .btn:hover {
     background-color: #E8B349;
     transition: .7s;
-}
+} */
 
 .contenido .presentacion .iz {
     left: 10px;
@@ -575,29 +577,46 @@ body {
 .contenido .accesorios .celulares .accesorio-celular h3 {
     line-height: 40px;
     height: 40px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
 }
 
 .contenido .accesorios .celulares .accesorio-celular img {
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     justify-self: center;
 }
 
 .contenido .accesorios .celulares .accesorio-celular a {
-    color: #419CCA;
-    height: 40px;
-    margin-top: -5px;
     text-decoration: none;
     line-height: 40px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: #419CCA;
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
 }
 
 .contenido .accesorios .celulares .accesorio-celular a:hover {
     color: #f3ff3b;
     font-weight: bolder;
-    background-color: #bababa;
-    border-radius: 20px;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a:active {
+    transform: scale(.9);
 }
 
 
@@ -640,18 +659,33 @@ body {
 }
 
 .contenido .accesorios .pc .accesorio-pc a {
-    color: #419CCA;
-    height: 40px;
-    margin-top: -5px;
     text-decoration: none;
     line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: #419CCA;
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
 }
 
 .contenido .accesorios .pc .accesorio-pc a:hover {
     color: #f3ff3b;
     font-weight: bolder;
-    background-color: #bababa;
-    border-radius: 20px;
+}
+
+.contenido .accesorios .pc .accesorio-pc a:active {
+    transform: scale(.9);
 }
 
 

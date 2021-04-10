@@ -88,7 +88,7 @@ body {
 
 .contenido .presentacion .descripcion h2 {
     font-size: 2em;
-    color: #f3ff3b;
+    color: #ca0505;
     font-weight: bolder;
 }
 
@@ -277,20 +277,17 @@ footer .social-desa h3 img {
     }
 } */
 
-
-/* 
 @media screen and (max-width: 768px) {
     .contenedor-header {
         height: 100px;
     }
     .contenido .presentacion {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 100px 90px;
     }
     .contenido .presentacion .descripcion p {
-        font-size: 2em;
+        line-height: 100px;
     }
-} */
+}
 
 @media screen and (max-width: 1024px) {
     .contenedor-header {

@@ -4,6 +4,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .contenedor-header {
     width: 100%;
     height: 70px;
@@ -14,6 +20,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: right;
+    position: relative;
 }
 
 .contenedor-header .header1 {
@@ -40,7 +47,8 @@ body {
 
 .contenido .presentacion {
     height: 500px;
-    background-color: #C4C4C6;
+    /* background-color: #C4C4C6; */
+    background-color: #181819;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -71,7 +79,7 @@ body {
 
 .contenido .descripcion {
     animation-name: description;
-    animation-duration: 3s;
+    animation-duration: 5s;
     margin-right: 80px;
     align-self: center;
     text-align: right;
@@ -88,7 +96,7 @@ body {
 
 .contenido .presentacion .descripcion h2 {
     font-size: 2em;
-    color: #ca0505;
+    color: #f3ff3b;
     font-weight: bolder;
 }
 
@@ -106,7 +114,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
     gap: 10px;
-    margin: 70px 0;
+    padding: 70px 0;
     text-align: center;
     justify-self: center;
     justify-content: center;
@@ -285,7 +293,7 @@ footer .social-desa h3 img {
         grid-template-rows: 100px 90px;
     }
     .contenido .presentacion .descripcion p {
-        line-height: 100px;
+        line-height: 50px;
     }
 }
 

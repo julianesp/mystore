@@ -74,13 +74,23 @@ body {
 
 .home-main .enlaces button {
     display: block;
-    width: 160px;
-    height: 70px;
-    background-color: #e6182191;
+    width: 230px;
+    height: 100px;
+    /* background-color: #e61821; */
+    background-color: rgba(189, 183, 184, .5);
     border: 2px solid white;
     /* box-shadow: 5px 5px 5px gray; */
     border-radius: 20px;
     margin: 20px 0;
+}
+
+.home-main .enlaces button .arrow {
+    height: 80px;
+    width: 90px;
+}
+
+.home-main .enlaces button .arrow:hover {
+    /* mostrar los enlaces y que esta flecha siempre se manetnga punsando hasta que el cursos se situe encima */
 }
 
 .home-main .enlaces button a {

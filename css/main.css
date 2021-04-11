@@ -40,28 +40,33 @@ body {
 }
 
 .home-main .home-main-text {
+    align-self: center;
+    justify-self: center;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row: 1;
 }
 
-.home-main p {
+.home-main .home-main-text p {
     align-items: center;
     font-family: 'Roboto mono', monospace;
     font-size: 3.5em;
     font-weight: 700px;
     /* espacio entre letras */
-    /* letter-spacing: 10px; */
+    letter-spacing: 10px;
     color: #fff;
     background-color: rgba(187, 170, 187, .1);
     border-radius: 20px;
-    /* text-shadow: 3px 5px 2px gray; */
+    text-shadow: 3px 3px 2px #baba;
     text-align: center;
     padding: 10px;
     margin: 30px 0;
     align-self: center;
     justify-self: center;
     text-align: center;
+}
+
+.home-main .home-main-text p:hover {
+    background-color: rgba(65, 156, 201, .6);
 }
 
 .home-main .enlaces {

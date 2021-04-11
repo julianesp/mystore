@@ -4,26 +4,28 @@
 
 html,
 body {
-    margin: 0;
     height: 100%;
     font-family: 'Roboto mono', monospace;
     margin: 0;
     padding: 0;
     font-family: 'Roboto mono', monospace;
+    background-image: url('../assets/img/guitar1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     /* position: static; */
     /* quitar scroll vertical */
     /* overflow: hidden; */
 }
 
 .home-main {
-    background-repeat: no-repeat;
-    background-image: url('../assets/img/guitar1.jpg');
-    background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr .4fr;
     gap: 10px;
     height: 100%;
+    min-height: 100vh;
 }
 
 .home-main .img {
@@ -146,14 +148,12 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .home-main img {
-        height: 10rem;
-        width: 400px;
+    .home-main .img img {
         grid-row: 3;
         grid-column: 2;
     }
     .home-main .home-main-text {
-        font-size: 4rem;
+        font-size: 1.5em;
         margin-top: 50px;
     }
     .home-main .enlaces .home-main-button {

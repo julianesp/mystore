@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
     /* position: static; */
     /* quitar scroll vertical */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .home-main {

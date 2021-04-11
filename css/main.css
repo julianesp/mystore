@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* quitar scroll vertical */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home-main {
@@ -37,6 +37,12 @@ body {
     align-self: center;
 }
 
+.home-main .home-main-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+
 .home-main p {
     grid-area: 2;
     grid-column: 2;
@@ -44,14 +50,14 @@ body {
     /* display: block; */
     align-items: center;
     font-family: 'Roboto mono', monospace;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 700px;
     /* espacio entre letras */
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     color: white;
-    background-color: rgba(187, 170, 187, .3);
+    background-color: rgba(187, 170, 187, .1);
     border-radius: 20px;
-    text-shadow: 3px 5px 2px gray;
+    /* text-shadow: 3px 5px 2px gray; */
     text-align: center;
     padding: 10px;
     margin: 30px 0;
@@ -72,25 +78,17 @@ body {
     width: 100%;
 }
 
-.home-main .enlaces button {
+.home-main .enlaces .home-main-button {
     display: block;
-    width: 230px;
-    height: 100px;
+    width: 160px;
+    height: 80px;
     /* background-color: #e61821; */
     background-color: rgba(189, 183, 184, .5);
     border: 2px solid white;
     /* box-shadow: 5px 5px 5px gray; */
     border-radius: 20px;
     margin: 20px 0;
-}
-
-.home-main .enlaces button .arrow {
-    height: 80px;
-    width: 90px;
-}
-
-.home-main .enlaces button .arrow:hover {
-    /* mostrar los enlaces y que esta flecha siempre se manetnga punsando hasta que el cursos se situe encima */
+    text-align: center;
 }
 
 .home-main .enlaces button a {

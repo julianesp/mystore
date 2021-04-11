@@ -5,18 +5,13 @@
 html,
 body {
     height: 100%;
-    font-family: 'Roboto mono', monospace;
     margin: 0;
-    padding: 0;
     font-family: 'Roboto mono', monospace;
     background-image: url('../assets/img/guitar1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    /* position: static; */
-    /* quitar scroll vertical */
-    overflow: hidden;
 }
 
 .home-main {

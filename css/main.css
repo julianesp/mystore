@@ -11,14 +11,14 @@ body {
     padding: 0;
     font-family: 'Roboto mono', monospace;
     /* position: static; */
-    background-image: url('../assets/img/guitar1.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     /* quitar scroll vertical */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home-main {
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/guitar1.jpg');
+    background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr .4fr;
@@ -26,15 +26,17 @@ body {
     height: 100%;
 }
 
-.home-main img {
-    margin: 0 10px;
-    padding: 20px 0;
-    width: 200px;
-    height: 50px;
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
+.home-main .img {
     align-self: center;
+    justify-self: center;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.home-main .img img {
+    width: 150px;
+    height: 50px;
+    display: grid;
 }
 
 .home-main .home-main-text {
@@ -125,12 +127,9 @@ body {
 /* vista para tablets y smartphones */
 
 @media screen and (max-width: 425px) {
-    .home-main .home-main-text {
-        font-size: 4rem;
-    }
-    .home-main img {
-        grid-column: 2;
-        grid-row: 3;
+    .home-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 

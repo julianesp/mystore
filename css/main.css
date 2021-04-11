@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto mono', monospace;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto mono', monospace;
     /* position: static; */
     background-image: url('../assets/img/guitar1.jpg');
     background-repeat: no-repeat;
@@ -44,17 +44,13 @@ body {
 }
 
 .home-main p {
-    grid-area: 2;
-    grid-column: 2;
-    grid-row: 1;
-    /* display: block; */
     align-items: center;
     font-family: 'Roboto mono', monospace;
     font-size: 3.5em;
     font-weight: 700px;
     /* espacio entre letras */
     /* letter-spacing: 10px; */
-    color: white;
+    color: #fff;
     background-color: rgba(187, 170, 187, .1);
     border-radius: 20px;
     /* text-shadow: 3px 5px 2px gray; */
@@ -74,27 +70,55 @@ body {
     text-align: center;
 }
 
-.home-main .enlaces:nth-of-type(5) {
-    width: 100%;
-}
-
 .home-main .enlaces .home-main-button {
-    display: block;
-    width: 160px;
-    height: 80px;
-    /* background-color: #e61821; */
-    background-color: rgba(189, 183, 184, .5);
-    border: 2px solid white;
-    /* box-shadow: 5px 5px 5px gray; */
-    border-radius: 20px;
-    margin: 20px 0;
-    text-align: center;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
-.home-main .enlaces button a {
-    font-size: 1.6em;
+.home-main .enlaces .home-main-button a {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: .5em .5em;
+    line-height: 40px;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    background-color: rgb(102, 95, 95);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+    will-change: transform;
+}
+
+.home-main .enlaces .home-main-button a:hover {
+    color: #fff;
+    background: #419CCA;
+}
+
+.desarrollador h1 {
+    color: #fff;
+}
+
+.desarrollador {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.desarrollador a {
+    align-self: center;
+}
+
+.desarrollador img {
+    width: 50px;
 }
 
 

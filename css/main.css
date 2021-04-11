@@ -148,6 +148,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .home-main .home-main-text p {
+        font-size: 2em;
+    }
     .home-main .img img {
         grid-row: 3;
         grid-column: 2;
@@ -157,11 +160,11 @@ body {
         margin-top: 50px;
     }
     .home-main .enlaces .home-main-button {
-        width: 350px;
+        width: 250px;
         height: 100px;
-        margin: 70px 0;
+        margin: 20px 0;
     }
     .home-main .enlaces .home-main-button a {
-        font-size: 3rem;
+        font-size: 1.8em;
     }
 }

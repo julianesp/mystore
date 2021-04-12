@@ -762,7 +762,7 @@ footer .social-desa h3 img {
     }
     .contenido {}
     .contenido .presentacion {
-        min-width: 200px;
+        /* min-width: 200px; */
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
         height: 250px;

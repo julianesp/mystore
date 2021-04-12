@@ -129,9 +129,12 @@ body {
 /* vista para tablets y smartphones */
 
 @media screen and (max-width: 425px) {
-    .home-main {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+    .home-main .img img {
+        width: 150px;
+        height: 150px;
+    }
+    .home-main .home-main-text p {
+        width: 40%;
     }
 }
 

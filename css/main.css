@@ -131,7 +131,13 @@ body {
 
 /* vista para tablets y smartphones */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {}
+
+@media screen and (max-width: 768px) {
+    .home-main img {
+        grid-column: 2;
+        grid-row: 3;
+    }
     .home-main .img img {
         width: 150px;
         height: 150px;
@@ -139,12 +145,8 @@ body {
     .home-main .home-main-text p {
         width: 40%;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .home-main img {
-        grid-column: 2;
-        grid-row: 3;
+    .desarrollador a img {
+        min-width: 40px;
     }
 }
 

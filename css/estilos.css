@@ -70,6 +70,12 @@ h2 {
     margin-right: auto;
     padding: 15px;
     border-radius: 10px;
+    transition: .8s;
+}
+
+h2:hover {
+    background-color: #419CCA;
+    color: #fff;
 }
 
 .header {

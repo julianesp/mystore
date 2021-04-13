@@ -59,6 +59,19 @@ body {
     right: 0;
 }
 
+h2 {
+    font-weight: bolder;
+    color: #419CCA;
+    border: 1px solid #419CCA;
+    width: 350px;
+    /* margin: 20px auto; */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -311,7 +324,7 @@ body {
 /* estilos trabajo */
 
 .contenido .mi_trabajo {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .contenido .mi_trabajo .formateo {
@@ -320,7 +333,7 @@ body {
 }
 
 .contenido .mi_trabajo .formateo .title {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #c28604;
     margin-top: 100px;
 }
@@ -694,7 +707,6 @@ body {
 footer {
     background-color: #419CCA;
     border: 1px solid black;
-    box-shadow: -100px -100px -100px #baba;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -728,9 +740,9 @@ footer .social-desa {
     grid-column-end: 3;
 }
 
-footer .social-desa h2 {
+footer .social-desa h1 {
     color: #f3ff3b;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-style: italic;
     letter-spacing: 5px;
     font-weight: bolder;

@@ -556,8 +556,10 @@ body {
     padding: 10px;
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 30px 0;
     overflow: scroll;
     overflow-y: unset;
 }
@@ -626,6 +628,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    gap: 30px 0;
     overflow: scroll;
     overflow-y: unset;
 }
@@ -635,7 +638,7 @@ body {
     grid-template-rows: 40px 200px 60px;
     align-items: center;
     width: 250px;
-    margin: auto 15px;
+    margin: auto 10px;
     border: 1px solid #bababa;
     font-weight: bold;
     border-radius: 20px;
@@ -840,8 +843,18 @@ footer .social-desa h3 img {
         width: 80%;
     }
     .contenido .accesorios .celulares {
-        /* display: flex;
-            overflow: scroll; */
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenido .accesorios .celulares .accesorio-celular {
+        width: 210px;
+    }
+    .contenido .accesorios .pc {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenido .accesorios .pc .accesorio-pc {
+        width: 210px;
     }
     .contenido .accesorios .celulares .titulo {
         display: none;

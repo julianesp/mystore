@@ -292,6 +292,7 @@ footer .social-desa h3 img {
     .contenido .presentacion {
         grid-template-rows: 100px 90px;
     }
+    .contenido .descripcion {}
     .contenido .presentacion .descripcion p {
         line-height: 50px;
     }
@@ -308,29 +309,32 @@ footer .social-desa h3 img {
         height: 450px;
     }
     .contenido .presentacion .descripcion p {
+        line-height: 50px;
+    }
+    .contenido .presentacion .descripcion p {
         font-size: 1.8em;
-        line-height: 30px;
+        /* line-height: 30px; */
     }
     .contenido .presentacion .descripcion h2 {
         font-size: 2.9em;
     }
     .contenido .tiempo .tiempo-titulo h2 {
-        font-size: 1.6em;
+        font-size: 2em;
     }
     .contenido .tiempo .tiempo-dividido {
-        width: 800px;
+        width: 100%;
     }
     .contenido .tiempo .tiempo-dividido .actividades {
-        width: 320px;
-        height: 250px;
+        width: 430px;
+        height: 290px;
         grid-template-rows: 40px 1fr;
     }
     .contenido .tiempo .tiempo-dividido .actividades h4 {
-        font-size: 1.4em;
+        font-size: 1.6em;
         grid-row: 1;
     }
     .contenido .tiempo .tiempo-dividido .actividades p {
-        font-size: 1.2em;
+        font-size: 1.6em;
         line-height: 40px;
         grid-row: 2;
         align-items: center;
@@ -338,15 +342,15 @@ footer .social-desa h3 img {
         align-content: center;
     }
     footer .info-desa h3 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     footer .social-desa h2 {
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
     footer .social-desa h3 {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
     footer .social-desa a img {
-        width: 40px;
+        width: 60px;
     }
 }

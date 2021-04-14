@@ -161,11 +161,13 @@ body {
         grid-column: 2;
     }
     .home-main .img img {
-        width: 380px;
-        height: 150px;
+        width: 250px;
+        height: 70px;
     }
     .home-main .home-main-text p {
-        font-size: 3.3em;
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
     }
     .home-main .img img {
         grid-row: 3;
@@ -176,15 +178,14 @@ body {
         margin-top: 50px;
     }
     .home-main .enlaces .home-main-button {
-        width: 290px;
+        width: 160px;
         height: 100px;
-        margin: 20px 0;
-        padding-bottom: 20px;
+        margin: 10px 0;
     }
     .home-main .enlaces .home-main-button a {
-        font-size: 2.8em;
+        font-size: 1.5em;
     }
     .desarrollador a img {
-        width: 90px;
+        width: 60px;
     }
 }

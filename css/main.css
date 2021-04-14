@@ -133,6 +133,9 @@ body {
 /* vista para tablets y smartphones */
 
 @media screen and (max-width: 425px) {
+    body {
+        height: 100vh;
+    }
     .home-main .home-main-text {
         margin: 0;
     }

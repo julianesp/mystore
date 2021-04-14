@@ -245,8 +245,8 @@ h2:hover {
     padding: 20px;
     width: 100%;
     margin: 10px auto;
-    border: 2px solid #000;
-    box-shadow: 15px 15px 10px #bababa;
+    border: 2px solid #419CCA;
+    box-shadow: 10px 10px 10px 10px #bababa;
     border-radius: 20px;
 }
 
@@ -469,7 +469,7 @@ h2:hover {
     width: 60%;
     height: 330px;
     margin: 0 auto;
-    border: 1px solid gray;
+    border: 2px solid #419CCA;
     border-radius: 5px;
     box-shadow: 10px 10px 10px #bababa;
     border-radius: 50px;
@@ -488,7 +488,7 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
     height: 10px;
-    background-image: url('../assets/img/sistemas/linux/arch.png');
+    background-image: url('../assets/img/programs/chrome.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -497,7 +497,7 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
     height: 10px;
-    background-image: url('../assets/img/sistemas/linux/arch.png');
+    background-image: url('../assets/img/programs/ofis.png');
     display: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -507,7 +507,7 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
     height: 10px;
-    background-image: url('../assets/img/sistemas/linux/arch.png');
+    background-image: url('../assets/img/programs/adobe.png');
     display: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -541,8 +541,6 @@ h2:hover {
     right: 10px;
 }
 
-
-/* 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
     position: absolute;
     text-align: center;
@@ -559,7 +557,8 @@ h2:hover {
     border-radius: 50%;
     cursor: pointer;
     display: none;
-} */
+    background-color: greenyellow;
+}
 
 
 /*estilos para accesorios celulares*/

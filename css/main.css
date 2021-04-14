@@ -134,6 +134,9 @@ body {
 @media screen and (max-width: 425px) {}
 
 @media screen and (max-width: 768px) {
+    .home-main .home-main-text p {
+        /* font-size: 4em; */
+    }
     .home-main img {
         grid-column: 2;
         grid-row: 3;
@@ -151,8 +154,11 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .home-main {
+        grid-template-columns: .3fr 1fr .3fr;
+    }
     .home-main .home-main-text p {
-        font-size: 2em;
+        font-size: 3.3em;
     }
     .home-main .img img {
         grid-row: 3;
@@ -163,11 +169,12 @@ body {
         margin-top: 50px;
     }
     .home-main .enlaces .home-main-button {
-        width: 250px;
+        width: 290px;
         height: 100px;
         margin: 20px 0;
+        padding-bottom: 20px;
     }
     .home-main .enlaces .home-main-button a {
-        font-size: 1.8em;
+        font-size: 2.8em;
     }
 }

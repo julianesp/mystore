@@ -157,6 +157,13 @@ body {
     .home-main {
         grid-template-columns: .3fr 1fr .3fr;
     }
+    .home-main .img {
+        grid-column: 2;
+    }
+    .home-main .img img {
+        width: 380px;
+        height: 150px;
+    }
     .home-main .home-main-text p {
         font-size: 3.3em;
     }
@@ -176,5 +183,8 @@ body {
     }
     .home-main .enlaces .home-main-button a {
         font-size: 2.8em;
+    }
+    .desarrollador a img {
+        width: 90px;
     }
 }

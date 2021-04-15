@@ -1,0 +1,16 @@
+/* @media screen and (max-width: 768px) {
+    .home-main img {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .home-main .home-main-text p {
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+    .home-main .enlaces .home-main-button {
+        width: 500px;
+    }
+    .desarrollador a img {
+        min-width: 40px;
+    }
+} */

@@ -1,0 +1,12 @@
+@media screen and (max-width: 425px) {
+    body {
+        height: 100vh;
+    }
+    .home-main {}
+    .home-main .home-main-text {
+        margin: 0;
+    }
+    .home-main .img img {
+        width: 100%;
+    }
+}

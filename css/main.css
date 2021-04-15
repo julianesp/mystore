@@ -69,6 +69,9 @@ body {
 }
 
 .home-main .enlaces {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-self: center;
     justify-self: center;
     grid-column: 2;
@@ -77,12 +80,6 @@ body {
 }
 
 .home-main .enlaces .home-main-button {
-    /* height: 30px; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; */
-    /* gap: 50px;
-    margin-bottom: 50px; */
     margin: 20px 0;
 }
 
@@ -132,6 +129,8 @@ body {
 
 /* vista para tablets y smartphones */
 
+
+/* 
 @media screen and (max-width: 425px) {
     body {
         height: 100vh;
@@ -143,7 +142,7 @@ body {
     .home-main .img img {
         width: 100%;
     }
-}
+} */
 
 
 /* 
@@ -173,10 +172,12 @@ body {
         grid-column: 2;
     }
     .home-main .img img {
-        width: 50%;
-        height: 70px;
+        width: 40%;
+        height: 50px;
         margin: 0 auto;
         min-width: 45%;
+        grid-row: 3;
+        grid-column: 2;
     }
     .home-main .home-main-text {
         font-size: 1.5em;
@@ -185,21 +186,17 @@ body {
     }
     .home-main .home-main-text p {
         width: 70%;
-        font-size: 3em;
+        font-size: 2.2em;
         margin: 0 auto;
-    }
-    .home-main .img img {
-        grid-row: 3;
-        grid-column: 2;
-        height: 120px;
     }
     .home-main .enlaces .home-main-button {
         width: 260px;
         height: 50px;
-        margin: 60px 0;
+        /* margin: 20px 0;
+        padding: 20px 0; */
     }
     .home-main .enlaces .home-main-button a {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
     .desarrollador a img {
         width: 60%;

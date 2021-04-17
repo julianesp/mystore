@@ -19,11 +19,13 @@ body {
 
 .home-main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: .5fr 1fr .4fr; */
+    grid-template-columns: 50% 50%;
     gap: 10px;
-    height: 100%;
-    min-height: 100vh;
+}
+
+.inicio {
+    width: 100%;
+    background-color: #19bcec;
 }
 
 .home-main .img {
@@ -66,7 +68,8 @@ body {
 }
 
 .home-main .home-main-text p:hover {
-    background-color: rgba(65, 156, 201, .6);
+    background-color: #fff;
+    color: #000;
 }
 
 .home-main .enlaces {
@@ -103,6 +106,20 @@ body {
 .home-main .enlaces .home-main-button a:hover {
     color: #fff;
     background: #419CCA;
+}
+
+.my_photo {
+    width: 80%;
+    display: flex;
+    padding: 50px;
+    /* justify-content: center; */
+    /* background-size: 40%; */
+}
+
+.my_photo img {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
 }
 
 .desarrollador h1 {

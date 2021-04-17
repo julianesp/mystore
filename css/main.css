@@ -25,10 +25,14 @@ body {
 
 .inicio {
     width: 100%;
+    height: 100vh;
     background-color: #19bcec;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .7fr .2fr;
 }
 
-.home-main .img {
+.home-main .inicio .img {
     align-self: center;
     justify-self: center;
     grid-row: 3;
@@ -51,7 +55,7 @@ body {
 .home-main .home-main-text p {
     align-items: center;
     font-family: 'Roboto mono', monospace;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 700px;
     /* espacio entre letras */
     letter-spacing: 10px;
@@ -65,20 +69,22 @@ body {
     align-self: center;
     justify-self: center;
     text-align: center;
+    transition: .5s;
 }
 
-.home-main .home-main-text p:hover {
-    background-color: #fff;
-    color: #000;
+.home-main .inicio .home-main-text p:hover {
+    background-color: rgba(242, 231, 201 .5);
+    color: #6D76C9;
+    /* color: #f9a801; */
+    /* background: #f9a801; */
 }
 
-.home-main .enlaces {
+.home-main .inicio .enlaces {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     align-self: center;
     justify-self: center;
-    grid-column: 2;
     grid-row: 2;
     text-align: center;
 }
@@ -105,15 +111,14 @@ body {
 
 .home-main .enlaces .home-main-button a:hover {
     color: #fff;
-    background: #419CCA;
+    background: #f9a801;
 }
 
 .my_photo {
     width: 80%;
     display: flex;
     padding: 50px;
-    /* justify-content: center; */
-    /* background-size: 40%; */
+    justify-content: center;
 }
 
 .my_photo img {

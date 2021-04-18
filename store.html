@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div>
     <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> -->
 
     <i class="icon-menu burger-button"></i>
 
@@ -37,17 +37,15 @@
         <div id="menu-h">
             <ul>
                 <li>
-                    <a href="#">Categor&iacute;as</a>
-                    <ul>
-                        <li>
-                            <a href="#accesorios-celular">Accesorios celulares</a>
-                        </li>
-                        <li>
-                            <a href="#accesorios-laptop">Accesorios computadores</a>
-                        </li>
-                        <li>
-                            <a href="#accesorios-usados">Accesorios usados</a>
-                        </li>
+                    <!-- <a href="#">Categor&iacute;as</a> -->
+                    <button class="desplegar">
+                        Category
+                    </button>
+
+                    <ul class="sub-menu">
+                        <a href="#accesorios-celular">Accesorios celulares</a>
+                        <a href="#accesorios-laptop">Accesorios computadores</a>
+                        <a href="#accesorios-usados">Accesorios usados</a>
                     </ul>
 
                 </li>
@@ -377,7 +375,7 @@
             $(".preacce").eq(indi).fadeIn();
             $(".page li").css("background-color", "#bababa");
             $(".page li").eq(indi).css("background-color", "#419CCA");
-        }, 4000);
+        }, 2000);
 
         $(".dere").click(function() {
             indi++;

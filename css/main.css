@@ -9,7 +9,7 @@ body {
     margin: 0;
     font-family: 'Roboto mono', monospace;
     /* background-image: url('../assets/img/guitar1.jpg'); */
-    background-color: rgb(185, 178, 178);
+    /* background-color: rgb(185, 178, 178); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -119,6 +119,18 @@ body {
     display: flex;
     padding: 50px;
     justify-content: center;
+    /* animaciones */
+    animation-name: yo;
+    animation-duration: 2s;
+}
+
+@keyframes yo {
+    from {
+        transform: scale(.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .my_photo img {

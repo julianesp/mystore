@@ -39,11 +39,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-#particles-js {
+
+/* #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
-}
+} */
 
 .burger-button {
     display: none;
@@ -239,46 +240,44 @@ h2:hover {
 }
 
 .contenido .presentacion {
-    display: grid;
     justify-content: center;
     position: relative;
-    padding: 20px;
     width: 100%;
-    margin: 10px auto;
+    padding: 50px 0;
+    margin: 0 auto;
     border: 2px solid #419CCA;
-    box-shadow: 10px 10px 10px 10px #bababa;
-    border-radius: 20px;
+    object-fit: cover;
 }
 
 .contenido .presentacion .preacce {
-    width: 0;
+    height: 350px;
     text-align: center;
-    padding: 200px 100px;
+    /* padding: 50px 100px; */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contenido .presentacion .p1 {
-    background-image: url('../assets/img/ArticulosCali/MouseM90/1.png');
-    background-size: 50%;
+    background-image: url('../assets/img/presentacion/p1.gif');
+    background-size: 90%;
     background-position: center;
-    width: 200px;
+    /* height: i; */
 }
 
 .contenido .presentacion .p2 {
     display: none;
-    background-image: url('../assets/img/ArticulosCali/AdaptadorWifiUSB/2.png');
-    background-size: 50%;
+    background-image: url('../assets/img/presentacion/p2.png');
+    background-size: 100%;
     background-position: center;
-    width: 200px;
+    /* width: 200px; */
 }
 
 .contenido .presentacion .p3 {
     display: none;
     background-image: url('../assets/img/ArticulosChina/Microfono/1.jpg');
-    background-size: 50%;
+    background-size: 90%;
     background-position: center;
-    width: 200px;
+    /* width: 200px; */
 }
 
 
@@ -309,7 +308,7 @@ h2:hover {
 }
 
 .contenido .presentacion .page {
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     left: 0px;
     right: 0px;

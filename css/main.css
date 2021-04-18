@@ -21,6 +21,20 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+.home-main .screen {
+    width: inherit;
+    position: absolute;
+    z-index: 20;
+}
+
+.home-main .screen img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .inicio {
@@ -50,6 +64,7 @@ body {
     justify-self: center;
     grid-column-start: 1;
     grid-column-end: 4;
+    z-index: 30;
 }
 
 .home-main .home-main-text p {
@@ -87,6 +102,7 @@ body {
     justify-self: center;
     grid-row: 2;
     text-align: center;
+    z-index: 40;
 }
 
 .home-main .enlaces .home-main-button {

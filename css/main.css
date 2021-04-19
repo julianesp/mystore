@@ -4,37 +4,34 @@
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
-    font-family: 'Roboto mono', monospace;
-    /* background-image: url('../assets/img/guitar1.jpg'); */
-    /* background-color: rgb(185, 178, 178); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
     position: fixed;
 }
 
 .home-main {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    /* gap: 10px; */
     z-index: 10;
-    position: relative;
+}
+
+.home-main .pages {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-image: url('../assets/img/street.jpg');
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
 }
 
 .home-main .screen {
     width: inherit;
     position: absolute;
     z-index: 20;
-}
-
-.home-main .screen img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
 }
 
 .inicio {
@@ -46,28 +43,28 @@ body {
     grid-template-rows: .2fr .7fr .2fr;
 }
 
-.home-main .inicio .img {
+.home-main .pages .img {
     align-self: center;
     justify-self: center;
     grid-row: 3;
-    grid-column: 1;
 }
 
 .home-main .img img {
     width: 150px;
+    grid-row: 3;
     height: 50px;
-    display: grid;
+    /* display: grid; */
 }
 
 .home-main .home-main-text {
     align-self: center;
     justify-self: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    z-index: 30;
+    z-index: 100;
+    grid-row: 1;
 }
 
 .home-main .home-main-text p {
+    z-index: 30;
     align-items: center;
     font-family: 'Roboto mono', monospace;
     font-size: 3em;
@@ -90,8 +87,6 @@ body {
 .home-main .inicio .home-main-text p:hover {
     background-color: rgba(242, 231, 201 .5);
     color: #6D76C9;
-    /* color: #f9a801; */
-    /* background: #f9a801; */
 }
 
 .home-main .inicio .enlaces {
@@ -100,9 +95,9 @@ body {
     grid-template-columns: 1fr;
     align-self: center;
     justify-self: center;
-    grid-row: 2;
+    justify-content: center;
+    justify-items: center;
     text-align: center;
-    z-index: 40;
 }
 
 .home-main .enlaces .home-main-button {
@@ -131,6 +126,7 @@ body {
 }
 
 .my_photo {
+    border: 2px solid greenyellow;
     width: 80%;
     display: flex;
     padding: 50px;
@@ -141,10 +137,10 @@ body {
 }
 
 @keyframes yo {
-    from {
+    0% {
         transform: scale(.5);
     }
-    to {
+    100% {
         transform: scale(1);
     }
 }

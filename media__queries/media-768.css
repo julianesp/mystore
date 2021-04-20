@@ -5,21 +5,29 @@
     body {
         background-color: #EEF0F0;
     }
+    .icon-menu {
+        position: fixed;
+    }
     .burger-button {
         display: block;
         z-index: 1;
         cursor: pointer;
     }
     .header {
-        grid-template-columns: 1fr;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /* position: unset; */
+        /* width: 40vw; */
+        background-color: rgba(0, 0, 0, .1);
+        top: 0;
+        right: 0;
+        padding-top: 70px;
+        padding-right: 20px;
+        position: fixed;
+        display: block;
+        z-index: 20;
     }
     .header #menu-h {
         width: 250px;
     }
-    .header #menu-h:nth-child(2),
+    /* .header #menu-h:nth-child(2),
     #menu-h:nth-child(3),
     #menu-h:nth-child(4),
     #menu-h:nth-child(5) {
@@ -29,7 +37,7 @@
         background-color: rgba(253, 171, 1, .7);
         right: 0;
         margin-top: 68px;
-    }
+    } */
     .contenido {
         grid-template-columns: 1fr;
         margin: 5px;

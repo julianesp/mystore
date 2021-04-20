@@ -39,13 +39,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-/* #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-} */
-
 .burger-button {
     display: none;
     position: fixed;

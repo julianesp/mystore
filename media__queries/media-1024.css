@@ -1,4 +1,4 @@
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .home-main {
         grid-template-columns: .3fr 1fr .3fr;
         grid-template-rows: 200px .5fr .3;
@@ -34,4 +34,4 @@
     .desarrollador a img {
         width: 60%;
     }
-} */
+}

@@ -1,16 +1,87 @@
-/* @media screen and (max-width: 768px) {
-    .home-main img {
+@media screen and (max-width: 768px) {
+    #particles {
+        display: inline-block;
+    }
+    body {
+        background-color: #EEF0F0;
+    }
+    .burger-button {
+        display: block;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .header {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* position: unset; */
+    }
+    .header #menu-h {
+        width: 250px;
+    }
+    .header #menu-h:nth-child(2),
+    #menu-h:nth-child(3),
+    #menu-h:nth-child(4),
+    #menu-h:nth-child(5) {
+        display: none;
+        grid-template-rows: repeat(4, 1fr);
+        position: fixed;
+        background-color: rgba(253, 171, 1, .7);
+        right: 0;
+        margin-top: 68px;
+    }
+    .contenido {
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+    .contenido .presentacion {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: 80%;
+    }
+    .contenido .accesorios .celulares {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenido .accesorios .celulares .accesorio-celular {
+        width: 210px;
+    }
+    .contenido .accesorios .pc {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenido .accesorios .pc .accesorio-pc {
+        width: 210px;
+    }
+    .contenido .accesorios .celulares .titulo {
+        display: none;
+    }
+    footer {
+        font-size: .8em;
+    }
+    footer .info-desa h3 {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+    footer .info-desa h3 img {
+        width: 40px;
+    }
+    footer .social-desa {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    footer .social-desa h2 {
+        font-size: 1.4rem;
+        grid-row: 1;
         grid-column: 2;
-        grid-row: 3;
     }
-    .home-main .home-main-text p {
-        font-size: 1.5em;
-        margin: 0 auto;
+    footer .social-desa h3 {
+        font-size: 1.2rem;
+        grid-row: 2;
+        grid-column: 2;
     }
-    .home-main .enlaces .home-main-button {
-        width: 500px;
+    footer .social-desa a img {
+        width: 20%;
+        margin: 0 10px;
     }
-    .desarrollador a img {
-        min-width: 40px;
-    }
-} */
+}

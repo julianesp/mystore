@@ -1,12 +1,48 @@
 @media screen and (max-width: 425px) {
     body {
-        height: 100vh;
+        min-width: 400px;
     }
-    .home-main {}
-    .home-main .home-main-text {
+    #particles-js {
+        display: none;
+    }
+    .burger-button {}
+    .header {
+        padding-top: 20px;
+    }
+    .contenido {}
+    .contenido .presentacion {
+        /* min-width: 200px; */
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
+        height: 250px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+        width: 150px;
+        height: 180px;
+        margin: 0 10px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
+        width: 50%;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+        height: 250px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+        width: 150px;
+        height: 180px;
+        margin: 0 10px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+        width: 50%;
+    }
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor {
         margin: 0;
-    }
-    .home-main .img img {
         width: 100%;
+    }
+    .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
+        width: 1px;
+    }
+    footer .social-desa h3 {
+        font-size: .9em;
     }
 }

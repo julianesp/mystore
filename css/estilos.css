@@ -563,20 +563,17 @@ h2:hover {
 .contenido .accesorios {
     position: relative;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 100px;
 }
 
 .contenido .accesorios .celulares {
     height: 365px;
     padding: 10px;
-    border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
-    gap: 30px 0;
-    overflow: scroll;
-    overflow-y: unset;
+    gap: 0 10px;
+    overflow-x: scroll;
 }
 
 .contenido .accesorios .celulares .accesorio-celular {
@@ -638,20 +635,20 @@ h2:hover {
 
 .contenido .accesorios .pc {
     height: 365px;
-    border: 3px solid gray;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 0;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
     overflow: scroll;
     overflow-y: unset;
+    align-items: center;
 }
 
 .contenido .accesorios .pc .accesorio-pc {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
+    gap: 0 30px;
     width: 250px;
     margin: auto 10px;
     border: 1px solid #bababa;

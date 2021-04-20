@@ -124,11 +124,20 @@ body {
     background: #f9a801;
 }
 
+#particles-js {
+    /* width: 100vw; */
+}
+
 .home-main .my_photo {
-    width: 80%;
-    display: flex;
-    padding: 50px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-image: url('../assets/img/Desarrollador.jpg');
+    height: 100vh;
     justify-content: center;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
     /* animaciones */
     animation-name: yo;
     animation-duration: 2s;
@@ -143,15 +152,10 @@ body {
     }
 }
 
-#particles-js {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
 .home-main .my_photo img {
     width: 400px;
     height: 500px;
     border-radius: 15px;
 }
+
+.home-main .my_photo .particulas {}

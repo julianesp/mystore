@@ -1,37 +1,33 @@
 particlesJS({
     "particles": {
         "number": {
-            // cantidad de circulos
-            "value": 40,
+            "value": 125,
             "density": {
                 "enable": true,
                 "value_area": 800
             }
         },
         "color": {
-            /*color de la nieve*/
-            "value": "#000"
+            "value": "#ede4e4"
         },
         "shape": {
-            //para type a image para colocar una imagen de animación    
             "type": "circle",
             "stroke": {
-                // color del borde de los circulos 
-                "width": 1,
-                "color": "#fff"
+                "width": 3,
+                "color": "#000000"
             },
             "polygon": {
                 "nb_sides": 5
             },
             "image": {
-                "src": "noel.png",
-                "width": 500,
-                "height": 500
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
             }
         },
         "opacity": {
-            "value": 0.5,
-            "random": true,
+            "value": 0.15232414578222467,
+            "random": false,
             "anim": {
                 "enable": false,
                 "speed": 1,
@@ -40,26 +36,26 @@ particlesJS({
             }
         },
         "size": {
-            "value": 10,
+            "value": 7,
             "random": true,
             "anim": {
                 "enable": true,
-                "speed": 10,
-                "size_min": 0.1,
-                "sync": false
+                "speed": 12.181158184520175,
+                "size_min": 4.060386061506725,
+                "sync": true
             }
         },
         "line_linked": {
             "enable": true,
-            "distance": 100,
-            "color": "#000",
+            "distance": 150,
+            "color": "#ffffff",
             "opacity": 0.4,
-            "width": 2
+            "width": 1
         },
         "move": {
             "enable": true,
-            "speed": 6,
-            "direction": "none",
+            "speed": 7,
+            "direction": "top-right",
             "random": false,
             "straight": false,
             "out_mode": "out",
@@ -75,7 +71,7 @@ particlesJS({
         "detect_on": "canvas",
         "events": {
             "onhover": {
-                "enable": true,
+                "enable": false,
                 "mode": "repulse"
             },
             "onclick": {
@@ -88,14 +84,14 @@ particlesJS({
             "grab": {
                 "distance": 400,
                 "line_linked": {
-                    "opacity": 0.5
+                    "opacity": 1
                 }
             },
             "bubble": {
                 "distance": 400,
-                "size": 4,
-                "duration": 0.3,
-                "opacity": 1,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
                 "speed": 3
             },
             "repulse": {

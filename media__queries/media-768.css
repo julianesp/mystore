@@ -35,20 +35,11 @@
         margin: 5px;
     }
     .contenido .presentacion {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        width: 80%;
-    }
-    .contenido .accesorios .celulares {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        width: 97vw;
     }
     .contenido .accesorios .celulares .accesorio-celular {
         width: 210px;
-    }
-    .contenido .accesorios .pc {
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(3, 1fr);
     }
     .contenido .accesorios .pc .accesorio-pc {
         width: 210px;

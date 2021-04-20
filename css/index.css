@@ -13,14 +13,14 @@ body {
 
 .home-main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 80% 20%;
     /* gap: 10px; */
     z-index: 10;
 }
 
 .home-main .pages {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     background-image: url('../assets/img/street.jpg');
     background-size: cover;
@@ -88,6 +88,11 @@ body {
     transition: .5s;
 }
 
+.home-main .pages .home-main-text p span {
+    color: #f9a801;
+    /* transform: scale(.5); */
+}
+
 .home-main .pages .enlaces {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -124,23 +129,26 @@ body {
     background: #f9a801;
 }
 
-#particles-js {
-    /* width: 100vw; */
-}
-
-.home-main .my_photo {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    background-image: url('../assets/img/Desarrollador.jpg');
+.home-main .mensaje {
     height: 100vh;
+    display: inline-block;
     justify-content: center;
-    background-size: cover;
     justify-items: center;
     align-items: center;
+    align-self: center;
+    align-content: center;
+    /* centrar texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* animaciones */
     animation-name: yo;
-    animation-duration: 2s;
+    animation-duration: 1.3s;
+}
+
+.home-main .mensaje p {
+    font-style: italic;
+    margin: 0 20px;
 }
 
 @keyframes yo {
@@ -151,11 +159,3 @@ body {
         transform: scale(1);
     }
 }
-
-.home-main .my_photo img {
-    width: 400px;
-    height: 500px;
-    border-radius: 15px;
-}
-
-.home-main .my_photo .particulas {}

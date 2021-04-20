@@ -340,7 +340,12 @@
         burgerMenu.addEventListener('click', hideShow);
 
         function hideShow() {
-            header.classList.add('is-active');
+            if (header.classList.contains('is-active')) {
+                header.classList.remove('is-active');
+
+            } else {
+                header.classList.add('is-active');
+            }
         }
 
         // control para mostrar accesorios

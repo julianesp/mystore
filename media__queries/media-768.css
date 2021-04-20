@@ -22,7 +22,7 @@
         display: block;
         z-index: 200;
         /* para que aparezca el menu con suavizado*/
-        transition: .3s;
+        transition: .5s;
     }
     .header.is-active {
         left: 450px;

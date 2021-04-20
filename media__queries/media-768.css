@@ -1,7 +1,4 @@
 @media screen and (max-width: 768px) {
-    #particles {
-        display: inline-block;
-    }
     body {
         background-color: #EEF0F0;
     }
@@ -10,19 +7,27 @@
     }
     .burger-button {
         display: block;
-        z-index: 1;
+        z-index: 10000;
         cursor: pointer;
     }
     .header {
         /* width: 40vw; */
-        background-color: rgba(0, 0, 0, .1);
+        background-color: rgba(0, 0, 0, .4);
         top: 0;
         right: 0;
+        bottom: 0;
+        width: vw;
+        left: 770px;
         padding-top: 70px;
-        padding-right: 20px;
+        /* padding-right: 20px; */
         position: fixed;
         display: block;
-        z-index: 20;
+        z-index: 200;
+        /* para que aparezca el menu con suavizado*/
+        transition: .3s;
+    }
+    .header.is-active {
+        left: 0;
     }
     .header #menu-h {
         width: 250px;

@@ -2,10 +2,6 @@
     body {
         min-width: 400px;
     }
-    #particles-js {
-        display: none;
-    }
-    .burger-button {}
     .header {
         padding-top: 20px;
     }

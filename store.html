@@ -21,7 +21,7 @@
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script> -->
 
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
 
     <header class="header">
 
@@ -333,6 +333,16 @@
     </main>
 
     <script>
+        //menu lateral en 768px
+        const header = document.querySelector('.header');
+        const burgerMenu = document.querySelector('#burger-menu');
+
+        burgerMenu.addEventListener('click', hideShow);
+
+        function hideShow() {
+            header.classList.add('is-active');
+        }
+
         // control para mostrar accesorios
 
         var indi = 0;

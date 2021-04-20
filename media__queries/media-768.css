@@ -7,19 +7,17 @@
     }
     .burger-button {
         display: block;
-        z-index: 10000;
+        z-index: 1000;
         cursor: pointer;
     }
     .header {
-        /* width: 40vw; */
         background-color: rgba(0, 0, 0, .4);
         top: 0;
         right: 0;
         bottom: 0;
-        width: vw;
-        left: 770px;
+        width: 50vw;
+        left: 780px;
         padding-top: 70px;
-        /* padding-right: 20px; */
         position: fixed;
         display: block;
         z-index: 200;
@@ -27,7 +25,7 @@
         transition: .3s;
     }
     .header.is-active {
-        left: 0;
+        left: 450px;
     }
     .header #menu-h {
         width: 250px;

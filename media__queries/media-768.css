@@ -30,17 +30,6 @@
     .header #menu-h {
         width: 250px;
     }
-    /* .header #menu-h:nth-child(2),
-    #menu-h:nth-child(3),
-    #menu-h:nth-child(4),
-    #menu-h:nth-child(5) {
-        display: none;
-        grid-template-rows: repeat(4, 1fr);
-        position: fixed;
-        background-color: rgba(253, 171, 1, .7);
-        right: 0;
-        margin-top: 68px;
-    } */
     .contenido {
         grid-template-columns: 1fr;
         margin: 5px;

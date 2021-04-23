@@ -35,6 +35,7 @@
 body {
     margin: 0;
     background-size: cover;
+    /* background: 300deg, #baba 20%, #ffbaba 80%; */
     background-color: #EEF0F0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -800,7 +801,7 @@ footer .social-desa h3 img {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: #EEF0F0;
+        /* background-color: #EEF0F0; */
     }
     .icon-menu {
         position: fixed;

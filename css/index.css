@@ -124,6 +124,7 @@ body {
 .home-main .enlaces .home-main-button a:hover {
     color: #fff;
     background: #f9a801;
+    /* background: linear-gradient(207, 8deg, #bababa 17%, #333fff 100%); */
 }
 
 .home-main .enlaces .show {
@@ -198,7 +199,7 @@ body {
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .home-main {
-        grid-template-columns: 80% 20%;
+        /* grid-template-columns: 80% 20%; */
     }
     .home-main .home-main-text {
         font-size: 1.1em;

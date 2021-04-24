@@ -47,7 +47,7 @@ main {
         transform: translateX(180px);
     }
     100% {
-        transform: translateX(1000px);
+        transform: translateX(1500px);
     }
 }
 

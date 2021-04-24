@@ -118,3 +118,7 @@ main {
     max-width: 200px;
     padding: 0 50px 30px;
 }
+
+.redes a .tui {
+    border-radius: 50%;
+}

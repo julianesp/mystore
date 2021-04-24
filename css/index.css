@@ -13,14 +13,15 @@ body {
 }
 
 main {
-    position: relative;
+    width: 100vw;
 }
 
 .fondo {
     width: 100%;
     height: 100vh;
+    display: none;
     background: url('../assets/img/street.jpg') no-repeat center center/cover;
-    position: absolute;
+    position: relative;
 }
 
 .welcome {
@@ -51,65 +52,15 @@ main {
     }
 }
 
-
-/*footer*/
-
-footer {
-    background-color: #419CCA;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    position: absolute;
-    z-index: 5;
-    text-align: center;
-    margin-top: 100px;
-    padding: 10px 15px;
-    gap: 20px;
+.redes {
+    padding-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
 }
 
-footer .info-desa {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    text-align: center;
-}
-
-footer .info-desa h3 {
-    font-size: 1em;
-    font-style: italic;
-    color: white;
-    margin-left: 80px;
-    /* box-shadow: 2px 2px 2px gray; */
-}
-
-footer .info-desa h3 img {
-    width: 40px;
-}
-
-footer .social-desa {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-footer .social-desa h1 {
-    color: #f3ff3b;
-    font-size: 1.5em;
-    font-style: italic;
-    letter-spacing: 5px;
-    font-weight: bolder;
-}
-
-footer .social-desa a img {
-    width: 50px;
-    margin: 0 20px;
-}
-
-footer .social-desa h3 {
-    font-size: 1em;
-    font-style: italic;
-    color: white;
-}
-
-footer .social-desa h3 img {
-    width: 30px;
-    padding-right: 10px;
+.redes a img {
+    width: 100px;
+    padding: 0 50px 30px;
 }

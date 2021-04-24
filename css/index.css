@@ -1,23 +1,79 @@
+/* tipo de fuente */
+
 @import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
 
 /* inicio de diseño */
 
-html {
+body {
+    font-family: 'Roboto mono', monospace;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto mono', monospace;
-    /* position: fixed; */
-}
-
 main {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: url('../assets/img/street.jpg') no-repeat center center/cover;
     background-size: 100% 100%;
     position: fixed;
+}
+
+
+/* estilos menu hamburguesa */
+
+.burger-button {
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgba(253, 171, 1, .7);
+    font-size: 50px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    top: 15px;
+    right: 15px;
+}
+
+.icon-menu {
+    position: fixed;
+}
+
+.burger-button {
+    display: block;
+    /* z-index: 1000; */
+    cursor: pointer;
 }
 
 .welcome {
@@ -29,10 +85,10 @@ main {
 
 .welcome h1 {
     color: #F9A801;
-    font-size: 7rem;
+    font-size: 5rem;
     font-style: italic;
-    animation: title forwards ease-out;
-    animation-duration: 2s;
+    animation: title forwards ease-in;
+    animation-duration: 2.5s;
     animation-delay: .7s;
 }
 
@@ -58,5 +114,7 @@ main {
 
 .redes a img {
     width: 100px;
+    min-width: 100px;
+    max-width: 200px;
     padding: 0 50px 30px;
 }

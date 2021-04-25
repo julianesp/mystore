@@ -66,12 +66,10 @@ main {
 }
 
 .icon-menu {
-    /* position: fixed; */
+    position: fixed;
 }
 
 .burger-button {
-    right: 100px;
-    left: 0;
     display: block;
     cursor: pointer;
 }
@@ -112,9 +110,16 @@ main {
     height: 100vh;
 }
 
+.redes a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .redes a img {
-    width: 100px;
-    padding: 0 50px 30px;
+    width: 300px;
+    /* padding: 0 5px; */
+    max-width: 30%;
 }
 
 .redes a .tui {

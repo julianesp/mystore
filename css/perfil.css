@@ -48,7 +48,7 @@ body {
 .contenido .presentacion {
     height: 500px;
     /* background-color: #C4C4C6; */
-    background-color: #181819;
+    background-color: #a1a1a1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;

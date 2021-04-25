@@ -1,127 +1,222 @@
-/* tipo de fuente */
-
-@import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
-
-/* icono de menu  */
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?3ot2jt');
-    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-    content: "\e9bd";
-}
-
-
 /* inicio de diseño */
 
+html,
 body {
-    font-family: 'Roboto mono', monospace;
-    margin: 0;
-    padding: 0;
-}
-
-main {
+    height: 100vh;
     width: 100vw;
-    background: url('../assets/img/street.jpg') no-repeat center center/cover;
-    background-size: 100% 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
     position: fixed;
 }
 
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
+    z-index: 10;
+}
 
-/* estilos menu hamburguesa */
+.home-main .pages {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-image: url('../assets/img/street.jpg');
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
 
-.burger-button {
+.home-main .screen {
+    width: inherit;
+    position: absolute;
+    z-index: 20;
+}
+
+.inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: #19bcec;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .7fr .2fr;
+}
+
+.home-main .pages .img {
+    align-self: center;
+    justify-self: center;
+    grid-row: 3;
+}
+
+.home-main .img img {
+    width: 150px;
+}
+
+.home-main .img:hover {
+    background-color: rgba(156, 156, 162, .8);
+    padding: 15px;
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.home-main .pages .home-main-text {
+    align-self: center;
+    justify-self: center;
+    z-index: 100;
+    grid-row: 1;
+}
+
+.home-main .pages .home-main-text p {
+    z-index: 30;
+    align-items: center;
+    font-family: 'Roboto mono', monospace;
+    font-size: 3em;
+    font-weight: 700px;
+    /* espacio entre letras */
+    letter-spacing: 10px;
     color: #fff;
-    border-radius: 50%;
-    background-color: rgba(253, 171, 1, .7);
-    font-size: 50px;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    line-height: 80px;
+    background-color: rgba(187, 170, 187, .1);
+    border-radius: 20px;
+    text-shadow: 3px 3px 2px #baba;
     text-align: center;
-    top: 15px;
-    right: 15px;
+    padding: 10px;
+    margin: 30px 0;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    transition: .5s;
 }
 
-.icon-menu {
-    position: fixed;
+.home-main .pages .home-main-text p span {
+    color: #f9a801;
+    /* transform: scale(.5); */
 }
 
-.burger-button {
-    display: block;
+.home-main .pages .enlaces {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.home-main .enlaces .home-main-button {
+    margin: 20px 0;
+}
+
+.home-main .enlaces .home-main-button a {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: .5em .5em;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(102, 95, 95);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+    will-change: transform;
+}
+
+.home-main .enlaces .home-main-button a:hover {
+    color: #fff;
+    background: #f9a801;
+    /* background: linear-gradient(207, 8deg, #bababa 17%, #333fff 100%); */
+}
+
+.home-main .enlaces .show {
+    right: 0;
+    position: absolute;
+    animation-name: show-mensaje;
+    animation-duration: 2s;
+    display: none;
+}
+
+.home-main .enlaces .show img {
+    width: 50px;
+    background-color: rgba(172, 167, 166, .7);
+    transition: .5s;
+    border-radius: 50%;
+    padding: 20px;
     cursor: pointer;
 }
 
-.welcome {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    position: absolute;
+.home-main .enlaces .show img:hover {
+    background-color: #f9a801;
 }
 
-.welcome h1 {
-    color: #F9A801;
-    font-size: 5rem;
-    font-style: italic;
-    animation: title forwards ease-in;
-    animation-duration: 2.5s;
-    animation-delay: .7s;
-}
-
-@keyframes title {
+@keyframes show-mensaje {
     0% {
-        transform: translateX(1px);
-    }
-    50% {
-        transform: translateX(180px);
+        transform: scaleX(.5);
+        transform: translateX(-1200px);
     }
     100% {
-        transform: translateX(1500px);
+        transform: translateX(0);
+        transform: scaleX(1);
     }
 }
 
-.redes {
-    /* padding-bottom: 100px; */
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.home-main .mensaje {
     height: 100vh;
-}
-
-.redes a {
+    display: none;
+    /* centrar texto */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* animaciones */
 }
 
-.redes a img {
-    width: 300px;
-    /* padding: 0 5px; */
-    max-width: 30%;
+.home-main .mensaje p {
+    font-style: italic;
+    margin: 250px 20px;
 }
 
-.redes a .tui {
-    border-radius: 50%;
+@media screen and (min-width: 280px) and (max-width:424px) {
+    .home-main .pages .home-main-text {
+        background-color: red;
+        font-size: 10em;
+    }
+    .home-main .pages .home-main-text p {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        /* min-width: 425px; */
+    }
+    .home-main .pages {
+        /* grid-template-columns: 1fr; */
+    }
+    .home-main .pages .home-main-text p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .home-main {
+        /* grid-template-columns: 80% 20%; */
+    }
+    .home-main .home-main-text {
+        font-size: 1.1em;
+        align-self: baseline;
+        margin-top: 30px;
+    }
+    .home-main .home-main-text p {
+        width: 70%;
+        font-size: 2.2em;
+        margin: 0 auto;
+    }
+    .home-main .enlaces .home-main-button {
+        width: 260px;
+        height: 50px;
+    }
+    .home-main .enlaces .home-main-button a {
+        font-size: 1.8em;
+    }
+    .desarrollador a img {
+        width: 60%;
+    }
 }

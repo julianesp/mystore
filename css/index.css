@@ -43,7 +43,6 @@ body {
 
 main {
     width: 100vw;
-    height: 100vh;
     background: url('../assets/img/street.jpg') no-repeat center center/cover;
     background-size: 100% 100%;
     position: fixed;
@@ -67,10 +66,12 @@ main {
 }
 
 .icon-menu {
-    position: fixed;
+    /* position: fixed; */
 }
 
 .burger-button {
+    right: 100px;
+    left: 0;
     display: block;
     cursor: pointer;
 }
@@ -109,7 +110,6 @@ main {
     align-items: flex-end;
     justify-content: center;
     height: 100vh;
-    max-width: 425px;
 }
 
 .redes a img {

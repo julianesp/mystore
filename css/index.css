@@ -5,27 +5,21 @@ body {
     height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     background: url('../assets/img/street.jpg')no-repeat center center/cover;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
 }
 
 .pages {
     /* width: 100vw; */
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr .5fr;
+    grid-template-rows: .2fr 1fr;
     /* position: relative; */
-}
-
-.pages .img {
-    background-image: url('../assets/img/whatsapp.png')no-repeat center center/cover;
-    position: absolute;
 }
 
 .pages .home-main-text {
     align-self: center;
     justify-self: center;
-    /* z-index: 100; */
-    grid-row: 1;
+    margin-bottom: 150px;
 }
 
 .pages .home-main-text p {
@@ -56,23 +50,24 @@ body {
 
 .pages .enlaces {
     display: grid;
-    /* grid-template-rows: 35% 35%; */
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
 }
 
 .pages .enlaces .home-main-button {
     /* margin: 10px 0;
     justify-content: center; */
-    margin: 0;
-    padding: 0;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .pages .enlaces .home-main-button a {
     border: 2px solid #fff;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: .5em .5em;
     line-height: 40px;
     text-align: center;

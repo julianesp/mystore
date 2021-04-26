@@ -1,13 +1,13 @@
 /* inicio de diseño */
 
 body {
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vh;
+    /* width: 100vw; */
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     /* position: fixed; */
-    background: url('../assets/img/Desarrollador.jpg')no-repeat center center/cover;
+    background: url('../assets/img/street.jpg')no-repeat center center/cover;
     background-size: 100% 100%;
 }
 
@@ -65,7 +65,8 @@ body {
 }
 
 .pages .enlaces .home-main-button {
-    margin: 20px 0;
+    margin: 10px 0;
+    justify-content: center;
 }
 
 .pages .enlaces .home-main-button a {
@@ -81,7 +82,6 @@ body {
     cursor: pointer;
     outline: none;
     transition: .5s;
-    will-change: transform;
 }
 
 .pages .enlaces .home-main-button a:hover {
@@ -138,50 +138,28 @@ body {
 } */
 
 @media screen and (min-width: 280px) and (max-width:424px) {
-    .home-main .pages .home-main-text {
+    .pages .home-main-text {
         background-color: red;
         font-size: 10em;
     }
-    .home-main .pages .home-main-text p {
+    .pages .home-main-text p {
         font-size: 3em;
     }
 }
 
 @media screen and (max-width: 768px) and (min-width: 425px) {
-    .home-main {
-        grid-template-columns: 1fr;
-        /* min-width: 425px; */
-    }
-    .home-main .pages {
+    .pages {
         /* grid-template-columns: 1fr; */
     }
-    .home-main .pages .home-main-text p {
+    .pages .home-main-text p {
         font-size: 2em;
+    }
+    .pages .enlaces {
+        padding-bottom: 100px;
+    }
+    .pages .enlaces .home-main-button {
+        height: 100px;
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-    .home-main {
-        /* grid-template-columns: 80% 20%; */
-    }
-    .home-main .home-main-text {
-        font-size: 1.1em;
-        align-self: baseline;
-        margin-top: 30px;
-    }
-    .home-main .home-main-text p {
-        width: 70%;
-        font-size: 2.2em;
-        margin: 0 auto;
-    }
-    .home-main .enlaces .home-main-button {
-        width: 260px;
-        height: 50px;
-    }
-    .home-main .enlaces .home-main-button a {
-        font-size: 1.8em;
-    }
-    .desarrollador a img {
-        width: 60%;
-    }
-}
+@media screen and (max-width: 1024px) and (min-width: 768px) {}

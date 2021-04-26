@@ -135,7 +135,9 @@ body {
 
 @media screen and (min-width: 425px) {
     .pages {
-        position: fixed;
+        /* position: fixed; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
         width: 100%;
     }
     .pages .home-main-text {
@@ -147,6 +149,11 @@ body {
     .pages .enlaces .home-main-button {
         font-size: 2em;
         width: 250px;
+    }
+    .pages .enlaces {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 300px;
     }
 }
 

@@ -50,6 +50,7 @@ body {
 
 .pages .enlaces {
     display: grid;
+    grid-template-rows: 100px 100px;
     align-items: center;
     justify-content: center;
 }
@@ -133,8 +134,15 @@ body {
 } */
 
 @media screen and (min-width: 425px) {
+    .pages .home-main-text {
+        margin-top: 300px;
+    }
+    .pages .home-main-text p {
+        font-size: 5em;
+    }
     .pages .enlaces .home-main-button {
-        font-size: 1.5em;
+        font-size: 2em;
+        width: 250px;
     }
 }
 

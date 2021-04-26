@@ -12,7 +12,7 @@ body {
     /* width: 100vw; */
     height: 100vh;
     display: grid;
-    grid-template-rows: 75% 35%;
+    grid-template-rows: 1fr .5fr;
     /* position: relative; */
 }
 
@@ -56,7 +56,8 @@ body {
 
 .pages .enlaces {
     display: grid;
-    grid-template-rows: 35% 35%;
+    /* grid-template-rows: 35% 35%; */
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
 }

@@ -810,6 +810,7 @@ footer .social-desa h3 img {
         display: block;
         z-index: 1000;
         cursor: pointer;
+        position: absolute;
     }
     .header {
         background-color: rgba(0, 0, 0, .4);
@@ -822,8 +823,11 @@ footer .social-desa h3 img {
         position: fixed;
         display: block;
         z-index: 200;
-        /* para que aparezca el menu con suavizado*/
         transition: .5s;
+    }
+    .header #menu-h img:nth-child(1) {
+        display: inline-block;
+        position: relative;
     }
     .header.is-active {
         left: 450px;
@@ -836,8 +840,9 @@ footer .social-desa h3 img {
         margin: 5px;
     }
     .contenido .presentacion {
+        position: relative;
         padding: 0;
-        width: 97vw;
+        width: 100vw;
     }
     .contenido .accesorios .celulares .accesorio-celular {
         width: 210px;

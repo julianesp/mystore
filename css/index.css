@@ -134,6 +134,10 @@ body {
 } */
 
 @media screen and (min-width: 425px) {
+    .pages {
+        position: fixed;
+        width: 100%;
+    }
     .pages .home-main-text {
         margin-top: 300px;
     }

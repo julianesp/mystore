@@ -1,6 +1,7 @@
 @media screen and (min-width: 425px) {
     body {
         margin: 0;
+        font-family: 'Roboto', sans-serif;
     }
     .pages {
         display: grid;
@@ -42,35 +43,36 @@
     .pages .enlaces {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        /* grid-row: 2; */
         align-self: center;
-    }
-    .pages .enlaces {
-        display: grid;
-        grid-template-rows: 100px 100px;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
+        justify-self: center;
     }
     .pages .enlaces .home-main-button {
         display: flex;
-        width: 200px;
-        height: 100px;
         align-items: center;
         justify-content: center;
+        width: 200px;
     }
     .pages .enlaces .home-main-button a {
+        height: 60px;
+        width: 150px;
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 10px;
+        margin: 30px 0;
         border: 2px solid #fff;
+        box-shadow: 5px -5px 10px #fff;
         border-radius: 10px;
-        font-size: 1em;
-        padding: .5em .5em;
-        line-height: 40px;
         text-align: center;
         text-decoration: none;
         background-color: rgb(102, 95, 95);
         color: #fff;
         cursor: pointer;
-        outline: none;
         transition: .5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .pages .enlaces .home-main-button a:hover {
         color: #fff;

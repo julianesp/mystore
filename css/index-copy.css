@@ -5,11 +5,9 @@ body {
     height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     background: url('../assets/img/street.jpg')no-repeat center center/cover;
-    /* background-size: 100% 100%; */
 }
 
 .pages {
-    /* width: 100vw; */
     height: 100vh;
     display: grid;
     grid-template-rows: .2fr 1fr;
@@ -23,12 +21,10 @@ body {
 }
 
 .pages .home-main-text p {
-    /* z-index: 30; */
     align-items: center;
     font-family: 'Roboto mono', monospace;
     font-size: 3em;
     font-weight: 700px;
-    /* espacio entre letras */
     letter-spacing: 10px;
     color: #fff;
     background-color: rgba(187, 170, 187, .1);
@@ -45,7 +41,6 @@ body {
 
 .pages .home-main-text p span {
     color: #f9a801;
-    /* transform: scale(.5); */
 }
 
 .pages .enlaces {
@@ -56,8 +51,6 @@ body {
 }
 
 .pages .enlaces .home-main-button {
-    /* margin: 10px 0;
-    justify-content: center; */
     display: flex;
     width: 200px;
     height: 100px;

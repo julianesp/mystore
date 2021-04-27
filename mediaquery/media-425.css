@@ -6,10 +6,12 @@
     .pages {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: fixed;
         background: url('../assets/img/street.jpg')no-repeat center center/cover;
+        /* min-width: 420px;
+        max-width: 767px; */
     }
     .pages .home-main-text {
         display: grid;
@@ -33,9 +35,32 @@
         align-self: center;
         justify-self: center;
         text-align: center;
-        transition: .5s;
         min-width: 400px;
         max-width: 500px;
+        /* animaciones  */
+        animation-name: welcome;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes welcome {
+        0% {
+            transform: translateX(-700px);
+        }
+        25% {
+            transform: translateX(100px);
+        }
+        55% {
+            transform: translateX(-100px);
+        }
+        75% {
+            transform: translateX(70px);
+        }
+        90% {
+            transform: translateX(-20px);
+        }
+        100% {
+            transform: translateX(45px);
+        }
     }
     .pages .home-main-text p span {
         color: #f9a801;
@@ -53,6 +78,8 @@
         align-items: center;
         justify-content: center;
         width: 200px;
+        min-width: 200px;
+        max-width: 250px;
     }
     .pages .enlaces .home-main-button a {
         height: 60px;

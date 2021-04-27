@@ -145,12 +145,3 @@ body {
         width: 250px;
     }
 }
-
-@media screen and (min-width: 425px) {
-    .pages .home-main-text {
-        margin-top: 100px;
-    }
-    .pages .enlaces {
-        margin-top: 200px;
-    }
-}

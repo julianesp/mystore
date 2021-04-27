@@ -1,0 +1,11 @@
+@media screen and (min-width: 425px) {
+    .pages .home-main-text {
+        margin-top: 100px;
+    }
+    .pages .enlaces {
+        margin-top: 200px;
+    }
+    .pages .enlaces .home-main-button a {
+        font-size: 1.5em;
+    }
+}

@@ -285,6 +285,8 @@ footer .social-desa h3 img {
     }
 } */
 
+
+/* 
 @media screen and (max-width: 768px) {
     .contenedor-header {
         height: 100px;
@@ -296,7 +298,7 @@ footer .social-desa h3 img {
     .contenido .presentacion .descripcion p {
         line-height: 50px;
     }
-}
+} */
 
 @media screen and (max-width: 1024px) {
     .contenedor-header {
@@ -342,13 +344,13 @@ footer .social-desa h3 img {
         align-content: center;
     }
     footer .info-desa h3 {
-        font-size: 1.5em;
+        font-size: 1.9em;
     }
     footer .social-desa h2 {
-        font-size: 1.8em;
+        font-size: 2.8rem;
     }
     footer .social-desa h3 {
-        font-size: 1.5em;
+        font-size: 1.9em;
     }
     footer .social-desa a img {
         width: 60px;

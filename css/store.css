@@ -205,7 +205,7 @@ h2:hover {
 
 .contenido {
     height: 100%;
-    margin: 20px 80px;
+    /* margin: 20px 80px; */
 }
 
 .contenido .container {
@@ -797,88 +797,4 @@ footer .social-desa h3 {
 footer .social-desa h3 img {
     width: 30px;
     padding-right: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        /* background-color: #EEF0F0; */
-    }
-    .icon-menu {
-        position: fixed;
-    }
-    .burger-button {
-        display: block;
-        z-index: 1000;
-        cursor: pointer;
-        position: absolute;
-    }
-    .header {
-        background-color: rgba(0, 0, 0, .4);
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 50vw;
-        left: 780px;
-        padding-top: 70px;
-        position: fixed;
-        display: block;
-        z-index: 200;
-        transition: .5s;
-    }
-    .header #menu-h img:nth-child(1) {
-        display: inline-block;
-        position: relative;
-    }
-    .header.is-active {
-        left: 450px;
-    }
-    .header #menu-h {
-        width: 250px;
-    }
-    .contenido {
-        grid-template-columns: 1fr;
-        margin: 5px;
-    }
-    .contenido .presentacion {
-        position: relative;
-        padding: 0;
-        width: 100vw;
-    }
-    .contenido .accesorios .celulares .accesorio-celular {
-        width: 210px;
-    }
-    .contenido .accesorios .pc .accesorio-pc {
-        width: 210px;
-    }
-    .contenido .accesorios .celulares .titulo {
-        display: none;
-    }
-    footer {
-        font-size: .8em;
-    }
-    footer .info-desa h3 {
-        margin-left: 0;
-        font-size: 1.2rem;
-    }
-    footer .info-desa h3 img {
-        width: 40px;
-    }
-    footer .social-desa {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    footer .social-desa h2 {
-        font-size: 1.4rem;
-        grid-row: 1;
-        grid-column: 2;
-    }
-    footer .social-desa h3 {
-        font-size: 1.2rem;
-        grid-row: 2;
-        grid-column: 2;
-    }
-    footer .social-desa a img {
-        width: 20%;
-        margin: 0 10px;
-    }
 }

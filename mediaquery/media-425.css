@@ -5,8 +5,7 @@
         width: 100%; */
         /* background: url('../assets/img/street.jpg')no-repeat center center/cover; */
         position: fixed;
-        background-attachment: fixed;
-        position: relative;
+        /* background-attachment: fixed; */
     }
     .pages {
         display: grid;

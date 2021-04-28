@@ -36,7 +36,7 @@ body {
     margin: 0;
     background-size: cover;
     /* background: 300deg, #baba 20%, #ffbaba 80%; */
-    background-color: #EEF0F0;
+    background-color: #e0e6e6;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -61,8 +61,7 @@ h2 {
     color: #419CCA;
     border: 1px solid #419CCA;
     width: 250px;
-    /* margin: 20px auto; */
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
@@ -378,7 +377,7 @@ h2:hover {
 .contenido .mi_trabajo .formateo .title {
     font-size: 1em;
     color: #c28604;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos {
@@ -617,6 +616,20 @@ h2:hover {
     overflow-x: scroll;
 }
 
+.contenido .accesorios .celulares::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .celulares::-webkit-scrollbar-thumb {
+    background: #419CCA;
+    border-radius: 5px;
+}
+
 .contenido .accesorios .celulares .accesorio-celular {
     display: grid;
     grid-template-rows: 40px 200px 60px;
@@ -630,10 +643,10 @@ h2:hover {
 }
 
 .contenido .accesorios .celulares .accesorio-celular h3 {
-    color: #419CCA;
+    /* color: #419CCA; */
     line-height: 40px;
     height: 40px;
-    font-size: 1em;
+    font-size: .9em;
     margin: 0;
 }
 
@@ -687,6 +700,20 @@ h2:hover {
     align-items: center;
 }
 
+.contenido .accesorios .pc::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .pc::-webkit-scrollbar-thumb {
+    background: #419CCA;
+    border-radius: 5px;
+}
+
 .contenido .accesorios .pc .accesorio-pc {
     display: grid;
     grid-template-rows: 40px 200px 60px;
@@ -702,7 +729,7 @@ h2:hover {
 .contenido .accesorios .pc .accesorio-pc h3 {
     line-height: 40px;
     height: 40px;
-    font-size: 1em;
+    font-size: .9em;
     margin: 0;
 }
 

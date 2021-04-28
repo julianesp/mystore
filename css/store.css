@@ -77,7 +77,8 @@ h2:hover {
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #419CCA;
+    /* background-color: #419CCA; */
+    background: linear-gradient(-90deg, #6FC0F9 10%, #0A96F7 80%);
     margin: 0;
     padding: 0;
     justify-items: center;
@@ -773,7 +774,8 @@ h2:hover {
 /* estilos para los botones */
 
 footer {
-    background-color: #419CCA;
+    background: linear-gradient(-270deg, #6FC0F9 10%, #0A96F7 80%);
+    /* background-color: #419CCA; */
     border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;

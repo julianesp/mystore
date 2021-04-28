@@ -774,7 +774,7 @@ h2:hover {
 /* estilos para los botones */
 
 footer {
-    background: linear-gradient(-270deg, #6FC0F9 10%, #0A96F7 80%);
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     /* background-color: #419CCA; */
     border: 1px solid black;
     display: grid;

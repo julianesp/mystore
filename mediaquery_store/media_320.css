@@ -716,9 +716,10 @@ h2:hover {
 }
 
 .contenido .accesorios .celulares {
+    border: 1px solid #000;
     height: 365px;
     padding: 10px;
-    margin: 0 50px;
+    margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;

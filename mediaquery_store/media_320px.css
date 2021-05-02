@@ -235,7 +235,8 @@ h2:hover {
 .contenido .accesorios .celulares {
     height: 365px;
     padding: 10px;
-    margin: 0 50px;
+    border: 1px solid #000;
+    margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
@@ -318,7 +319,8 @@ h2:hover {
 .contenido .accesorios .pc {
     height: 365px;
     padding: 10px;
-    margin: 0 50px;
+    border: 1px solid #000;
+    margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: 1fr;
@@ -529,13 +531,16 @@ h2:hover {
 footer {
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     text-align: center;
-    margin-top: 100px;
-    gap: 20px;
+    padding-top: 50px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .info-desa {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    text-align: center;
+    /* text-align: center; */
 }
 
 footer .info-desa h3 {
@@ -548,11 +553,6 @@ footer .info-desa h3 {
 
 footer .info-desa h3 img {
     width: 40px;
-}
-
-footer .social-desa {
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 
 footer .social-desa h1 {

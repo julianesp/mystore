@@ -540,7 +540,7 @@ footer .info-desa {
 
 footer .info-desa h3 {
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-style: italic;
     color: white;
 }
@@ -551,7 +551,7 @@ footer .info-desa h3 img {
 
 footer .social-desa h1 {
     color: #f3ff3b;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 5px;
@@ -580,7 +580,7 @@ footer .social-desa a img:hover {
 }
 
 footer .social-desa h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 300;
     color: white;

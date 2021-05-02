@@ -1,0 +1,230 @@
+/* tipo de letra */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+.icon-menu {
+    position: fixed;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: #e0e6e6;
+    font-family: 'Oswald', sans-serif;
+}
+
+.burger-button {
+    position: fixed;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(253, 171, 1, .7);
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    right: 0;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #419CCA;
+    border: 1px solid #419CCA;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+h2:hover {
+    background-color: #419CCA;
+    color: #fff;
+}
+
+.header {
+    background: linear-gradient(-90deg, #6FC0F9 10%, #0A96F7 80%);
+    /*background: linear-gradient(), rgba(red, green, blue, .3); */
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.header #menu-h .desplegar {
+    color: #fff;
+    background-color: #419CCA;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    border: 1px solid white;
+    font-size: 1em;
+    padding: 5px;
+    margin: 0;
+}
+
+.header #menu-h .desplegar:hover {
+    color: white;
+    background-color: #088DD1;
+    cursor: pointer;
+}
+
+.header #menu-h .sub-menu {
+    display: none;
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.header #menu-h .sub-menu a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: #fff;
+    background-color: #088DD1;
+    text-decoration: none;
+    /**/
+}
+
+.header #menu-h:hover .sub-menu {
+    float: none;
+    padding: 0 0;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    z-index: 3;
+}
+
+.header #menu-h {
+    text-align: center;
+    background-color: red;
+}
+
+.header #menu-h img {
+    align-items: center;
+    width: 35px;
+}
+
+.header #menu-h a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    margin-top: 3%;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.header #menu-h a:hover {
+    color: white;
+    background-color: #088DD1;
+    margin-left: 0;
+}
+
+.header #menu-h ul {
+    list-style-type: none;
+}
+
+.header #menu-h ul ul {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+.header #menu-h ul li a {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header #menu-h ul li a:hover {
+    background-color: #088DD1;
+}
+
+.header #menu-h ul li ul {
+    margin: 0 0;
+}
+
+.header #menu-h ul li ul li:hover {
+    display: block;
+    position: absolute;
+}
+
+.header #menu-h ul ul li a {
+    /* margin: 15px 0; */
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    /* padding-left: 0; */
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.header a {
+    border: 1px solid brown;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.contenido .container .menu {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenido .container .menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.contenido .container .menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}

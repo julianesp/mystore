@@ -235,7 +235,6 @@ h2:hover {
 .contenido .accesorios .celulares {
     height: 365px;
     padding: 10px;
-    border: 1px solid #000;
     margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -319,7 +318,6 @@ h2:hover {
 .contenido .accesorios .pc {
     height: 365px;
     padding: 10px;
-    border: 1px solid #000;
     margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
@@ -408,7 +406,7 @@ h2:hover {
 .contenido .mi_trabajo .formateo {
     position: relative;
     text-align: center;
-    margin: 0 50px;
+    margin: 0 10px;
 }
 
 .contenido .mi_trabajo .formateo .title {
@@ -421,7 +419,6 @@ h2:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .2fr 1fr .2fr;
-    border: 1px solid black;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
@@ -431,11 +428,9 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .linux {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding-bottom: 20px;
     justify-items: center;
     overflow-x: auto;
@@ -462,7 +457,7 @@ h2:hover {
     justify-items: center;
     width: 200px;
     height: 180px;
-    margin: 0 20px;
+    margin: 0 10px;
     border: 1px solid gray;
     box-shadow: -8px 10px 10px #AEB2B2;
     border-radius: 20px;
@@ -479,9 +474,9 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     gap: 10px;
     height: 220px;
     justify-items: center;
@@ -509,7 +504,7 @@ h2:hover {
     justify-items: center;
     width: 200px;
     height: 180px;
-    margin: 0 20px;
+    margin: 0 10px;
     border: 1px solid gray;
     box-shadow: -10px 5px 15px 0px #AEB2B2;
     border-radius: 20px;
@@ -544,11 +539,10 @@ footer .info-desa {
 }
 
 footer .info-desa h3 {
-    font-size: 1em;
+    font-weight: 300;
+    font-size: 1.5em;
     font-style: italic;
     color: white;
-    margin-left: 80px;
-    /* box-shadow: 2px 2px 2px gray; */
 }
 
 footer .info-desa h3 img {

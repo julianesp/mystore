@@ -296,7 +296,7 @@ h2:hover {
     height: inherit;
     background-image: url('../assets/img/presentacion/p1.gif');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .contenido .presentacion .p2 {

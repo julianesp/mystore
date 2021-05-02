@@ -373,7 +373,7 @@ h2:hover {
 .contenido .mi_trabajo .formateo {
     position: relative;
     text-align: center;
-    margin: 0 50px;
+    margin: 0 10px;
 }
 
 .contenido .mi_trabajo .formateo .title {
@@ -772,7 +772,7 @@ h2:hover {
 }
 
 
-/* estilos para los botones */
+/* footer */
 
 footer {
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);

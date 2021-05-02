@@ -661,11 +661,122 @@ h2:hover {
 }
 
 
+/* estilos para presentacion de programas */
+
+.contenido .mi_trabajo .formateo .programas {
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    margin: 10px 0;
+}
+
+.contenido .mi_trabajo .formateo .programas .titulo h3 {
+    padding: 5px 0;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor {
+    /* width: 60%; */
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #419CCA;
+    border-radius: 1px;
+    box-shadow: 10px 10px 10px #bababa;
+    border-radius: 20px;
+    /* display: grid; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-varios {
+    text-align: center;
+    /* padding: 100px 180px; */
+    /* margin: 0 auto; */
+    background-size: cover;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
+    height: 300px;
+    background-image: url('../assets/img/programs/chrome.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
+    height: 10px;
+    background-image: url('../assets/img/programs/ofis.png');
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
+    height: 10px;
+    background-image: url('../assets/img/programs/adobe.png');
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton:hover {
+    color: yellowgreen;
+    background-color: rgba(0, 0, 0, .9);
+    transition: .7s;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .izquierda {
+    border-radius: 50%;
+    left: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
+    border-radius: 50%;
+    right: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
+    display: inline-block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    background-color: greenyellow;
+}
+
+
+/* -------------------------------------- */
+
+
 /* footer */
 
 footer {
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     text-align: center;
+    margin-top: 100px;
     padding-top: 50px;
     padding: 10px 0;
     display: flex;

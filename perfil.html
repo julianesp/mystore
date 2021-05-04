@@ -3,36 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/perfil.css">
-    <link rel="stylesheet" href="css/font/flaticon.css">
-    <link rel="icon" href="assets/img/logo-pestaña.ico">
+    <title>Perfil</title>
+    <link rel=" stylesheet " href="css/font/flaticon.css ">
+    <link rel="icon " href="assets/img/logo-pestaña.ico ">
+    <!-- tipo de letra  -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- estilos -->
+    <!-- <link rel="stylesheet" href="css/perfil.css"> -->
+    <link rel="stylesheet" href="mediaquery_perfil/perfil_320px.css">
 </head>
 
 <body>
-
-    <!-- <div id="particles-js"></div>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script> -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
 
     <header class="contenedor-header">
 
-        <div class="header1">
-            <a href="index.html" class="inicio">Inicio</a>
+        <div class="header1 ">
+            <a href="index.html " class="inicio ">Inicio</a>
         </div>
-        <div class="header1">
-            <a href="store.html" class="inicio">Tienda</a>
+        <div class="header1 ">
+            <a href="store.html " class="inicio ">Tienda</a>
         </div>
 
     </header>
 
-    <main class="contenido">
+    <main class="contenido ">
 
-        <div class="presentacion">
-            <div class="img">
-                <img class="img-photo" src="assets/img/Desarrollador.jpg" alt="">
+        <div class="presentacion ">
+            <div class="img ">
+                <img class="img-photo " src="assets/img/Desarrollador.jpg " alt=" ">
             </div>
-            <div class="descripcion">
+            <div class="descripcion ">
                 <h2>Hola, soy Juli&aacute;n</h2>
                 <p>
                     Desde niño me ha gustado tocar guitarra, tambi&eacute;n me dedico a leer porque me gusta enterarme de los hechos que han marcado la actualidad. <br>Espero sea de su agrado mi sitio 😉
@@ -41,30 +43,30 @@
         </div>
 
 
-        <div class="tiempo">
-            <div class="tiempo-titulo">
+        <div class="tiempo ">
+            <div class="tiempo-titulo ">
                 <h2>¿A qu&eacute; me dedico?</h2>
             </div>
-            <div class="tiempo-dividido">
-                <article class="actividades">
+            <div class="tiempo-dividido ">
+                <article class="actividades ">
                     <h4>Trabajo</h4>
                     <p>
                         Trabajo como t&eacute;cnico en sistemas y desarrollador web. Me gusta reparar computadores y a&uacute;n m&aacute;s crear tu página web 😎
                     </p>
                 </article>
-                <article class="actividades">
+                <article class="actividades ">
                     <h4>Estudiar</h4>
                     <p>
-                        "Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber". Albert Einstein
+                        "Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber ". Albert Einstein
                     </p>
                 </article>
-                <article class="actividades">
+                <article class="actividades ">
                     <h4>Gustos</h4>
                     <p>
                         Me gusta tocar guitarra, además, es el momento en el que mi mente se aleja de toda preocupaci&oacute;n
                     </p>
                 </article>
-                <article class="actividades">
+                <article class="actividades ">
                     <h4>Hobbies</h4>
                     <p>
                         Me gusta emplear el tiempo en educarme en programaci&oacute;n y otros temas de ingenier&iacute;a
@@ -77,22 +79,39 @@
 
     <footer>
 
-        <div class="info-desa">
+        <div class="info-desa ">
             <h3>Desarrollado por Juli&aacute;n España</h3>
             <h3>T&eacute;cnico en sistemas </h3>
-            <h3><img src="assets/img/sena.png" alt=""></h3>
+            <h3><img src="assets/img/sena.png " alt=" "></h3>
             <h3>Colón, Putumayo</h3>
         </div>
 
-        <div class="social-desa">
+        <div class="social-desa ">
             <h2>Cont&aacute;ctame:</h2>
             <h3>julii1295@gmail.com</h3>
-            <a href="https://www.facebook.com/alex.rio20/" target="_blank"><img src="assets/img/facebook.png" alt="Imagen de red social Facebook" title="Mi perfil en Facebook"></a>
-            <a href="https://twitter.com/julialexes" target="_blank"><img src="assets/img/twitter.png" alt=""></a>
-            <a href="https://wa.me/c/573174503604"><img src="assets/img/whatsapp.png" alt=""></a>
+            <a href="https://www.facebook.com/alex.rio20/ " target="_blank "><img src="assets/img/facebook.png " alt="Imagen de red social Facebook " title="Mi perfil en Facebook "></a>
+            <a href="https://twitter.com/julialexes " target="_blank "><img src="assets/img/twitter.png " alt=" "></a>
+            <a href="https://wa.me/c/573174503604 "><img src="assets/img/whatsapp.png " alt=" "></a>
         </div>
 
     </footer>
+
+    <script>
+        //menu lateral en 768px
+        const contenedor = document.querySelector('.contenedor-header');
+        const burgerMenu = document.querySelector('#burger-menu');
+
+        burgerMenu.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (contenedor.classList.contains('is-active')) {
+                contenedor.classList.remove('is-active');
+
+            } else {
+                contenedor.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 
 </html>

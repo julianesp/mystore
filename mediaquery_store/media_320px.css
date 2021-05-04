@@ -78,18 +78,6 @@ h2:hover {
     color: #fff;
 }
 
-
-/* 
-.header {
-    background: linear-gradient(-90deg, #6FC0F9 10%, #0A96F7 80%);
-    margin: 0;
-    padding: 0;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-    display: none;
-} */
-
 .header {
     background-color: rgba(0, 0, 0, .4);
     top: 0;

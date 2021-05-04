@@ -1,6 +1,5 @@
 /* tipo de letra */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 /* icono de menu  */
 
@@ -316,23 +315,6 @@ h2:hover {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
-
-/* 
-.contenido .presentacion .btn {
-    color: white;
-    font-size: 70px;
-    position: absolute;
-    top: 40%;
-    background-color: rgba(186, 186, 186, .9);
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.contenido .presentacion .btn:hover {
-    background-color: #E8B349;
-    transition: .7s;
-} */
 
 .contenido .presentacion .iz {
     left: 10px;

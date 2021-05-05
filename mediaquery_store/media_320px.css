@@ -70,6 +70,7 @@ h2 {
     margin-right: auto;
     padding: 15px;
     border-radius: 10px;
+    text-align: center;
     transition: .5s;
 }
 
@@ -436,6 +437,7 @@ h2:hover {
     height: 40px;
     font-size: .9em;
     margin: 0;
+    text-align: center;
 }
 
 .contenido .accesorios .celulares .accesorio-celular img {

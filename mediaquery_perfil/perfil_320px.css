@@ -95,18 +95,35 @@ body {
     height: auto;
     width: 100vw;
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    grid-template-rows: 1fr 1fr; */
+    /* padding: 10px; */
     text-align: center;
+}
+
+.contenido .presentacion .logo {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: left;
+    justify-items: left;
+}
+
+.contenido .presentacion .logo img {
+    width: 250px;
 }
 
 .contenido .presentacion .img {
     border-radius: 10px;
     align-self: center;
-    transform: rotate(-25deg);
-    transition: .5s;
+    margin-bottom: 50px;
+    /* transform: rotate(-25deg);
+    transition: .5s; */
 }
 
 .contenido .presentacion .img .img-photo {
@@ -115,20 +132,18 @@ body {
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 10px gray;
-    transform: scale(.8);
+    /* transform: scale(.8); */
 }
 
-.contenido .presentacion .img:hover {
+
+/* .contenido .presentacion .img:hover {
     transform: scale(1);
     transform: rotate(0deg);
-}
+} */
 
 .contenido .descripcion {
     animation-name: description;
-    animation-duration: 5s;
-    margin-right: 80px;
-    align-self: center;
-    text-align: right;
+    animation-duration: 1.5s;
 }
 
 @keyframes description {

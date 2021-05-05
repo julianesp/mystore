@@ -107,7 +107,7 @@ body {
 
 .contenido .presentacion .logo {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     justify-content: left;
     justify-items: left;
@@ -126,8 +126,8 @@ body {
 }
 
 .contenido .presentacion .img .img-photo {
-    width: 60%;
-    height: 450px;
+    width: 80%;
+    height: 250px;
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 10px gray;
@@ -174,12 +174,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 50px 0;
-    /* text-align: center;
-    justify-self: center;
-    justify-content: center;
-    justify-items: center; */
 }
 
 .contenido .tiempo .tiempo-titulo {
@@ -188,69 +185,46 @@ body {
 
 .contenido .tiempo .tiempo-titulo h2 {
     font-size: 1.2em;
-    /* display: inline-block;
-    position: relative;
-    justify-self: center; */
 }
-
-
-/* lineas a los costados */
-
-
-/* 
-.contenido .tiempo .tiempo-titulo h2::after,
-.contenido .tiempo .tiempo-titulo h2::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 5px;
-    background-color: #ed143d;
-    top: .6em;
-}
-
-.contenido .tiempo h2::before {
-    left: -140px;
-}
-
-.contenido .tiempo h2::after {
-    right: -140px;
-} */
 
 .contenido .tiempo .tiempo-dividido {
-    width: 1000px;
-    justify-items: center;
-    justify-self: center;
+    width: 300px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     line-height: 50px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; */
 }
 
 .contenido .tiempo .tiempo-dividido .actividades {
-    width: 50px;
-    /* height: 310px; */
-    display: flex;
-    align-items: center;
+    width: inherit;
+    /* display: flex; */
+    /* align-items: center;
     justify-content: center;
+    flex-direction: column; */
     border: 1px solid gray;
     border-radius: 10px;
     background-color: #DEF3F3;
     /* box-shadow: 5px 5px 5px gray; */
+    margin-bottom: 20px;
+    /* padding: 15px; */
 }
 
 .contenido .tiempo .tiempo-dividido .actividades h4 {
     color: #ed143d;
     font-size: 1.2em;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
 
 .contenido .tiempo .tiempo-dividido .actividades p {
     color: #1B678C;
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: 500;
     margin: 0;
     padding: 0 5px;
+    text-align: center;
 }
 
 

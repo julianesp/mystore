@@ -228,20 +228,15 @@ body {
 }
 
 .contenido .tiempo .tiempo-dividido .actividades {
-    width: 450px;
-    height: 310px;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr;
-    text-align: center;
-    justify-items: center;
+    width: 50px;
+    /* height: 310px; */
+    display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #DEF3F3;
-    box-shadow: 5px 5px 5px gray;
+    /* box-shadow: 5px 5px 5px gray; */
 }
 
 .contenido .tiempo .tiempo-dividido .actividades h4 {

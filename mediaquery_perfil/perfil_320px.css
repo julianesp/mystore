@@ -33,17 +33,16 @@
 html,
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .burger-button {
-    /* display: none; */
     margin: 10px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(253, 171, 1, .7);
-    color: #fff;
+    color: #000;
     line-height: 50px;
     text-align: center;
     right: 0;
@@ -168,6 +167,7 @@ body {
     justify-self: center;
     align-items: center;
     line-height: 50px;
+    letter-spacing: 1px;
 }
 
 .contenido .tiempo {
@@ -328,105 +328,3 @@ footer .social-desa h3 img {
     width: 30px;
     padding-right: 10px;
 }
-
-
-/* 
-@media screen and (max-width: 425px) {
-    .contenedor-header .header1 a {
-        font-size: 3em;
-    }
-    .contenido .presentacion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .contenido .presentacion .descripcion {
-        text-align: center;
-        justify-content: center;
-    }
-    .contenido .tiempo .tiempo-dividido .actividades {
-        width: 10px;
-        margin: 0;
-    }
-    .contenido .tiempo .tiempo-titulo {
-        justify-self: center;
-    }
-    .contenido .tiempo .tiempo-titulo h2::before {
-        width: 60px;
-    }
-} */
-
-
-/* 
-@media screen and (max-width: 768px) {
-    .contenedor-header {
-        height: 100px;
-    }
-    .contenido .presentacion {
-        grid-template-rows: 100px 90px;
-    }
-    .contenido .descripcion {}
-    .contenido .presentacion .descripcion p {
-        line-height: 50px;
-    }
-} */
-
-
-/* @media screen and (max-width: 1024px) {
-    .contenedor-header {
-        height: 90px;
-    }
-    .contenedor-header .header1 {
-        font-size: 1.6em;
-    }
-    .contenido .presentacion .img .img-photo {
-        height: 450px;
-    }
-    .contenido .presentacion .descripcion p {
-        line-height: 50px;
-    }
-    .contenido .presentacion .descripcion p {
-        font-size: 1.8em;
-        line-height: 30px;
-
-
-}
-.contenido .presentacion .descripcion h2 {
-    font-size: 2.9em;
-}
-.contenido .tiempo .tiempo-titulo h2 {
-    font-size: 2em;
-}
-.contenido .tiempo .tiempo-dividido {
-    width: 100%;
-}
-.contenido .tiempo .tiempo-dividido .actividades {
-    width: 430px;
-    height: 290px;
-    grid-template-rows: 40px 1fr;
-}
-.contenido .tiempo .tiempo-dividido .actividades h4 {
-    font-size: 1.6em;
-    grid-row: 1;
-}
-.contenido .tiempo .tiempo-dividido .actividades p {
-    font-size: 1.6em;
-    line-height: 40px;
-    grid-row: 2;
-    align-items: center;
-    align-items: center;
-    align-content: center;
-}
-footer .info-desa h3 {
-    font-size: 1.9em;
-}
-footer .social-desa h2 {
-    font-size: 2.8rem;
-}
-footer .social-desa h3 {
-    font-size: 1.9em;
-}
-footer .social-desa a img {
-    width: 60px;
-}
-*/

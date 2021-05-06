@@ -130,12 +130,6 @@ body {
     /* transform: scale(1); */
 }
 
-
-/* .contenido .presentacion .img:hover {
-    transform: scale(1);
-    transform: rotate(0deg);
-} */
-
 .contenido .descripcion {
     animation-name: description;
     animation-duration: 2s;
@@ -194,20 +188,14 @@ body {
 
 .contenido .tiempo .tiempo-dividido .actividades {
     width: inherit;
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center;
-    flex-direction: column; */
     border: 1px solid gray;
     border-radius: 10px;
-    background-color: #DEF3F3;
-    /* box-shadow: 5px 5px 5px gray; */
+    background: linear-gradient(-70deg, #6FC0F9 2%, #0A96F7 60%);
     margin-bottom: 20px;
-    /* padding: 15px; */
 }
 
 .contenido .tiempo .tiempo-dividido .actividades h4 {
-    color: #ed143d;
+    color: #f3ff3b;
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
@@ -215,7 +203,7 @@ body {
 }
 
 .contenido .tiempo .tiempo-dividido .actividades p {
-    color: #1B678C;
+    color: #fff;
     font-size: 1.2em;
     font-weight: 500;
     margin: 0;

@@ -295,8 +295,10 @@ h2:hover {
 }
 
 .contenido .logo img {
-    width: 120px;
-    height: 90px;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -371,15 +373,17 @@ h2:hover {
 
 .contenido .presentacion .page {
     /* position: absolute; */
-    text-align: center;
-    left: 0px;
+    /* text-align: center; */
+    /* left: 0px;
     right: 0px;
     bottom: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
 }
 
 .contenido .presentacion .page li {
+    background: #fba901;
     display: inline-block;
+    text-align: center;
     list-style: none;
     width: 30px;
     height: 30px;
@@ -660,8 +664,12 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-    display: grid;
-    grid-template-rows: 50px 1fr;
+    /* display: grid;
+    grid-template-rows: 50px 1fr; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     justify-items: center;
@@ -676,6 +684,8 @@ h2:hover {
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas h4 {
     color: #000;
     font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
@@ -687,7 +697,7 @@ h2:hover {
 /* estilos para presentacion de programas */
 
 .contenido .mi_trabajo .formateo .programas {
-    width: 90%;
+    /* width: 100%; */
     height: auto;
     display: inline-block;
     position: relative;
@@ -701,28 +711,29 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor {
     /* width: 60%; */
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid #419CCA;
-    border-radius: 1px;
-    box-shadow: 10px 10px 10px #bababa;
-    border-radius: 20px;
+    /* height: auto; */
+    /* margin: 0 auto; */
+    /* border: 1px solid #419CCA; */
+    /* border-radius: 1px; */
+    /* box-shadow: 10px 10px 10px #bababa; */
+    /* border-radius: 20px; */
     /* display: grid; */
     /* justify-content: center; */
-    position: relative;
+    /* position: relative; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-varios {
     text-align: center;
     /* padding: 100px 180px; */
     /* margin: 0 auto; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
-    height: 300px;
+    height: 200px;
     background-image: url('../assets/img/programs/chrome.jpg');
     background-size: contain;
+    background-position-x: center;
     background-repeat: no-repeat;
 }
 
@@ -769,15 +780,17 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
     border-radius: 50%;
-    right: 10px;
+    /* right: 10px; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
-    position: absolute;
+    /* position: absolute; */
+    background-color: blueviolet;
     text-align: center;
     left: 0px;
     right: 0px;
-    bottom: 10px;
+    padding: 10px;
+    letter-spacing: 20px;
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
@@ -787,7 +800,7 @@ h2:hover {
     height: 25px;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
+    /* display: none; */
     background-color: greenyellow;
 }
 

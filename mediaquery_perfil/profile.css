@@ -101,15 +101,16 @@ body {
     text-align: center;
 }
 
-.contenido .presentacion .logo {
+.contenido .logo {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: left;
-    justify-items: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    display: flex;
+    justify-content: center;
 }
 
-.contenido .presentacion .logo img {
+.contenido .logo img {
     width: 160px;
 }
 
@@ -127,6 +128,7 @@ body {
     border: 1px solid #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #bababa;
+    margin-top: 20px;
     /* transform: scale(1); */
 }
 
@@ -182,7 +184,6 @@ body {
     /* display: flex; */
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     line-height: 50px;
 }
 

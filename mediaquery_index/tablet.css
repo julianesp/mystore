@@ -1,0 +1,7 @@
+.pages {
+    position: relative;
+}
+
+.pages .home-main-text p {
+    font-size: 10px;
+}

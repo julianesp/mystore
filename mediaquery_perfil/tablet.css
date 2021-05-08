@@ -1,0 +1,27 @@
+.contenido .presentacion {
+    flex-direction: row;
+}
+
+.contenido .tiempo {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.contenido .tiempo .tiempo-dividido {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades {
+    margin: 0 auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}

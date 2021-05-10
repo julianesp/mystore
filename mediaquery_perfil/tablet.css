@@ -1,5 +1,27 @@
 .contenido .presentacion {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: .9fr .7fr;
+}
+
+.contenido .presentacion .img {
+    width: 350px;
+    height: 350px;
+    justify-self: center;
+    align-self: center;
+}
+
+.contenido .descripcion {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenido .presentacion .descripcion h2 {
+    font-size: 1.5rem;
+}
+
+.contenido .presentacion .descripcion p {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .contenido .tiempo {

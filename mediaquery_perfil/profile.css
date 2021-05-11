@@ -117,7 +117,6 @@ body {
 .contenido .presentacion .img {
     border-radius: 10px;
     align-self: center;
-    margin-bottom: 20px;
     /* transform: rotate(-25deg);
     transition: .5s; */
 }
@@ -324,6 +323,7 @@ footer .social-desa h3 img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        gap: 25px;
     }
     .contenido .tiempo .tiempo-dividido .actividades {
         margin: 0 auto;
@@ -332,5 +332,28 @@ footer .social-desa h3 img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenido .presentacion .img {
+        width: 80%;
+    }
+    .contenido .presentacion .img .img-photo {
+        height: 90%;
+        width: 90%;
+    }
+    .contenido .presentacion .descripcion h2 {
+        font-size: 2.5rem;
+    }
+    .contenido .presentacion .descripcion p {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .contenido .tiempo .tiempo-titulo h2 {
+        font-size: 1.5rem;
+    }
+    .contenido .tiempo .tiempo-dividido {
+        width: 90%;
     }
 }

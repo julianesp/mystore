@@ -1,7 +1,6 @@
-.pages {
-    position: relative;
-}
-
-.pages .home-main-text p {
-    font-size: 10px;
+@media only screen and (min-width: 768px) {
+    .pages {}
+    .pages .home-main-text p {
+        /* font-size: 3rem; */
+    }
 }

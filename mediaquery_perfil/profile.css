@@ -181,9 +181,10 @@ body {
 
 .contenido .tiempo .tiempo-dividido {
     width: 300px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     line-height: 50px;
 }
 
@@ -280,5 +281,49 @@ footer .social-desa h3 {
 
 footer .social-desa h3 img {
     width: 30px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+}
+
+@media screen and (min-width: 700px) {
+    .contenido .presentacion {
+        display: grid;
+        grid-template-columns: .9fr .7fr;
+    }
+    .contenido .presentacion .img {
+        width: 350px;
+        height: 350px;
+        justify-self: center;
+        align-self: center;
+    }
+    .contenido .descripcion {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .contenido .presentacion .descripcion h2 {
+        font-size: 1.5rem;
+    }
+    .contenido .presentacion .descripcion p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .contenido .tiempo {
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .contenido .tiempo .tiempo-dividido {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades {
+        margin: 0 auto;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
 }

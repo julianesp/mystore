@@ -521,9 +521,10 @@ h2:hover {
 }
 
 .contenido .accesorios .pc .accesorio-pc h3 {
-    line-height: 40px;
-    height: 40px;
     font-size: .9em;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
     margin: 0;
 }
 
@@ -609,11 +610,7 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0 20px;
-    align-self: center;
+    display: flex;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
@@ -643,10 +640,7 @@ h2:hover {
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    height: 220px;
-    justify-items: center;
+    justify-content: center;
     overflow-x: auto;
 }
 
@@ -656,11 +650,7 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0 20px;
-    align-self: center;
+    display: flex;
 }
 
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
@@ -784,11 +774,8 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
-    /* position: absolute; */
     background-color: blueviolet;
     text-align: center;
-    left: 0px;
-    right: 0px;
     padding: 10px;
     letter-spacing: 20px;
 }
@@ -796,8 +783,8 @@ h2:hover {
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
     display: inline-block;
     list-style: none;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     /* display: none; */

@@ -92,7 +92,7 @@ body {
 
 .contenido .presentacion {
     height: auto;
-    width: 100vw;
+    /* width: 100vw; */
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     display: flex;
     flex-direction: column;
@@ -196,6 +196,7 @@ body {
 
 .contenido .tiempo .tiempo-dividido .actividades {
     width: inherit;
+    height: 300px;
     border: 1px solid gray;
     border-radius: 10px;
     background: linear-gradient(-70deg, #6FC0F9 2%, #0A96F7 60%);
@@ -214,8 +215,6 @@ body {
     color: #fff;
     font-size: 1.2em;
     font-weight: 500;
-    margin: 0;
-    padding: 0 5px;
     text-align: center;
 }
 
@@ -336,6 +335,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (min-width: 1024px) {
+    .contenido .logo {
+        justify-content: flex-start;
+    }
     .contenido .presentacion .img {
         width: 80%;
     }

@@ -40,6 +40,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     background-size: cover;
     background-color: #e0e6e6;
     font-family: 'Oswald', sans-serif;
@@ -313,7 +314,72 @@ h2:hover {
     object-fit: cover;
 }
 
-.contenido .presentacion .preacce {
+.contenido .presentacion .slider {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.contenido .presentacion .slider .slides {
+    width: inherit;
+    height: inherit;
+    display: flex;
+}
+
+.contenido .presentacion .slider .slides input {
+    display: none;
+}
+
+.contenido .presentacion .slider .slides .slide {
+    width: 100%;
+    transition: 2s;
+}
+
+.contenido .presentacion .slider .slides .slide img {
+    width: max-content;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual {
+    width: 320px;
+    position: absolute;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn:hover {
+    background: #40d3dc;
+}
+
+.contenido .presentacion .slider .slides #radio1:checked~.first {
+    margin-left: 0;
+}
+
+.contenido .presentacion .slider .slides #radio2:checked~.first {
+    margin-left: -100%;
+}
+
+.contenido .presentacion .slider .slides #radio3:checked~.first {
+    margin-left: -200%;
+}
+
+.contenido .presentacion .slider .slides #radio4:checked~.first {
+    margin-left: -300%;
+}
+
+.contenido .presentacion .contenido .presentacion .preacce {
     text-align: center;
 }
 

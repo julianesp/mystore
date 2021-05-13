@@ -379,6 +379,46 @@ h2:hover {
     margin-left: -300%;
 }
 
+
+/* css para navegacion automática */
+
+.contenido .presentacion .slider .slides .navigation-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+}
+
+.contenido .presentacion .slider .slides .navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.contenido .presentacion .slider .slides .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40d3dc;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40d3dc;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40d3dc;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40d3dc;
+}
+
+
+/* ----------------------------------------------- */
+
 .contenido .presentacion .contenido .presentacion .preacce {
     text-align: center;
 }

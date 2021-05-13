@@ -342,7 +342,7 @@ h2:hover {
 .contenido .presentacion .slider .slides .navigation-manual {
     width: 320px;
     position: absolute;
-    margin-top: 260px;
+    margin-top: 280px;
     display: flex;
     justify-content: center;
 }
@@ -353,6 +353,8 @@ h2:hover {
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
+    animation-name: deslizar;
+    animation-duration: 1.5s;
 }
 
 .contenido .presentacion .slider .slides .navigation-manual .manual-btn:not(:last-child) {
@@ -386,13 +388,25 @@ h2:hover {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 260px;
+    margin-top: 280px;
+    padding: 0 52px;
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .contenido .presentacion .slider .slides .navigation-auto div {
     border: 2px solid #40d3dc;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
     transition: 1s;
 }
 

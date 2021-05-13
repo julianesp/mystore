@@ -321,7 +321,7 @@ h2:hover {
 .contenido .presentacion .p1 {
     width: 100%;
     height: inherit;
-    background-image: url('../assets/img/presentacion/p1.gif');
+    background-image: url('../assets/img/street.jpg');
     background-size: 100% 100%;
     /* background-repeat: no-repeat; */
 }
@@ -330,7 +330,7 @@ h2:hover {
     width: 100%;
     height: inherit;
     display: none;
-    background-image: url('../assets/img/presentacion/p1.gif');
+    background-image: url('../assets/img/facebook.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -339,13 +339,11 @@ h2:hover {
     width: 100%;
     height: inherit;
     display: none;
-    background-image: url('../assets/img/presentacion/p1.gif');
+    background-image: url('../assets/img/Desarrollador.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-
-/* 
 .contenido .presentacion .btn {
     color: white;
     font-size: 70px;
@@ -359,7 +357,7 @@ h2:hover {
 .contenido .presentacion .btn:hover {
     background-color: #E8B349;
     transition: .7s;
-} */
+}
 
 .contenido .presentacion .iz {
     left: 10px;
@@ -372,12 +370,12 @@ h2:hover {
 }
 
 .contenido .presentacion .page {
-    /* position: absolute; */
-    /* text-align: center; */
-    /* left: 0px;
+    position: absolute;
+    text-align: center;
+    left: 0px;
     right: 0px;
     bottom: 10px;
-    padding-right: 10px; */
+    padding-right: 10px;
 }
 
 .contenido .presentacion .page li {
@@ -640,7 +638,7 @@ h2:hover {
 .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-x: auto;
 }
 
@@ -699,24 +697,8 @@ h2:hover {
     padding: 5px 0;
 }
 
-.contenido .mi_trabajo .formateo .programas .programas-contenedor {
-    /* width: 60%; */
-    /* height: auto; */
-    /* margin: 0 auto; */
-    /* border: 1px solid #419CCA; */
-    /* border-radius: 1px; */
-    /* box-shadow: 10px 10px 10px #bababa; */
-    /* border-radius: 20px; */
-    /* display: grid; */
-    /* justify-content: center; */
-    /* position: relative; */
-}
-
 .contenido .mi_trabajo .formateo .programas .programas-varios {
     text-align: center;
-    /* padding: 100px 180px; */
-    /* margin: 0 auto; */
-    /* background-size: cover; */
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
@@ -729,7 +711,7 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
     height: 10px;
-    background-image: url('../assets/img/programs/ofis.png');
+    background-image: url('../assets/img/programs/edge.jpg');
     display: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -749,9 +731,9 @@ h2:hover {
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     background-color: rgba(0, 0, 0, .5);
     padding: 0 10px;
     cursor: pointer;
@@ -764,17 +746,18 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .izquierda {
+    height: 50px;
     border-radius: 50%;
-    left: 10px;
+    left: -30px;
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
+    height: 50px;
     border-radius: 50%;
-    /* right: 10px; */
+    right: -30px;
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
-    background-color: blueviolet;
     text-align: center;
     padding: 10px;
     letter-spacing: 20px;

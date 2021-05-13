@@ -98,12 +98,12 @@
             <div class="preacce p3">
             </div>
 
-            <!-- <div class="btn iz">
+            <div class="btn iz">
                 &lt;
             </div>
             <div class="btn dere">
                 &gt;
-            </div> -->
+            </div>
 
             <ul class="page">
                 <li></li>
@@ -302,20 +302,21 @@
 
                         <div class="programas-varios c3">
                         </div>
-                        <!-- 
+
                         <div class="boton izquierda">
                             &lt;
                         </div>
 
                         <div class="boton derecha">
                             &gt;
-                        </div> -->
+                        </div>
 
                         <ul class="paginacion">
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -338,8 +339,7 @@
             }
         }
 
-        // control para mostrar accesorios
-
+        //slide de presentación de anuncios
         var indi = 0;
 
         $(".page li").eq(indi).css("background-color", "#419CCA");
@@ -383,7 +383,7 @@
             $(".preacce").eq(indi).fadeIn();
             $(".page li").css("background-color", "#bababa");
             $(".page li").eq(indi).css("background-color", "#419CCA");
-        }, 4000);
+        }, 1000);
 
         $(".dere").click(function() {
             indi++;
@@ -408,57 +408,6 @@
             $(".page li").eq(indi).css("background-color", "orange");
         });
 
-        //======================
-
-
-
-        var indice = 0;
-
-        $(".paginacion li").eq(indice).css("background-color", "orange");
-
-        $(".paginacion li").click(function() {
-            indice = $(this).index();
-            $(".paginacion li").css("background-color", "yellow");
-            $(this).css("background-color", "orange");
-            $(".accesorio-compu").hide();
-            $(".accesorio-compu").eq(indice).fadeIn();
-        });
-
-        // para que las imagenes se pasen automaticamente
-        // setInterval(() => {
-        //     indice++;
-
-        //     if (indice > 2) {
-        //         indice = 0;
-        //     }
-        //     $(".accesorio-compu").hide();
-        //     $(".accesorio-compu").eq(indice).fadeIn();
-        //     $(".paginacion li").css("background-color", "yellow");
-        //     $(".paginacion li").eq(indice).css("background-color", "orange");
-        // }, 2000);
-
-        $(".derecha").click(function() {
-            indice++;
-            // condicional para volver a la imagen 0
-            if (indice > 2) {
-                indice = 0;
-            }
-            $(".accesorio-compu").hide();
-            $(".accesorio-compu").eq(indice).fadeIn();
-            $(".paginacion li").css("background-color", "yellow");
-            $(".paginacion li").eq(indice).css("background-color", "orange");
-        });
-        $(".izquierda").click(function() {
-            indice--;
-            // condicional para volver a la imagen 0
-            if (indice < 0) {
-                indice = 2;
-            }
-            $(".accesorio-compu").hide();
-            $(".accesorio-compu").eq(indice).fadeIn();
-            $(".paginacion li").css("background-color", "yellow");
-            $(".paginacion li").eq(indice).css("background-color", "orange");
-        });
 
         // slide automatico para programas
         var indice = 0;
@@ -473,7 +422,6 @@
             $(".programas-varios").eq(indice).fadeIn();
         });
 
-        //slide para programas basicos
         // para que las imagenes se pasen automaticamente
         setInterval(() => {
             indice++;

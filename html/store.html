@@ -309,39 +309,39 @@
                     <div class="titulo">
                         <h2>Programas b&aacute;sicos</h2>
                     </div>
-                    <div class="slider">
-                        <div class="slides">
+                    <div class="pasar">
+                        <div class="pasar-contenido">
 
                             <input type="radio" name="radio-btn" id="ratio1">
                             <input type="radio" name="radio-btn" id="ratio2">
                             <input type="radio" name="radio-btn" id="ratio3">
                             <input type="radio" name="radio-btn" id="ratio4">
 
-                            <div class="slide first">
+                            <div class="slide-img first">
                                 <img src="../assets/img/presentacion/p1.gif" alt="">
                             </div>
-                            <div class="slide">
+                            <div class="slide-img">
                                 <img src="../assets/img/ArticulosChina/Microfono/1.jpg" alt="">
                             </div>
-                            <div class="slide">
+                            <div class="slide-img">
                                 <img src="../assets/img/ArticulosChina/Microfono/2.jpg" alt="">
                             </div>
-                            <div class="slide">
+                            <div class="slide-img">
                                 <img src="../assets/img/ArticulosChina/Microfono/3.jpg" alt="">
                             </div>
 
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
+                            <div class="navegacion-auto">
+                                <div class="boton-auto1"></div>
+                                <div class="boton-auto2"></div>
+                                <div class="boton-auto3"></div>
+                                <div class="boton-auto4"></div>
                             </div>
 
-                            <div class="navigation-manual">
-                                <label for="ratio1" class="manual-btn"></label>
-                                <label for="ratio2" class="manual-btn"></label>
-                                <label for="ratio3" class="manual-btn"></label>
-                                <label for="ratio4" class="manual-btn"></label>
+                            <div class="navegacion-manual">
+                                <label for="ratio1" class="boton-manual"></label>
+                                <label for="ratio2" class="boton-manual"></label>
+                                <label for="ratio3" class="boton-manual"></label>
+                                <label for="ratio4" class="boton-manual"></label>
                             </div>
                         </div>
                     </div>
@@ -366,16 +366,16 @@
 
         //Scrip para programas básicos
 
-        var counter_2 = 1;
-        /*
-                setInterval(function() {
-                        document.getElementById('ratio' + counter_2).checked = true;
-                        counter_2++;
-                        if (counter_2 > 4) {
-                            counter_2 = 1;
-                        }
-                    }, 5000)
-        */
+        let counter_2 = 1;
+
+        setInterval(function() {
+            document.getElementById('ratio' + counter_2).checked = true;
+            counter_2++;
+            if (counter_2 > 4) {
+                counter_2 = 1;
+            }
+        }, 5000)
+
         // --------------------------------------------------
 
 

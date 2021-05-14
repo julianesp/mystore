@@ -433,6 +433,8 @@ h2:hover {
 
 /* ----------------------------------------------- */
 
+
+/* 
 .contenido .presentacion .contenido .presentacion .preacce {
     text-align: center;
 }
@@ -442,7 +444,6 @@ h2:hover {
     height: inherit;
     background-image: url('../assets/img/street.jpg');
     background-size: 100% 100%;
-    /* background-repeat: no-repeat; */
 }
 
 .contenido .presentacion .p2 {
@@ -489,7 +490,7 @@ h2:hover {
 }
 
 .contenido .presentacion .page {
-    /* position: absolute; */
+    
     text-align: center;
     left: 0px;
     right: 0px;
@@ -507,7 +508,7 @@ h2:hover {
     margin-left: 30px;
     border-radius: 50%;
     cursor: pointer;
-}
+} */
 
 
 /* ------------------------------- */
@@ -801,30 +802,19 @@ h2:hover {
 }
 
 
-/* estilos para presentacion de programas */
-
-.contenido .mi_trabajo .formateo .programas {
-    /* width: 100%; */
-    height: auto;
-    display: inline-block;
-    position: relative;
-    /* height: 300px; */
-    /* margin: 10px 0; */
-}
-
-.contenido .mi_trabajo .formateo .programas .titulo h3 {
-    padding: 5px 0;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-varios {
-    text-align: center;
-}
-
-
 /* ------------------------------------------- */
 
 
 /* programas basicos */
+
+.contenido .mi_trabajo .formateo .programas {
+    /* justify-content: center;
+    position: relative;
+    height: 250px;
+    margin: 0 auto;
+    border: 2px solid #419CCA;
+    object-fit: cover; */
+}
 
 .contenido .mi_trabajo .formateo .programas .slider {
     width: 100%;
@@ -894,6 +884,9 @@ h2:hover {
     margin-left: -300%;
 }
 
+
+/* css para navegacion automática */
+
 .contenido .mi_trabajo .formateo .programas .slider .slides .navigation-auto {
     position: absolute;
     display: flex;
@@ -924,19 +917,19 @@ h2:hover {
     margin-right: 40px;
 }
 
-.contenido .mi_trabajo .formateo .programas .slider .slides #ratio1:checked~.navigation-auto .aut-btn1 {
+.contenido .mi_trabajo .formateo .programas .slider .slides #ratio1:checked~.navigation-auto .auto-btn1 {
     background: #40d3dc;
 }
 
-.contenido .mi_trabajo .formateo .programas .slider .slides #ratio2:checked~.navigation-auto .aut-btn2 {
+.contenido .mi_trabajo .formateo .programas .slider .slides #ratio2:checked~.navigation-auto .auto-btn2 {
     background: #40d3dc;
 }
 
-.contenido .mi_trabajo .formateo .programas .slider .slides #ratio3:checked~.navigation-auto .aut-btn3 {
+.contenido .mi_trabajo .formateo .programas .slider .slides #ratio3:checked~.navigation-auto .auto-btn3 {
     background: #40d3dc;
 }
 
-.contenido .mi_trabajo .formateo .programas .slider .slides #ratio4:checked~.navigation-auto .aut-btn4 {
+.contenido .mi_trabajo .formateo .programas .slider .slides #ratio4:checked~.navigation-auto .auto-btn4 {
     background: #40d3dc;
 }
 

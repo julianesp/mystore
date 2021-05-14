@@ -331,10 +331,10 @@
                             </div>
 
                             <div class="navigation-auto">
-                                <div class="aut-btn1"></div>
-                                <div class="aut-btn2"></div>
-                                <div class="aut-btn3"></div>
-                                <div class="aut-btn4"></div>
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
                             </div>
 
                             <div class="navigation-manual">
@@ -352,9 +352,10 @@
 
     <script>
         // --------------------------------------------------
-        // script para presentacion
+        // script para presentacion de accesorios, trabajos, accesorios nuevos, etcétera
 
         var counter = 1;
+
         setInterval(function() {
             document.getElementById('radio' + counter).checked = true;
             counter++;
@@ -363,7 +364,18 @@
             }
         }, 5000)
 
-        // --------------------------------------------------
+        //Scrip para programas básicos
+
+        var counter_2 = 1;
+
+        setInterval(function() {
+                document.getElementById('ratio' + counter_2).checked = true;
+                counter_2++;
+                if (counter_2 > 4) {
+                    counter_2 = 1;
+                }
+            }, 5000)
+            // --------------------------------------------------
 
 
         //menu lateral en 768px

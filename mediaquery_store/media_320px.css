@@ -808,125 +808,28 @@ h2:hover {
 /* programas basicos */
 
 .contenido .mi_trabajo .formateo .programas {
-    width: 100%;
+    width: 310px;
 }
 
-.contenido .mi_trabajo .formateo .programas .pasar {
-    width: 100%;
+.contenido .mi_trabajo .formateo .programas .programas-presentacion {
     width: 300px;
-    height: 250px;
+    padding: 0;
+    /* margin: 0 auto; */
+    display: flex;
     overflow: hidden;
 }
 
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido {
-    width: inherit;
-    height: inherit;
-    display: flex;
+.contenido .mi_trabajo .formateo .programas .programas-presentacion ul {
+    padding: 0;
 }
 
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido input {
-    display: none;
+.contenido .mi_trabajo .formateo .programas .programas-presentacion li {
+    /* width: 100%; */
+    list-style: none;
 }
 
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .slide-img {
+.contenido .mi_trabajo .formateo .programas .programas-presentacion img {
     width: 100%;
-    transition: 2s;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .slide-img img {
-    width: max-content;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-manual {
-    width: 300px;
-    position: absolute;
-    margin-top: 280px;
-    display: flex;
-    justify-content: center;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-manual .boton-manual {
-    border: 2px solid #40d3dc;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s;
-    animation-name: deslizar;
-    animation-duration: 1.5s;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-manual .boton-manual:not(:last-child) {
-    margin-right: 40px;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-manual .boton-manual:hover {
-    background: #40d3dc;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio1:checked~.first {
-    margin-left: 0;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio2:checked~.first {
-    margin-left: -100%;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio3:checked~.first {
-    margin-left: -200%;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio4:checked~.first {
-    margin-left: -300%;
-}
-
-
-/* css para navegacion automática */
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-auto {
-    width: 195px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 280px;
-    padding: 0 52px;
-    animation-name: deslizar;
-    animation-duration: 1.5s;
-}
-
-@keyframes deslizar {
-    0% {
-        transform: translateX(-500px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-auto div {
-    border: 2px solid #40d3dc;
-    padding: 10px;
-    border-radius: 50%;
-    transition: 1s;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido .navegacion-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio1:checked~.navegacion-auto .boton-auto1 {
-    background: #40d3dc;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio2:checked~.navegacion-auto .boton-auto2 {
-    background: #40d3dc;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio3:checked~.navegacion-auto .boton-auto3 {
-    background: #40d3dc;
-}
-
-.contenido .mi_trabajo .formateo .programas .pasar .pasar-contenido #ratio4:checked~.navegacion-auto .boton-auto4 {
-    background: #40d3dc;
 }
 
 

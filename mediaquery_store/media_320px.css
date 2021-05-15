@@ -808,27 +808,55 @@ h2:hover {
 /* programas basicos */
 
 .contenido .mi_trabajo .formateo .programas {
-    width: 310px;
+    border: 1px solid red;
 }
 
 .contenido .mi_trabajo .formateo .programas .programas-presentacion {
-    width: 300px;
-    padding: 0;
-    /* margin: 0 auto; */
-    display: flex;
+    width: 95%;
+    margin: auto;
     overflow: hidden;
 }
 
-.contenido .mi_trabajo .formateo .programas .programas-presentacion ul {
+.contenido .mi_trabajo .formateo .programas ul {
+    display: flex;
+    width: 400%;
     padding: 0;
+    animation: cambio 5s infinite alternate;
 }
 
-.contenido .mi_trabajo .formateo .programas .programas-presentacion li {
-    /* width: 100%; */
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.contenido .mi_trabajo .formateo .programas li {
+    width: 100%;
     list-style: none;
 }
 
-.contenido .mi_trabajo .formateo .programas .programas-presentacion img {
+.contenido .mi_trabajo .formateo .programas img {
     width: 100%;
 }
 

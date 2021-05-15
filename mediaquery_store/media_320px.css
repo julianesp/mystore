@@ -341,6 +341,7 @@ h2:hover {
 
 .contenido .presentacion .slider .slides .navigation-manual {
     width: 320px;
+    /* width: 100%; */
     position: absolute;
     margin-top: 280px;
     display: flex;
@@ -385,6 +386,7 @@ h2:hover {
 /* css para navegacion automática */
 
 .contenido .presentacion .slider .slides .navigation-auto {
+    /* width: 67%; */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -807,7 +809,9 @@ h2:hover {
 
 /* programas basicos */
 
-.contenido .mi_trabajo .formateo .programas {}
+.contenido .mi_trabajo .formateo .programas {
+    margin-top: 100px;
+}
 
 .contenido .mi_trabajo .formateo .programas .programas-presentacion {
     width: 95%;
@@ -819,7 +823,7 @@ h2:hover {
     display: flex;
     width: 400%;
     padding: 0;
-    animation: cambio 20s infinite alternate ease-in;
+    animation: cambio 20s infinite alternate ease-in-out;
 }
 
 @keyframes cambio {
@@ -855,7 +859,7 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .programas img {
-    width: 70%;
+    width: 40%;
 }
 
 
@@ -928,9 +932,19 @@ footer .social-desa h3 img {
     padding-right: 10px;
 }
 
+footer .fuentes h3 {
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 footer .fuentes p {
     font-size: .7rem;
     margin-top: 30px;
+    color: #fff;
+    font-style: italic;
+    margin: 0;
 }
 
 @media screen and (min-width:768px) {
@@ -955,15 +969,10 @@ footer .fuentes p {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    footer .fuentes h3 {
-        color: #fff;
-        font-weight: 300;
-        font-style: italic;
-        margin-bottom: 0;
-    }
-    footer .fuentes p {
-        color: #fff;
-        font-style: italic;
-        margin: 0;
+}
+
+@media screen and (min-width:1024px) {
+    .contenido .mi_trabajo .formateo .programas img {
+        width: 18%;
     }
 }

@@ -819,7 +819,7 @@ h2:hover {
     display: flex;
     width: 400%;
     padding: 0;
-    animation: cambio 20s infinite alternate;
+    animation: cambio 20s infinite alternate ease-in;
 }
 
 @keyframes cambio {
@@ -859,19 +859,12 @@ h2:hover {
 }
 
 
-/* ----------------------------------------------- */
-
-
-/* -------------------------------------- */
-
-
-/* footer */
+/* ----------- footer ------------*/
 
 footer {
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     text-align: center;
     margin-top: 50px;
-    /* padding-top: 50px; */
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -938,4 +931,39 @@ footer .social-desa h3 img {
 footer .fuentes p {
     font-size: .7rem;
     margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .contenido .presentacion .slider .slides .navigation-auto {
+        width: 87%;
+    }
+    .contenido .presentacion .slider .slides .navigation-manual {
+        width: 100%;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+        justify-content: center;
+    }
+    .contenido .mi_trabajo .formateo .programas img {
+        width: 30%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+    }
+    footer .fuentes {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    footer .fuentes h3 {
+        color: #fff;
+        font-weight: 300;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+    footer .fuentes p {
+        color: #fff;
+        font-style: italic;
+        margin: 0;
+    }
 }

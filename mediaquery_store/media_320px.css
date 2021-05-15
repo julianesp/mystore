@@ -807,9 +807,7 @@ h2:hover {
 
 /* programas basicos */
 
-.contenido .mi_trabajo .formateo .programas {
-    border: 1px solid red;
-}
+.contenido .mi_trabajo .formateo .programas {}
 
 .contenido .mi_trabajo .formateo .programas .programas-presentacion {
     width: 95%;
@@ -821,7 +819,7 @@ h2:hover {
     display: flex;
     width: 400%;
     padding: 0;
-    animation: cambio 5s infinite alternate;
+    animation: cambio 20s infinite alternate;
 }
 
 @keyframes cambio {
@@ -857,84 +855,11 @@ h2:hover {
 }
 
 .contenido .mi_trabajo .formateo .programas img {
-    width: 100%;
+    width: 70%;
 }
 
 
 /* ----------------------------------------------- */
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
-    height: 200px;
-    background-image: url('../assets/img/programs/chrome.jpg');
-    background-size: contain;
-    background-position-x: center;
-    background-repeat: no-repeat;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
-    height: 10px;
-    background-image: url('../assets/img/programs/edge.jpg');
-    display: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
-    height: 10px;
-    background-image: url('../assets/img/programs/adobe.png');
-    display: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    align-self: center;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 60%;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton:hover {
-    color: yellowgreen;
-    background-color: rgba(0, 0, 0, .9);
-    transition: .7s;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .izquierda {
-    height: 50px;
-    border-radius: 50%;
-    left: -30px;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
-    height: 50px;
-    border-radius: 50%;
-    right: -30px;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 20px;
-}
-
-.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
-    display: inline-block;
-    list-style: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    /* display: none; */
-    background-color: greenyellow;
-}
 
 
 /* -------------------------------------- */
@@ -1008,4 +933,9 @@ footer .social-desa h3 {
 footer .social-desa h3 img {
     width: 30px;
     padding-right: 10px;
+}
+
+footer .fuentes p {
+    font-size: .7rem;
+    margin-top: 30px;
 }

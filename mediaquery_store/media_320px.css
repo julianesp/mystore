@@ -347,6 +347,7 @@ h2:hover {
 .contenido .presentacion .slider .slides .slide img {
     width: 100vw;
     height: 50vh;
+    /* filter: blur(2px); */
 }
 
 .contenido .presentacion .slider .slides .navigation-manual {
@@ -617,6 +618,7 @@ h2:hover {
     height: 365px;
     padding: 10px;
     margin: 0 10px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: 1fr;

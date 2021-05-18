@@ -86,10 +86,7 @@ h2:hover {
     top: 0;
     bottom: 0;
     width: 100vw;
-    right: -780px;
-    padding-top: 70px;
     position: fixed;
-    /* display: block; */
     display: flex;
     justify-content: center;
     align-items: center;

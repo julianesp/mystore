@@ -85,7 +85,7 @@ h2:hover {
     background-color: rgba(0, 0, 0, .4);
     top: 0;
     bottom: 0;
-    width: 70vw;
+    width: 100vw;
     right: -780px;
     padding-top: 70px;
     position: fixed;
@@ -551,7 +551,8 @@ h2:hover {
 /* con thumb se accede a la barra */
 
 .contenido .accesorios .celulares::-webkit-scrollbar-thumb {
-    background: #419CCA;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    ;
     border-radius: 5px;
 }
 
@@ -636,7 +637,7 @@ h2:hover {
 /* con thumb se accede a la barra */
 
 .contenido .accesorios .pc::-webkit-scrollbar-thumb {
-    background: #419CCA;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
     border-radius: 5px;
 }
 

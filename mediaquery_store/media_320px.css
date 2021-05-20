@@ -86,7 +86,7 @@ h2:hover {
     top: 0;
     bottom: 0;
     width: 100vw;
-    right: -700px;
+    right: -1025px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -149,7 +149,6 @@ h2:hover {
     text-decoration: none;
     text-align: left;
     display: block;
-    /* z-index: 3; */
 }
 
 .header #menu-h {
@@ -361,8 +360,7 @@ h2:hover {
 }
 
 .contenido .presentacion .slider .slides .navigation-manual {
-    width: 320px;
-    /* width: 100%; */
+    width: 100%;
     position: absolute;
     margin-top: 280px;
     display: flex;
@@ -407,12 +405,11 @@ h2:hover {
 /* css para navegacion automática */
 
 .contenido .presentacion .slider .slides .navigation-auto {
-    /* width: 67%; */
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     margin-top: 280px;
-    padding: 0 52px;
     animation-name: deslizar;
     animation-duration: 1.5s;
 }
@@ -452,86 +449,6 @@ h2:hover {
 #radio4:checked~.navigation-auto .auto-btn4 {
     background: #40d3dc;
 }
-
-
-/* ----------------------------------------------- */
-
-
-/* 
-.contenido .presentacion .contenido .presentacion .preacce {
-    text-align: center;
-}
-
-.contenido .presentacion .p1 {
-    width: 100%;
-    height: inherit;
-    background-image: url('../assets/img/street.jpg');
-    background-size: 100% 100%;
-}
-
-.contenido .presentacion .p2 {
-    width: 100%;
-    height: inherit;
-    display: none;
-    background-image: url('../assets/img/facebook.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.contenido .presentacion .p3 {
-    width: 100%;
-    height: inherit;
-    display: none;
-    background-image: url('../assets/img/Desarrollador.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.contenido .presentacion .btn {
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 40%;
-    background-color: rgba(186, 186, 186, .9);
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.contenido .presentacion .btn:hover {
-    background-color: #E8B349;
-    transition: .7s;
-}
-
-.contenido .presentacion .iz {
-    left: 1px;
-    border-radius: 50%;
-}
-
-.contenido .presentacion .dere {
-    right: 1px;
-    border-radius: 50%;
-}
-
-.contenido .presentacion .page {
-    
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    bottom: 10px;
-    padding-right: 10px;
-}
-
-.contenido .presentacion .page li {
-    background: #fba901;
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-} */
 
 
 /* ------------------------------- */
@@ -579,7 +496,6 @@ h2:hover {
 }
 
 .contenido .accesorios .celulares .accesorio-celular h3 {
-    /* color: #419CCA; */
     line-height: 40px;
     height: 40px;
     font-size: .9em;
@@ -706,6 +622,99 @@ h2:hover {
 .contenido .accesorios .pc .accesorio-pc a:active {
     transform: scale(.9);
 }
+
+
+/* ------------------------------------------*/
+
+
+/*estilos para libros*/
+
+.contenido .accesorios .libros {
+    height: 365px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
+    overflow: scroll;
+    overflow-y: unset;
+    align-items: center;
+}
+
+.contenido .accesorios .libros::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .libros::-webkit-scrollbar-thumb {
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    border-radius: 5px;
+}
+
+.contenido .accesorios .libros .libros__catalogo {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    flex-direction: column;
+    align-items: center;
+    width: 225px;
+    margin: auto 10px;
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .libros .libros__catalogo h3 {
+    font-size: .9em;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.contenido .accesorios .libros .libros__catalogo img {
+    width: 80%;
+    height: 90%;
+    justify-self: center;
+}
+
+.contenido .accesorios .libros .libros__catalogo a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .libros .libros__catalogo a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .libros .libros__catalogo a:active {
+    transform: scale(.9);
+}
+
+
+/* ------------------------------------------*/
 
 
 /* estilos trabajo */
@@ -969,17 +978,21 @@ footer .fuentes p {
 }
 
 @media screen and (min-width:768px) {
-    .contenido .presentacion .slider .slides .navigation-auto {
-        width: 87%;
+    .contenido .mi_trabajo {
+        margin-left: 35px;
+        margin-right: 35px;
     }
-    .contenido .presentacion .slider .slides .navigation-manual {
-        width: 100%;
+    .contenido .accesorios .celulares .accesorio-celular {
+        width: 200px;
+    }
+    .contenido .accesorios .pc .accesorio-pc {
+        width: 200px;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
         justify-content: center;
     }
     .contenido .mi_trabajo .formateo .programas img {
-        width: 30%;
+        width: 20%;
     }
     footer {
         display: grid;
@@ -993,7 +1006,48 @@ footer .fuentes p {
 }
 
 @media screen and (min-width:1024px) {
+    .burger-button {
+        display: none;
+    }
+    .header {
+        background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        justify-content: flex-end;
+        height: max-content;
+        padding-right: 80px;
+    }
+    .header #menu-h ul {
+        margin: 0;
+    }
+    .header #menu-h ul li a {
+        width: 100px;
+        font-size: 1.1rem;
+    }
+    .contenido .logo {
+        width: 0;
+        margin-left: 80px;
+        position: relative;
+        z-index: 30;
+    }
+    .contenido .accesorios .libros {
+        display: flex;
+        justify-content: center;
+    }
     .contenido .mi_trabajo {
         margin: 100px 80px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+        width: 200px;
+        height: 200px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+        width: 200px;
+        height: 200px;
     }
 }

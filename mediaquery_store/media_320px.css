@@ -101,19 +101,16 @@ h2:hover {
 }
 
 .header #menu-h .desplegar {
-    font-family: 'Oswald', sans-serif;
-    width: 162px;
+    width: 140px;
     height: 40px;
     color: #fff;
-    /* background-color: transparent; */
     background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
     ;
     border-radius: 5px;
     box-shadow: 2px 2px white;
     border: 1px solid white;
     font-size: 1.4rem;
-    padding: 5px;
-    margin: 0;
+    margin-top: 15px;
 }
 
 .header #menu-h .desplegar:hover {
@@ -124,31 +121,29 @@ h2:hover {
 
 .header #menu-h .sub-menu {
     display: none;
-    position: relative;
-    margin-top: 10px;
-    /* padding-bottom: 500px; */
 }
 
 .header #menu-h .sub-menu a {
-    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 30px; */
     color: #fff;
     background-color: #088DD1;
     text-decoration: none;
     padding: 10px;
     font-size: .9rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .header #menu-h:hover .sub-menu {
     float: none;
     padding: 0 0;
     text-decoration: none;
-    text-align: left;
-    display: block;
+    text-align: center;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header #menu-h {
@@ -167,10 +162,6 @@ h2:hover {
     display: block;
     border: 1px solid white;
     border-radius: 5px;
-    box-shadow: 2px 2px white;
-    margin-top: 3%;
-    padding: 5px;
-    font-size: 1em;
 }
 
 .header #menu-h a:hover {

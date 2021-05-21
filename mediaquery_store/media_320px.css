@@ -355,8 +355,7 @@ h2:hover {
 
 .contenido .presentacion .slider .slides .slide img {
     width: 100vw;
-    height: 50vh;
-    /* filter: blur(2px); */
+    height: auto;
 }
 
 .contenido .presentacion .slider .slides .navigation-manual {

@@ -328,7 +328,6 @@ h2:hover {
     position: relative;
     height: 250px;
     margin: 0 auto;
-    border: 2px solid #419CCA;
     object-fit: cover;
 }
 
@@ -361,7 +360,7 @@ h2:hover {
 .contenido .presentacion .slider .slides .navigation-manual {
     width: 100%;
     position: absolute;
-    margin-top: 280px;
+    margin-top: 230px;
     display: flex;
     justify-content: center;
 }
@@ -408,7 +407,7 @@ h2:hover {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 280px;
+    margin-top: 230px;
     animation-name: deslizar;
     animation-duration: 1.5s;
 }
@@ -719,7 +718,7 @@ h2:hover {
 /* estilos trabajo */
 
 .contenido .mi_trabajo {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contenido .mi_trabajo .formateo {
@@ -976,8 +975,24 @@ footer .fuentes p {
     margin: 0;
 }
 
+@media screen and (min-width:425px) {
+    .contenido .presentacion .slider .slides .navigation-manual {
+        margin-top: 250px;
+    }
+    .contenido .presentacion .slider .slides .navigation-auto {
+        margin-top: 250px;
+    }
+}
+
 @media screen and (min-width:768px) {
+    .contenido .presentacion .slider .slides .navigation-manual {
+        margin-top: 270px;
+    }
+    .contenido .presentacion .slider .slides .navigation-auto {
+        margin-top: 270px;
+    }
     .contenido .mi_trabajo {
+        margin-top: 100px;
         margin-left: 35px;
         margin-right: 35px;
     }

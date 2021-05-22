@@ -3,6 +3,8 @@ body {
     font-family: 'Roboto mono', monospace;
     /* min-width: 400px;
     max-width: 422px; */
+    width: 100vw;
+    height: 100vh;
 }
 
 .pages {

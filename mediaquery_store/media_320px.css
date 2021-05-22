@@ -77,7 +77,7 @@ h2 {
 }
 
 h2:hover {
-    background-color: #419CCA;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
     color: #fff;
 }
 
@@ -442,7 +442,7 @@ h2:hover {
 /* accesorio celular  */
 
 .contenido .accesorios .celulares {
-    height: 365px;
+    height: 330px;
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 50px;
@@ -454,7 +454,7 @@ h2:hover {
 }
 
 .contenido .accesorios .celulares::-webkit-scrollbar {
-    height: 10px;
+    height: 15px;
     background: #fff;
     border-radius: 5px;
 }
@@ -472,8 +472,10 @@ h2:hover {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
-    width: 225px;
-    margin: auto 5px;
+    width: 175px;
+    height: 234px;
+    ;
+    /* margin: auto 5px; */
     border: 1px solid #bababa;
     font-weight: bold;
     border-radius: 7px;
@@ -526,20 +528,19 @@ h2:hover {
 /*estilos para accesorios computadores*/
 
 .contenido .accesorios .pc {
-    height: 365px;
+    height: 330px;
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: 1fr;
-    overflow: scroll;
-    overflow-y: unset;
-    align-items: center;
+    gap: 0 10px;
+    overflow-x: scroll;
 }
 
 .contenido .accesorios .pc::-webkit-scrollbar {
-    height: 10px;
+    height: 15px;
     background: #fff;
     border-radius: 5px;
 }
@@ -556,8 +557,9 @@ h2:hover {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
-    width: 225px;
-    margin: auto 10px;
+    width: 175px;
+    height: 234px;
+    /* margin: auto 10px; */
     border: 1px solid #bababa;
     font-weight: bold;
     border-radius: 7px;
@@ -615,16 +617,15 @@ h2:hover {
 /*estilos para libros*/
 
 .contenido .accesorios .libros {
-    height: 365px;
+    height: 330px;
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
-    overflow: scroll;
-    overflow-y: unset;
-    align-items: center;
+    gap: 0 10px;
+    overflow-x: scroll;
 }
 
 .contenido .accesorios .libros::-webkit-scrollbar {
@@ -646,8 +647,9 @@ h2:hover {
     grid-template-rows: 40px 200px 60px;
     flex-direction: column;
     align-items: center;
-    width: 225px;
-    margin: auto 10px;
+    width: 175px;
+    height: 234px;
+    /* margin: auto 10px; */
     border: 1px solid #bababa;
     font-weight: bold;
     border-radius: 7px;

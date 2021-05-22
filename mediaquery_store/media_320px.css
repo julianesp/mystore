@@ -67,13 +67,10 @@ h2 {
     border: 1px solid #419CCA;
     width: 200px;
     margin: 0 auto;
-    /* margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto; */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    transition: .5s;
+    transition: 1s;
 }
 
 h2:hover {
@@ -101,8 +98,8 @@ h2:hover {
 }
 
 .header #menu-h .desplegar {
-    /* width: 140px; */
-    height: 36px;
+    width: 150px;
+    height: 37px;
     color: #fff;
     background: transparent;
     border-radius: 5px;

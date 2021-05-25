@@ -128,14 +128,14 @@ h2:hover {
     text-decoration: none;
     padding: 10px;
     font-size: .9rem;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .header #menu-h:hover .sub-menu {
-    float: none;
+    /* float: none;
     padding: 0 0;
     text-decoration: none;
-    text-align: center;
+    text-align: center; */
     /* display: block; */
     display: flex;
     flex-direction: column;
@@ -837,7 +837,7 @@ h2:hover {
     display: flex;
     width: 400%;
     padding: 0;
-    animation: cambio 20s infinite alternate ease-in-out;
+    animation: cambio 10s infinite alternate ease-in-out;
 }
 
 @keyframes cambio {

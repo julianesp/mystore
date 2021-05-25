@@ -13,7 +13,7 @@ body {
     height: 100vh;
     font-size: 16px;
     overflow-x: hidden;
-    background: url('../assets/img/street.jpg')no-repeat center center/cover;
+    /* background: url('../assets/img/street.jpg')no-repeat center center/cover; */
     background-attachment: fixed;
 }
 
@@ -36,7 +36,7 @@ main {
 }
 
 .pages .home-main-text p {
-    font-size: 3em;
+    font-size: 4.5em;
     letter-spacing: 15px;
     color: #fff;
     text-shadow: 3px 3px 2px #baba;
@@ -112,4 +112,10 @@ main {
     /* color: #fff; */
     background: #f9a801;
     /* background: linear-gradient(207, 8deg, #bababa 17%, #333fff 100%); */
+}
+
+@media screen and (min-width: 768px) {
+    .pages .home-main-text p {
+        font-size: 3em;
+    }
 }

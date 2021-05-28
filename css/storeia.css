@@ -962,9 +962,6 @@ footer .fuentes p {
 }
 
 @media screen and (min-width:425px) {
-    .contenido .presentacion .slider .slides .slide img {
-        height: 250px;
-    }
     .contenido .presentacion .slider .slides .navigation-manual {
         margin-top: 250px;
     }
@@ -979,6 +976,10 @@ footer .fuentes p {
     }
     .contenido .presentacion .slider .slides .navigation-auto {
         margin-top: 270px;
+    }
+    .contenido .presentacion .slider .slides .slide img {
+        height: 250px;
+        object-fit: cover;
     }
     .contenido .mi_trabajo {
         margin-top: 100px;

@@ -1076,9 +1076,12 @@ footer .fuentes p {
     }
     .contenido .logo {
         width: 0;
+        height: 58px;
         margin-left: 80px;
         position: relative;
         z-index: 30;
+        display: flex;
+        align-items: center;
     }
     .contenido .accesorios .libros {
         display: flex;
@@ -1100,5 +1103,10 @@ footer .fuentes p {
         color: #fff;
         display: flex;
         height: 100%;
+    }
+    .contenido .presentacion .slider .slides .slide img {
+        object-fit: fill;
+        margin: 0;
+        padding: 0;
     }
 }

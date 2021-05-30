@@ -1073,6 +1073,8 @@ footer .fuentes p {
     .header #menu-h .sub-menu {
         margin: 0;
         padding: 0;
+        animation-name: header-desplegar;
+        animation-duration: 2s;
     }
     .contenido .logo {
         width: 0;
@@ -1097,12 +1099,23 @@ footer .fuentes p {
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
         width: 200px;
         height: 200px;
+        position: relative;
     }
-    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas p {}
-    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas p:hover {
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas p {
+        width: 100%;
+        height: 100%;
         color: #fff;
         display: flex;
-        height: 100%;
+        align-items: center;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        opacity: 0;
+        transition: all .5s ease-out;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas p:hover {
+        opacity: 1;
+        transition: all .5s ease-out;
     }
     .contenido .presentacion .slider .slides .slide img {
         object-fit: fill;

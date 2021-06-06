@@ -197,9 +197,9 @@ body {
 .contenido .tiempo .tiempo-dividido .actividades {
     width: inherit;
     height: 300px;
-    border: 1px solid gray;
     border-radius: 10px;
-    background: linear-gradient(-70deg, #6FC0F9 2%, #0A96F7 60%);
+    /* background: linear-gradient(-70deg, #6FC0F9 2%, #0A96F7 60%); */
+    background: #696262;
     margin-bottom: 20px;
 }
 

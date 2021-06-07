@@ -198,8 +198,7 @@ body {
     width: inherit;
     height: 300px;
     border-radius: 10px;
-    /* background: linear-gradient(-70deg, #6FC0F9 2%, #0A96F7 60%); */
-    background: #696262;
+    background: rgba(105, 98, 98, .6);
     margin-bottom: 20px;
 }
 

@@ -216,7 +216,7 @@ h2:hover {
 .header a {
     border: 1px solid brown;
     padding: 5px 0;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 

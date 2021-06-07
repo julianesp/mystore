@@ -55,7 +55,7 @@ body {
     top: 0;
     bottom: 0;
     width: 100vw;
-    right: -780px;
+    right: -1780px;
     padding-top: 70px;
     position: fixed;
     display: flex;
@@ -289,6 +289,9 @@ footer .social-desa h3 img {
 }
 
 @media screen and (min-width: 600px) {
+    .contenedor-header {
+        width: 30vw;
+    }
     .contenido .presentacion {
         display: grid;
         grid-template-columns: .9fr .7fr;

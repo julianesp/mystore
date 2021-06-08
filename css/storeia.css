@@ -1009,7 +1009,7 @@ footer .fuentes p {
     }
     .contenido .presentacion .slider .slides .slide img {
         height: 250px;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
     .contenido .mi_trabajo {
         margin-top: 100px;
@@ -1045,13 +1045,13 @@ footer .fuentes p {
     }
     .header {
         background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
-        position: absolute;
+        /* position: absolute;
         display: flex;
-        align-items: flex-start;
+        align-items: flex-start; */
         flex-direction: row;
-        top: 0;
+        /* top: 0; */
         right: 0;
-        background-color: transparent;
+        /* background-color: transparent; */
         justify-content: flex-end;
         height: max-content;
         padding-right: 80px;
@@ -1072,10 +1072,10 @@ footer .fuentes p {
         color: #0a96f7;
     }
     .header #menu-h .sub-menu {
-        margin: 0;
-        padding: 0;
-        animation-name: header-desplegar;
-        animation-duration: 2s;
+        /* margin: 0;
+        padding: 0; */
+        /* animation-name: header-desplegar;
+        animation-duration: 2s; */
     }
     .contenido .logo {
         width: 0;
@@ -1122,5 +1122,21 @@ footer .fuentes p {
         object-fit: fill;
         margin: 0;
         padding: 0;
+    }
+    footer .info-desa h3 {
+        font-size: 1.5em;
+        line-height: unset;
+    }
+    footer .social-desa {
+        /* margin-top: 40px; */
+    }
+    footer .social-desa h1 {
+        font-size: 2em;
+    }
+    footer .social-desa h3 {
+        font-size: 1.5em;
+    }
+    footer .fuentes {
+        height: 10px;
     }
 }

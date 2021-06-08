@@ -187,8 +187,8 @@ h2:hover {
 
 .header #menu-h ul li a:hover {
     background-color: #088DD1;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 .header #menu-h ul li ul {
@@ -1045,8 +1045,8 @@ footer .fuentes p {
     }
     .header {
         background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
-        /* position: absolute;
-        display: flex;
+        /* position: absolute; */
+        /* display: flex;
         align-items: flex-start; */
         flex-direction: row;
         /* top: 0; */
@@ -1072,10 +1072,8 @@ footer .fuentes p {
         color: #0a96f7;
     }
     .header #menu-h .sub-menu {
-        /* margin: 0;
-        padding: 0; */
-        /* animation-name: header-desplegar;
-        animation-duration: 2s; */
+        margin: 0;
+        padding: 0;
     }
     .contenido .logo {
         width: 0;

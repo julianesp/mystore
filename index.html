@@ -66,13 +66,13 @@
                 </li>
             </ul>
         </div>
-        <div id="menu-h">
+        <!-- <div id="menu-h">
             <ul>
                 <li>
                     <a href="html/blogs.html" class="inicio">Mi blog</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </header>
 
     <main class="contenido">
@@ -466,51 +466,51 @@
         // slide automatico para programas
         var indice = 0;
 
-        $(".paginacion li").eq(indice).css("background-color", "orange");
+        // $(".paginacion li").eq(indice).css("background-color", "orange");
 
-        $(".paginacion li").click(function() {
-            indice = $(this).index();
-            $(".paginacion li").css("background-color", "yellow");
-            $(this).css("background-color", "orange");
-            $(".programas-varios").hide();
-            $(".programas-varios").eq(indice).fadeIn();
-        });
+        // $(".paginacion li").click(function() {
+        //     indice = $(this).index();
+        //     $(".paginacion li").css("background-color", "yellow");
+        //     $(this).css("background-color", "orange");
+        //     $(".programas-varios").hide();
+        //     $(".programas-varios").eq(indice).fadeIn();
+        // });
 
-        // para que las imagenes se pasen automaticamente
-        setInterval(() => {
-            indice++;
-            // condicional para volver a la imagen 0
-            if (indice > 2) {
-                indice = 0;
-            }
-            $(".programas-varios").hide();
-            $(".programas-varios").eq(indice).fadeIn();
-            $(".paginacion li").css("background-color", "yellow");
-            $(".paginacion li").eq(indice).css("background-color", "orange");
-        }, 4000);
+        // // para que las imagenes se pasen automaticamente
+        // setInterval(() => {
+        //     indice++;
+        //     // condicional para volver a la imagen 0
+        //     if (indice > 2) {
+        //         indice = 0;
+        //     }
+        //     $(".programas-varios").hide();
+        //     $(".programas-varios").eq(indice).fadeIn();
+        //     $(".paginacion li").css("background-color", "yellow");
+        //     $(".paginacion li").eq(indice).css("background-color", "orange");
+        // }, 4000);
 
-        $(".derecha").click(function() {
-            indice++;
-            // condicional para volver a la imagen 0
-            if (indice > 2) {
-                indice = 0;
-            }
-            $(".programas-varios").hide();
-            $(".programas-varios").eq(indice).fadeIn();
-            $(".paginacion li").css("background-color", "yellow");
-            $(".paginacion li").eq(indice).css("background-color", "orange");
-        });
-        $(".izquierda").click(function() {
-            indice--;
-            // condicional para volver a la imagen 0
-            if (indice < 0) {
-                indice = 2;
-            }
-            $(".programas-varios").hide();
-            $(".programas-varios").eq(indice).fadeIn();
-            $(".paginacion li").css("background-color", "yellow");
-            $(".paginacion li").eq(indice).css("background-color", "orange");
-        });
+        // $(".derecha").click(function() {
+        //     indice++;
+        //     // condicional para volver a la imagen 0
+        //     if (indice > 2) {
+        //         indice = 0;
+        //     }
+        //     $(".programas-varios").hide();
+        //     $(".programas-varios").eq(indice).fadeIn();
+        //     $(".paginacion li").css("background-color", "yellow");
+        //     $(".paginacion li").eq(indice).css("background-color", "orange");
+        // });
+        // $(".izquierda").click(function() {
+        //     indice--;
+        //     // condicional para volver a la imagen 0
+        //     if (indice < 0) {
+        //         indice = 2;
+        //     }
+        //     $(".programas-varios").hide();
+        //     $(".programas-varios").eq(indice).fadeIn();
+        //     $(".paginacion li").css("background-color", "yellow");
+        //     $(".paginacion li").eq(indice).css("background-color", "orange");
+        // });
     </script>
 
     <footer>

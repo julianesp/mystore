@@ -66,6 +66,13 @@
                 </li>
             </ul>
         </div>
+        <div id="menu-h">
+            <ul>
+                <li>
+                    <a href="html/blogs.html" class="inicio">Mi blog</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="contenido">
@@ -360,10 +367,6 @@
     </main>
 
     <script>
-        //hover para distros Linux--------------------------------------------------
-
-
-        // --------------------------------------------------
         // script para presentacion de accesorios, trabajos, accesorios nuevos, etcétera
 
         var counter = 1;
@@ -375,9 +378,6 @@
                 counter = 1;
             }
         }, 3000)
-
-        // --------------------------------------------------
-
 
         //menu lateral en 768px
         const header = document.querySelector('.header');
@@ -397,7 +397,7 @@
         //slide de presentación de anuncios
         var indi = 0;
 
-        $(".page li").eq(indi).css("background-color", "#419CCA");
+        // $(".page li").eq(indi).css("background-color", "#419CCA");
 
         $(".page li").click(function() {
             indi = $(this).index();

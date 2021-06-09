@@ -118,6 +118,7 @@ h2:hover {
 
 .header #menu-h .sub-menu {
     display: none;
+    margin-top: 15px;
 }
 
 .header #menu-h .sub-menu a {
@@ -125,7 +126,8 @@ h2:hover {
     /* align-items: center;
     justify-content: center; */
     color: #fff;
-    background-color: #088DD1;
+    /* background-color: #088DD1; */
+    background-color: #78b7d8;
     text-decoration: none;
     /* padding: 10px; */
     font-size: .9rem;
@@ -134,9 +136,9 @@ h2:hover {
 }
 
 .header #menu-h:hover .sub-menu {
-    /* float: none;
+    /* float: none;*/
     padding: 0 0;
-    text-decoration: none;
+    /*text-decoration: none;
     text-align: center; */
     /* display: block; */
     display: block;
@@ -183,12 +185,14 @@ h2:hover {
     font-size: 1.4rem;
     color: #fff;
     text-decoration: none;
+    transition: .5s all ease-in-out;
 }
 
 .header #menu-h ul li a:hover {
     background-color: #088DD1;
     /* margin-top: 10px; */
     /* margin-bottom: 10px; */
+    transition: .5s all ease-in-out;
 }
 
 .header #menu-h ul li ul {
@@ -304,6 +308,20 @@ h2:hover {
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    animation-name: alfondo;
+    animation-duration: 2.5s;
+    /* animation-timing-function: linear, ease-in-out; */
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate;
+}
+
+@keyframes alfondo {
+    0% {
+        transform: scale(.7);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 

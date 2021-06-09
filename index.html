@@ -368,7 +368,6 @@
 
     <script>
         // script para presentacion de accesorios, trabajos, accesorios nuevos, etcétera
-
         var counter = 1;
 
         setInterval(function() {
@@ -399,69 +398,69 @@
 
         // $(".page li").eq(indi).css("background-color", "#419CCA");
 
-        $(".page li").click(function() {
-            indi = $(this).index();
-            $(".page li").css("background-color", "#bababa");
-            $(this).css("background-color", "#419CCA");
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-        });
+        // $(".page li").click(function() {
+        //     indi = $(this).index();
+        //     $(".page li").css("background-color", "#bababa");
+        //     $(this).css("background-color", "#419CCA");
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        // });
 
-        $(".dere").click(function() {
-            indi++;
-            if (indi > 2) {
-                indi = 0;
-            }
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-            $(".page li").css("background-color", "#bababa");
-            $(".page li").eq(indi).css("background-color", "#419CCA");
-        });
-        $(".iz").click(function() {
-            indi--;
-            if (indi < 0) {
-                indi = 1;
-            }
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-            $(".page li").css("background-color", "#bababa");
-            $(".page li").eq(indi).css("background-color", "#419CCA");
-        });
+        // $(".dere").click(function() {
+        //     indi++;
+        //     if (indi > 2) {
+        //         indi = 0;
+        //     }
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        //     $(".page li").css("background-color", "#bababa");
+        //     $(".page li").eq(indi).css("background-color", "#419CCA");
+        // });
+        // $(".iz").click(function() {
+        //     indi--;
+        //     if (indi < 0) {
+        //         indi = 1;
+        //     }
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        //     $(".page li").css("background-color", "#bababa");
+        //     $(".page li").eq(indi).css("background-color", "#419CCA");
+        // });
 
-        setInterval(() => {
-            indi++;
-            // condicional para volver a la imagen 0
-            if (indi > 2) {
-                indi = 0;
-            }
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-            $(".page li").css("background-color", "#bababa");
-            $(".page li").eq(indi).css("background-color", "#419CCA");
-        }, 1000);
+        // setInterval(() => {
+        //     indi++;
+        //     // condicional para volver a la imagen 0
+        //     if (indi > 2) {
+        //         indi = 0;
+        //     }
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        //     $(".page li").css("background-color", "#bababa");
+        //     $(".page li").eq(indi).css("background-color", "#419CCA");
+        // }, 1000);
 
-        $(".dere").click(function() {
-            indi++;
-            if (indi > 2) {
-                indi = 0;
-            }
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-            $(".page li").css("background-color", "#bababa");
-            $(".page li").eq(indi).css("background-color", "#419CCA");
-        });
+        // $(".dere").click(function() {
+        //     indi++;
+        //     if (indi > 2) {
+        //         indi = 0;
+        //     }
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        //     $(".page li").css("background-color", "#bababa");
+        //     $(".page li").eq(indi).css("background-color", "#419CCA");
+        // });
 
-        $(".iz").click(function() {
-            indi--;
+        // $(".iz").click(function() {
+        //     indi--;
 
-            if (indi < 0) {
-                indi = 2;
-            }
-            $(".preacce").hide();
-            $(".preacce").eq(indi).fadeIn();
-            $(".page li").css("background-color", "yellow");
-            $(".page li").eq(indi).css("background-color", "orange");
-        });
+        //     if (indi < 0) {
+        //         indi = 2;
+        //     }
+        //     $(".preacce").hide();
+        //     $(".preacce").eq(indi).fadeIn();
+        //     $(".page li").css("background-color", "yellow");
+        //     $(".page li").eq(indi).css("background-color", "orange");
+        // });
 
 
         // slide automatico para programas

@@ -930,7 +930,6 @@ h2:hover {
 footer {
     background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
     text-align: center;
-    margin-top: 50px;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -1048,12 +1047,19 @@ footer .fuentes p {
     }
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr .5fr;
+        grid-template-columns: 1fr 1fr .3fr;
+        /* grid-template-rows: 1fr .5fr; */
+        /* display: flex;
+        flex-direction: row; */
     }
     footer .fuentes {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        line-height: 25px;
+    }
+    footer .fuentes p {
+        font-size: .6em;
+    }
+    footer .fuentes h3 {
+        font-size: .8em;
     }
 }
 
@@ -1139,12 +1145,10 @@ footer .fuentes p {
         margin: 0;
         padding: 0;
     }
+    footer {}
     footer .info-desa h3 {
         font-size: 1.5em;
         line-height: unset;
-    }
-    footer .social-desa {
-        /* margin-top: 40px; */
     }
     footer .social-desa h1 {
         font-size: 2em;

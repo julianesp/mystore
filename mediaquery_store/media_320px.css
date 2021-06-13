@@ -1,0 +1,1054 @@
+/* tipo de letra */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+.icon-menu {
+    position: fixed;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-color: #FFF;
+    font-family: 'Oswald', sans-serif;
+}
+
+.burger-button {
+    position: fixed;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(253, 171, 1, .7);
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    right: 0;
+    z-index: 20;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #419CCA;
+    border: 1px solid #419CCA;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s;
+}
+
+h2:hover {
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    color: #fff;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    right: -1025px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: .5s;
+}
+
+.header.is-active {
+    right: 0;
+}
+
+.header #menu-h .desplegar {
+    /* width: 150px; */
+    /* height: 37px; */
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header #menu-h .desplegar:hover {
+    color: white;
+    background-color: #088DD1;
+    cursor: pointer;
+}
+
+.header #menu-h .sub-menu {
+    display: none;
+}
+
+.header #menu-h .sub-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #088DD1;
+    text-decoration: none;
+    padding: 10px;
+    font-size: .9rem;
+    margin: 0 auto;
+}
+
+.header #menu-h:hover .sub-menu {
+    /* float: none;
+    padding: 0 0;
+    text-decoration: none;
+    text-align: center; */
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header #menu-h {
+    text-align: center;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.header #menu-h img {
+    align-items: center;
+    width: 35px;
+}
+
+.header #menu-h a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.header #menu-h a:hover {
+    color: white;
+    background-color: #088DD1;
+    margin-left: 0;
+}
+
+.header #menu-h ul {
+    list-style-type: none;
+}
+
+.header #menu-h ul ul {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+.header #menu-h ul li a {
+    width: 150px;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header #menu-h ul li a:hover {
+    background-color: #088DD1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header #menu-h ul li ul {
+    margin: 0 0;
+}
+
+.header #menu-h ul li ul li:hover {
+    display: block;
+    position: absolute;
+}
+
+.header #menu-h ul ul li a {
+    /* margin: 15px 0; */
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    /* padding-left: 0; */
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.header a {
+    border: 1px solid brown;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+
+/* ----------------------- */
+
+.contenido .container {
+    margin: 0;
+    padding: 30px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.contenido .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contenido .container ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+.contenido .container ul.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 1s;
+}
+
+.contenido .container ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contenido .container ul.slider li:first-child {
+    opacity: 1;
+}
+
+.contenido .container ul.slider li:target {
+    opacity: 1;
+}
+
+
+/* ----------------------- */
+
+.contenido .container .menu {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenido .container .menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.contenido .container .menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+/* ------------------------------- */
+
+.contenido .logo {
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+}
+
+.contenido .logo img {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------- */
+
+.contenido .presentacion {
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.contenido .presentacion .slider {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.contenido .presentacion .slider .slides {
+    width: inherit;
+    height: inherit;
+    display: flex;
+}
+
+.contenido .presentacion .slider .slides input {
+    display: none;
+}
+
+.contenido .presentacion .slider .slides .slide {
+    width: 100%;
+    transition: 2s;
+}
+
+.contenido .presentacion .slider .slides .slide img {
+    width: 100vw;
+    height: auto;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual {
+    width: 100%;
+    position: absolute;
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contenido .presentacion .slider .slides .navigation-manual .manual-btn:hover {
+    background: #40d3dc;
+}
+
+.contenido .presentacion .slider .slides #radio1:checked~.first {
+    margin-left: 0;
+}
+
+.contenido .presentacion .slider .slides #radio2:checked~.first {
+    margin-left: -100%;
+}
+
+.contenido .presentacion .slider .slides #radio3:checked~.first {
+    margin-left: -200%;
+}
+
+.contenido .presentacion .slider .slides #radio4:checked~.first {
+    margin-left: -300%;
+}
+
+
+/* css para navegacion automática */
+
+.contenido .presentacion .slider .slides .navigation-auto {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contenido .presentacion .slider .slides .navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.contenido .presentacion .slider .slides .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40d3dc;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40d3dc;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40d3dc;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40d3dc;
+}
+
+
+/* ------------------------------- */
+
+
+/* accesorio celular  */
+
+.contenido .accesorios .celulares {
+    height: 330px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    overflow-x: scroll;
+}
+
+.contenido .accesorios .celulares::-webkit-scrollbar {
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .celulares::-webkit-scrollbar-thumb {
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    ;
+    border-radius: 5px;
+}
+
+.contenido .accesorios .celulares .accesorio-celular {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    align-items: center;
+    width: 175px;
+    height: 234px;
+    ;
+    /* margin: auto 5px; */
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .celulares .accesorio-celular h3 {
+    line-height: 40px;
+    height: 40px;
+    font-size: .9em;
+    margin: 0;
+    text-align: center;
+}
+
+.contenido .accesorios .celulares .accesorio-celular img {
+    width: 70%;
+    height: 70%;
+    justify-self: center;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a {
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a:active {
+    transform: scale(.9);
+}
+
+
+/*estilos para accesorios computadores*/
+
+.contenido .accesorios .pc {
+    height: 330px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    overflow-x: scroll;
+}
+
+.contenido .accesorios .pc::-webkit-scrollbar {
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .pc::-webkit-scrollbar-thumb {
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    border-radius: 5px;
+}
+
+.contenido .accesorios .pc .accesorio-pc {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    align-items: center;
+    width: 175px;
+    height: 234px;
+    /* margin: auto 10px; */
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .pc .accesorio-pc h3 {
+    font-size: .9em;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.contenido .accesorios .pc .accesorio-pc img {
+    width: 80%;
+    height: 90%;
+    justify-self: center;
+}
+
+.contenido .accesorios .pc .accesorio-pc a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .pc .accesorio-pc a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .pc .accesorio-pc a:active {
+    transform: scale(.9);
+}
+
+
+/* ------------------------------------------*/
+
+
+/*estilos para libros*/
+
+.contenido .accesorios .libros {
+    height: 330px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    overflow-x: scroll;
+}
+
+.contenido .accesorios .libros::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .libros::-webkit-scrollbar-thumb {
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    border-radius: 5px;
+}
+
+.contenido .accesorios .libros .libros__catalogo {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    flex-direction: column;
+    align-items: center;
+    width: 175px;
+    height: 234px;
+    /* margin: auto 10px; */
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .libros .libros__catalogo h3 {
+    font-size: .9em;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.contenido .accesorios .libros .libros__catalogo img {
+    width: 80%;
+    height: 90%;
+    justify-self: center;
+}
+
+.contenido .accesorios .libros .libros__catalogo a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .libros .libros__catalogo a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .libros .libros__catalogo a:active {
+    transform: scale(.9);
+}
+
+
+/* ------------------------------------------*/
+
+
+/* estilos trabajo */
+
+.contenido .mi_trabajo {
+    margin-top: 50px;
+}
+
+.contenido .mi_trabajo .formateo {
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.contenido .mi_trabajo .formateo .title {
+    font-size: 1em;
+    color: #c28604;
+    margin-top: 60px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr .2fr;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
+    color: #3a2727;
+    text-decoration: underline;
+    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    justify-items: center;
+    overflow-x: auto;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .titulo {
+    justify-items: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones {
+    display: flex;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 130px;
+    height: 140px;
+    margin: 0 10px;
+    border: 1px solid gray;
+    box-shadow: -8px 10px 10px #AEB2B2;
+    border-radius: 20px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas h4 {
+    color: #944242;
+    font-size: 1rem;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
+    width: 50%;
+    text-align: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .titulo {
+    justify-items: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones {
+    display: flex;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 130px;
+    height: 140px;
+    margin: 0 10px;
+    border: 1px solid gray;
+    box-shadow: -10px 5px 15px 0px #AEB2B2;
+    border-radius: 20px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas h4 {
+    color: #944242;
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------- */
+
+
+/* programas basicos */
+
+.contenido .mi_trabajo .formateo .programas {
+    margin-top: 100px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-presentacion {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenido .mi_trabajo .formateo .programas ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 10s infinite alternate ease-in-out;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.contenido .mi_trabajo .formateo .programas li {
+    width: 100%;
+    list-style: none;
+}
+
+.contenido .mi_trabajo .formateo .programas img {
+    width: 40%;
+}
+
+
+/* ----------- footer ------------*/
+
+footer {
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .info-desa h3 {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 10px;
+    font-style: italic;
+    color: white;
+}
+
+footer .info-desa h3 img {
+    width: 40px;
+}
+
+footer .social-desa h1 {
+    color: #f3ff3b;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
+
+footer .social-desa a img {
+    width: 50px;
+    margin: 0 20px;
+    transform: scale();
+}
+
+footer .social-desa a img:hover {
+    animation-name: aumentar;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+footer .social-desa h3 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer .social-desa h3 img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+footer .fuentes h3 {
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+footer .fuentes p {
+    font-size: .7rem;
+    margin-top: 30px;
+    color: #fff;
+    font-style: italic;
+    margin: 0;
+}
+
+@media screen and (min-width:425px) {
+    .contenido .presentacion .slider .slides .navigation-manual {
+        margin-top: 250px;
+    }
+    .contenido .presentacion .slider .slides .navigation-auto {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contenido .presentacion .slider .slides .navigation-manual {
+        margin-top: 270px;
+    }
+    .contenido .presentacion .slider .slides .navigation-auto {
+        margin-top: 270px;
+    }
+    .contenido .mi_trabajo {
+        margin-top: 100px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .contenido .accesorios .celulares .accesorio-celular {
+        width: 200px;
+    }
+    .contenido .accesorios .pc .accesorio-pc {
+        width: 200px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+        justify-content: center;
+    }
+    .contenido .mi_trabajo .formateo .programas img {
+        width: 20%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+    }
+    footer .fuentes {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .burger-button {
+        display: none;
+    }
+    .header {
+        background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        justify-content: flex-end;
+        height: max-content;
+        padding-right: 80px;
+    }
+    .header #menu-h ul {
+        margin: 0;
+    }
+    .header #menu-h ul li a {
+        width: 100px;
+        font-size: 1.1rem;
+    }
+    .header #menu-h .desplegar {}
+    .contenido .logo {
+        width: 0;
+        margin-left: 80px;
+        position: relative;
+        z-index: 30;
+    }
+    .contenido .accesorios .libros {
+        display: flex;
+        justify-content: center;
+    }
+    .contenido .mi_trabajo {
+        margin: 100px 80px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+        width: 200px;
+        height: 200px;
+    }
+    .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+        width: 200px;
+        height: 200px;
+    }
+}

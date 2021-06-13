@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+
+    <!-- <link rel=" stylesheet " href="css/font/flaticon.css "> -->
+
+    <!-- logo de pestaña  -->
+    <link rel="icon" href="../assets/img/logo-pestaña.ico">
+
+    <!-- tipo de letra  -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../mediaquery_perfil/profile.css">
+</head>
+
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+
+    <header class="contenedor-header">
+
+        <!-- <div class="header1 ">
+            <a href="../index.html" class="inicio ">Inicio</a>
+        </div> -->
+        <div class="header1 ">
+            <a href="../index.html" rel="noopener" class="inicio ">Tienda</a>
+        </div>
+        <!-- <div class="header1 ">
+            <a href="blogs.html" class="inicio ">Mi Blog</a>
+        </div> -->
+    </header>
+
+    <main class="contenido ">
+
+        <div class="logo">
+            <img src="../assets/img/Logo.png" alt="Logo de mi empresa">
+        </div>
+        <div class="presentacion ">
+
+            <div class="img ">
+                <img class="img-photo " src="../assets/img/developer.jpg" alt="Foto de desarrollador">
+            </div>
+
+            <div class=" descripcion ">
+                <h2>Hola, soy Juli&aacute;n</h2>
+                <p>
+                    Desde niño me ha gustado tocar guitarra, tambi&eacute;n me dedico a leer porque me gusta enterarme de los hechos que han marcado la actualidad. <br>Espero sea de su agrado mi sitio 😉
+                </p>
+            </div>
+        </div>
+
+        <div class="tiempo ">
+            <div class="tiempo-titulo ">
+                <h2>¿A qu&eacute; me dedico?</h2>
+            </div>
+            <div class="tiempo-dividido ">
+                <article class="actividades ">
+                    <h4>Trabajo</h4>
+                    <p>
+                        Trabajo como t&eacute;cnico en sistemas y desarrollador web. Me gusta reparar computadores y a&uacute;n m&aacute;s crear tu página web 😎
+                    </p>
+                </article>
+                <article class="actividades ">
+                    <h4>Estudiar</h4>
+                    <p>
+                        "Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber ". Albert Einstein
+                    </p>
+                </article>
+                <article class="actividades ">
+                    <h4>Gustos</h4>
+                    <p>
+                        Me gusta tocar guitarra, además, es el momento en el que mi mente se aleja de toda preocupaci&oacute;n
+                    </p>
+                </article>
+                <article class="actividades ">
+                    <h4>Hobbies</h4>
+                    <p>
+                        Me gusta emplear el tiempo en educarme en programaci&oacute;n y otros temas de ingenier&iacute;a
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="info-desa ">
+            <h3>Desarrollado por Juli&aacute;n España</h3>
+            <h3>T&eacute;cnico en sistemas </h3>
+            <h3>Colón, Putumayo</h3>
+        </div>
+
+        <div class="social-desa ">
+            <h2>Cont&aacute;ctame:</h2>
+            <h3>julii1295@gmail.com</h3>
+            <a href="https://www.facebook.com/alex.rio20/ " target="_blank "><img src="../assets/img/facebook.png " alt="Enlace de red social Facebook" title="Mi perfil en Facebook "></a>
+            <!-- <a href="https://twitter.com/julialexes " target="_blank "><img src="../assets/img/network/twitter.svg" alt="Enlace de red social Twitter"></a> -->
+            <a href="https://wa.me/c/573174503604 "><img src="../assets/img/whatsapp.png " alt="Enlace de red social WhatsApp"></a>
+        </div>
+
+    </footer>
+
+    <script>
+        //menu lateral en 768px
+        const contenedor = document.querySelector('.contenedor-header');
+        const burgerMenu = document.querySelector('#burger-menu');
+
+        burgerMenu.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (contenedor.classList.contains('is-active')) {
+                contenedor.classList.remove('is-active');
+
+            } else {
+                contenedor.classList.add('is-active');
+            }
+        }
+    </script>
+</body>
+
+</html>

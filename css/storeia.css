@@ -455,43 +455,40 @@ h2:hover {
 
 /* ------------------------------- */
 
-
-/* accesorio celular  */
-
-.contenido .accesorios .celulares {
+.contenido .accesorios .accesorio {
     height: 330px;
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(15, 1fr);
     grid-template-rows: 1fr;
-    gap: 0 10px;
+    gap: 0 10px; */
+    display: flex;
+    /* justify-content: center; */
     overflow-x: scroll;
 }
 
-.contenido .accesorios .celulares::-webkit-scrollbar {
+.contenido .accesorios .accesorio::-webkit-scrollbar {
     height: 15px;
     background: #fff;
     border-radius: 5px;
 }
 
-
-/* con thumb se accede a la barra */
-
-.contenido .accesorios .celulares::-webkit-scrollbar-thumb {
+.contenido .accesorios .accesorio::-webkit-scrollbar-thumb {
     background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
     ;
     border-radius: 5px;
 }
 
-.contenido .accesorios .celulares .accesorio-celular {
+.contenido .accesorios .accesorio .accesorio-tipo {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
+    min-width: 150px;
     width: 175px;
     height: 234px;
-    ;
+    margin-left: 10px;
     /* margin: auto 5px; */
     border: 1px solid #bababa;
     font-weight: bold;
@@ -499,7 +496,7 @@ h2:hover {
     box-shadow: 5px 5px 5px #baba;
 }
 
-.contenido .accesorios .celulares .accesorio-celular h3 {
+.contenido .accesorios .accesorio .accesorio-tipo h3 {
     line-height: 40px;
     height: 40px;
     font-size: .8em;
@@ -507,13 +504,13 @@ h2:hover {
     text-align: center;
 }
 
-.contenido .accesorios .celulares .accesorio-celular img {
+.contenido .accesorios .accesorio .accesorio-tipo img {
     width: 70%;
     height: 70%;
     justify-self: center;
 }
 
-.contenido .accesorios .celulares .accesorio-celular a {
+.contenido .accesorios .accesorio .accesorio-tipo a {
     line-height: 40px;
     font-size: 1em;
     text-align: center;
@@ -532,188 +529,12 @@ h2:hover {
     will-change: transform;
 }
 
-.contenido .accesorios .celulares .accesorio-celular a:hover {
+.contenido .accesorios .accesorio .accesorio-tipo a:hover {
     color: #f3ff3b;
     font-weight: bolder;
 }
 
-.contenido .accesorios .celulares .accesorio-celular a:active {
-    transform: scale(.9);
-}
-
-
-/*estilos para accesorios computadores*/
-
-.contenido .accesorios .pc {
-    height: 330px;
-    padding: 10px;
-    margin: 0 10px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: 1fr;
-    gap: 0 10px;
-    overflow-x: scroll;
-}
-
-.contenido .accesorios .pc::-webkit-scrollbar {
-    height: 15px;
-    background: #fff;
-    border-radius: 5px;
-}
-
-
-/* con thumb se accede a la barra */
-
-.contenido .accesorios .pc::-webkit-scrollbar-thumb {
-    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
-    border-radius: 5px;
-}
-
-.contenido .accesorios .pc .accesorio-pc {
-    display: grid;
-    grid-template-rows: 40px 200px 60px;
-    align-items: center;
-    width: 175px;
-    height: 234px;
-    /* margin: auto 10px; */
-    border: 1px solid #bababa;
-    font-weight: bold;
-    border-radius: 7px;
-    box-shadow: 5px 5px 5px #baba;
-}
-
-.contenido .accesorios .pc .accesorio-pc h3 {
-    font-size: .8em;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin: 0;
-}
-
-.contenido .accesorios .pc .accesorio-pc img {
-    width: 80%;
-    height: 90%;
-    justify-self: center;
-}
-
-.contenido .accesorios .pc .accesorio-pc a {
-    text-decoration: none;
-    line-height: 40px;
-    font-size: 1em;
-    text-align: center;
-    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
-    padding: .5em .5em;
-    margin: 5px;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    /* box-shadow: inset x y; */
-    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
-    color: #fff;
-    cursor: pointer;
-    /* para quitar el color del borde cuando se da click */
-    outline: none;
-    transition: .2s;
-    will-change: transform;
-}
-
-.contenido .accesorios .pc .accesorio-pc a:hover {
-    color: #f3ff3b;
-    font-weight: bolder;
-}
-
-.contenido .accesorios .pc .accesorio-pc a:active {
-    transform: scale(.9);
-}
-
-
-/* ------------------------------------------*/
-
-
-/*estilos para libros*/
-
-.contenido .accesorios .libros {
-    height: 330px;
-    padding: 10px;
-    margin: 0 10px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 0 10px;
-    overflow-x: scroll;
-}
-
-.contenido .accesorios .libros::-webkit-scrollbar {
-    height: 10px;
-    background: #fff;
-    border-radius: 5px;
-}
-
-
-/* con thumb se accede a la barra */
-
-.contenido .accesorios .libros::-webkit-scrollbar-thumb {
-    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
-    border-radius: 5px;
-}
-
-.contenido .accesorios .libros .libros__catalogo {
-    display: grid;
-    grid-template-rows: 40px 200px 60px;
-    flex-direction: column;
-    align-items: center;
-    width: 175px;
-    height: 234px;
-    /* margin: auto 10px; */
-    border: 1px solid #bababa;
-    font-weight: bold;
-    border-radius: 7px;
-    box-shadow: 5px 5px 5px #baba;
-}
-
-.contenido .accesorios .libros .libros__catalogo h3 {
-    font-size: .9em;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin: 0;
-}
-
-.contenido .accesorios .libros .libros__catalogo img {
-    width: 80%;
-    height: 90%;
-    justify-self: center;
-}
-
-.contenido .accesorios .libros .libros__catalogo a {
-    text-decoration: none;
-    line-height: 40px;
-    font-size: 1em;
-    text-align: center;
-    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
-    padding: .5em .5em;
-    margin: 5px;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    /* box-shadow: inset x y; */
-    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
-    color: #fff;
-    cursor: pointer;
-    /* para quitar el color del borde cuando se da click */
-    outline: none;
-    transition: .2s;
-    will-change: transform;
-}
-
-.contenido .accesorios .libros .libros__catalogo a:hover {
-    color: #f3ff3b;
-    font-weight: bolder;
-}
-
-.contenido .accesorios .libros .libros__catalogo a:active {
+.contenido .accesorios .accesorio .accesorio-tipo a:active {
     transform: scale(.9);
 }
 
@@ -1032,6 +853,9 @@ footer .fuentes p {
         margin-top: 100px;
         margin-left: 35px;
         margin-right: 35px;
+    }
+    .contenido .accesorios .accesorio {
+        justify-content: center;
     }
     .contenido .accesorios .celulares .accesorio-celular {
         width: 200px;

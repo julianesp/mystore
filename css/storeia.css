@@ -849,6 +849,16 @@ footer .fuentes p {
         height: 250px;
         /* object-fit: cover; */
     }
+    .contenido .accesorios {
+        position: relative;
+    }
+    .contenido .accesorios .accesorio:hover {
+        left: 0;
+        transition: .4s all;
+        width: 400px;
+        height: 500px;
+        position: absolute;
+    }
     .contenido .mi_trabajo {
         margin-top: 100px;
         margin-left: 35px;
@@ -856,12 +866,6 @@ footer .fuentes p {
     }
     .contenido .accesorios .accesorio {
         justify-content: center;
-    }
-    .contenido .accesorios .celulares .accesorio-celular {
-        width: 200px;
-    }
-    .contenido .accesorios .pc .accesorio-pc {
-        width: 200px;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
         justify-content: center;

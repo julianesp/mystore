@@ -101,19 +101,6 @@ body {
     text-align: center;
 }
 
-.contenido .logo {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
-    display: flex;
-    justify-content: center;
-}
-
-.contenido .logo img {
-    width: 160px;
-}
-
 .contenido .presentacion .img {
     border-radius: 10px;
     align-self: center;
@@ -129,6 +116,19 @@ body {
     box-shadow: 5px 5px 10px #bababa;
     margin-top: 20px;
     /* transform: scale(1); */
+}
+
+.contenido .logo {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    display: flex;
+    justify-content: center;
+}
+
+.contenido .logo img {
+    width: 160px;
 }
 
 .contenido .descripcion {
@@ -297,14 +297,40 @@ footer .social-desa h3 img {
         grid-template-columns: .9fr .7fr;
     }
     .contenido .presentacion .img {
-        width: 350px;
+        /* width: 350px;
         height: 350px;
         justify-self: center;
-        align-self: center;
+        align-self: center; */
+        position: relative;
+    }
+    .contenido .presentacion .img:hover {
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(.3);
+        }
+        to {
+            transform: scale(1);
+        }
     }
     .contenido .descripcion {
         padding: 20px;
         box-sizing: border-box;
+    }
+    .contenido .descripcion {
+        animation-name: upslide;
+        animation-duration: 1.7s;
+    }
+    @keyframes upslide {
+        from {
+            transform: translateY(1000px);
+        }
+        to {
+            transform: translateY(0);
+        }
     }
     .contenido .presentacion .descripcion h2 {
         font-size: 1.5rem;
@@ -341,11 +367,11 @@ footer .social-desa h3 img {
         justify-content: flex-start;
     }
     .contenido .presentacion .img {
-        width: 80%;
-    }
-    .contenido .presentacion .img .img-photo {
-        height: 90%;
-        width: 90%;
+        /* width: 80%; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .contenido .presentacion .descripcion h2 {
         font-size: 2.5rem;

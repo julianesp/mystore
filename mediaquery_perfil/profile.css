@@ -288,13 +288,31 @@ footer .social-desa h3 img {
     /* padding-right: 10px; */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .contenedor-header {
         width: 30vw;
     }
     .contenido .presentacion {
         display: grid;
         grid-template-columns: .9fr .7fr;
+    }
+    .contenido .presentacion .img .img-photo {
+        width: 300px;
+    }
+    .contenido .presentacion .img .img-photo:hover {
+        animation-name: zoom;
+        animation-duration: .5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite, infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.2);
+        }
     }
     .contenido .descripcion {
         padding: 20px;

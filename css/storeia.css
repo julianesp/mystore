@@ -849,16 +849,6 @@ footer .fuentes p {
         height: 250px;
         /* object-fit: cover; */
     }
-    .contenido .accesorios {
-        position: relative;
-    }
-    .contenido .accesorios .accesorio:hover {
-        left: 0;
-        transition: .4s all;
-        width: 400px;
-        height: 500px;
-        position: absolute;
-    }
     .contenido .mi_trabajo {
         margin-top: 100px;
         margin-left: 35px;

@@ -292,6 +292,9 @@ footer .social-desa h3 img {
     .contenedor-header {
         width: 30vw;
     }
+    .contenido .logo img {
+        margin-left: 80px;
+    }
     .contenido .presentacion {
         display: grid;
         grid-template-columns: .9fr .7fr;

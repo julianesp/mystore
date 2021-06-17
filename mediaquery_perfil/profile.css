@@ -296,26 +296,6 @@ footer .social-desa h3 img {
         display: grid;
         grid-template-columns: .9fr .7fr;
     }
-    .contenido .presentacion .img {
-        /* width: 350px;
-        height: 350px;
-        justify-self: center;
-        align-self: center; */
-        position: relative;
-    }
-    .contenido .presentacion .img:hover {
-        animation-name: zoom;
-        animation-duration: 3s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-    @keyframes zoom {
-        from {
-            transform: scale(.3);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
     .contenido .descripcion {
         padding: 20px;
         box-sizing: border-box;

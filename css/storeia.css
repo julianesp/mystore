@@ -44,7 +44,6 @@ body {
     background-size: cover;
     background-color: #FFF;
     font-family: 'Oswald', sans-serif;
-    font-family: 'Oswald', sans-serif;
 }
 
 .burger-button {
@@ -457,16 +456,10 @@ h2:hover {
 /* ------------------------------- */
 
 .contenido .accesorios .accesorio {
-    height: 330px;
+    height: 310px;
     padding: 10px;
-    margin: 0 10px;
     margin-bottom: 50px;
-    /* display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: 1fr;
-    gap: 0 10px; */
     display: flex;
-    /* justify-content: center; */
     overflow-x: scroll;
 }
 
@@ -856,7 +849,7 @@ footer .fuentes p {
         margin-right: 35px;
     }
     .contenido .accesorios .accesorio {
-        justify-content: center;
+        /* justify-content: center; */
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
         justify-content: center;
@@ -927,10 +920,8 @@ footer .fuentes p {
         display: flex;
         align-items: center;
     }
-    .contenido .accesorios .libros {
-        display: flex;
-        justify-content: center;
-    }
+    /* despliegue de enlaces de pago  */
+    .contenido .accesorios .accesorio .accesorio-tipo a:hover {}
     .contenido .mi_trabajo {
         margin: 100px 80px;
     }
@@ -965,17 +956,17 @@ footer .fuentes p {
         padding: 0;
     }
     footer {}
-    footer .info-desa h3 {
-        font-size: 1.5em;
+    /* footer .info-desa h3 {
+        font-size: 1.3em;
         line-height: unset;
     }
     footer .social-desa h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     footer .social-desa h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     footer .fuentes {
         height: 10px;
-    }
+    } */
 }

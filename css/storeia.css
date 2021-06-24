@@ -456,7 +456,7 @@ h2:hover {
 /* ------------------------------- */
 
 .contenido .accesorios .accesorio {
-    height: 310px;
+    height: 446px;
     padding: 10px;
     margin-bottom: 50px;
     display: flex;
@@ -479,8 +479,8 @@ h2:hover {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
-    min-width: 150px;
-    width: 175px;
+    min-width: 200px;
+    width: 250px;
     height: 234px;
     margin-left: 10px;
     /* margin: auto 5px; */
@@ -511,6 +511,7 @@ h2:hover {
     background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
     padding: .5em .5em;
     margin: 5px;
+    margin-top: 100px;
     text-decoration: none;
     border: none;
     border-radius: 10px;
@@ -533,7 +534,54 @@ h2:hover {
 }
 
 
-/* ------------------------------------------*/
+/* imagenes en accesorios  */
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images {
+    height: 100%;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images ul,
+li {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador {
+    position: relative;
+    width: 200px;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador li:first-child {
+    opacity: 1;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador li img {
+    width: 80%;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador #deslizador1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deslizador-menu {
+    text-align: center;
+}
+
+.deslizador-menu li {
+    display: inline-block;
+    height: 0;
+}
 
 
 /* estilos trabajo */
@@ -860,9 +908,6 @@ footer .fuentes p {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr .3fr;
-        /* grid-template-rows: 1fr .5fr; */
-        /* display: flex;
-        flex-direction: row; */
     }
     footer .fuentes {
         line-height: 25px;
@@ -955,18 +1000,4 @@ footer .fuentes p {
         margin: 0;
         padding: 0;
     }
-    footer {}
-    /* footer .info-desa h3 {
-        font-size: 1.3em;
-        line-height: unset;
-    }
-    footer .social-desa h1 {
-        font-size: 1.5em;
-    }
-    footer .social-desa h3 {
-        font-size: 1.2em;
-    }
-    footer .fuentes {
-        height: 10px;
-    } */
 }

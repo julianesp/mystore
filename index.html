@@ -78,13 +78,13 @@
 
     <main class="contenido">
 
-        <div class="logo">
+        <section class="logo">
             <img src="assets/img/Logo.png" alt="Logo de la tienda">
-        </div>
+        </section>
 
-        <div class="presentacion">
+        <section class="presentacion">
 
-            <div class="slider">
+            <section class="slider">
                 <div class="slides">
                     <input type="radio" name="radio-btn" id="radio1">
                     <!-- <input type="radio" name="radio-btn" id="radio2">
@@ -118,13 +118,13 @@
                         <label for="radio4" class="manual-btn"></label> -->
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
+        </section>
 
-        <div class="mi_trabajo">
+        <section class="mi_trabajo">
 
-            <div class="accesorios">
+            <section class="accesorios">
                 <!-- accesorios_celulares  -->
                 <div class="titulo" id="accesorios-celular">
                     <h2>Accesorios para celulares</h2>
@@ -133,7 +133,35 @@
 
                     <div class="accesorio-tipo">
                         <h3>Tarjeta de memoria 16 gigas</h3>
-                        <img src="assets/img/ArticulosChina/SanDisk16/1san.jpg" alt="" title="Antena TP-Link USB wifi">
+                        <div class="accesorio-images">
+                            <!-- contenedor de imagenes  -->
+                            <ul class="deslizador">
+                                <li id="deslizador1">
+                                    <img src="assets/img/ArticulosChina/SanDisk16/1san.jpg" alt="" title="Antena TP-Link USB wifi">
+                                </li>
+                                <li id="deslizador2">
+                                    <img src="assets/img/ArticulosChina/SanDisk16/1san.jpg" alt="" title="Antena TP-Link USB wifi">
+                                </li>
+                                <li id="deslizador3">
+                                    <img src="assets/img/ArticulosChina/SanDisk16/1san.jpg" alt="" title="Antena TP-Link USB wifi">
+                                </li>
+                            </ul>
+                            <!-- contenedor de control de imagenes  -->
+                            <ul class="deslizador-menu">
+                                <li>
+                                    <a href="#deslizador1">1</a>
+                                </li>
+                                <li>
+                                    <a href="#deslizador2">2</a>
+                                </li>
+                                <li>
+                                    <a href="#deslizador3">3</a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
 
                         <a href="https://www.facebook.com/alex.rio20/" rel="noopener" target="_blank">Comprar</a>
                     </div>
@@ -255,10 +283,9 @@
                         <a href="https://www.facebook.com/alex.rio20/" rel="noopener" target="_blank">Comprar</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-
-            <div class="formateo" id="formateo">
+            <section class="formateo" id="formateo">
                 <div class="title">
                     <h2>Formateo</h2>
                 </div>
@@ -372,9 +399,40 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
+
+
+
+    <footer>
+        <div class="info-desa">
+            <h3>Desarrollado por Juli&aacute;n España</h3>
+            <h3>T&eacute;cnico en sistemas - SENA</h3>
+            <h3>Colón, Putumayo</h3>
+            <!-- <h3><img src="../assets/img/sena.png" alt=""></h3> -->
+        </div>
+
+        <div class="social-desa">
+            <h1>Cont&aacute;ctame:</h1>
+            <h3>julii1295@gmail.com</h3>
+            <a href="https://www.facebook.com/alex.rio20/" rel="noopener" target="_blank">
+                <img src="assets/img/facebook.png" alt="Imagen de red social Facebook"></a>
+            <!-- <a href="https://twitter.com/julialexes" target="_blank"><img src="assets/img/network/twitter.svg" alt="Imagen de red social Twitter" title="Mi perfil en Twitter"></a> -->
+            <a href="https://wa.me/c/573174503604" rel="noopener" target="_blank">
+                <img src="assets/img/whatsapp.png" alt="Imagen de red social de whatsapp" title="Mi cuenta de whatsapp">
+            </a>
+        </div>
+
+        <div class="fuentes">
+            <h3>Fuentes:</h3>
+            <p>
+                Icons made by
+                <a href="https://www.freepik.com" rel="noopener" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" rel="noopener" target="_blank" title="Flaticon">www.flaticon.com
+                </a>
+            </p>
+        </div>
+    </footer>
 
     <script>
         // script para presentacion de accesorios, trabajos, accesorios nuevos, etcétera
@@ -522,38 +580,6 @@
         //     $(".paginacion li").eq(indice).css("background-color", "orange");
         // });
     </script>
-
-    <footer>
-        <!-- colocando footer siempre visible en 1024px -->
-
-        <div class="info-desa">
-            <h3>Desarrollado por Juli&aacute;n España</h3>
-            <h3>T&eacute;cnico en sistemas - SENA</h3>
-            <h3>Colón, Putumayo</h3>
-            <!-- <h3><img src="../assets/img/sena.png" alt=""></h3> -->
-        </div>
-
-        <div class="social-desa">
-            <h1>Cont&aacute;ctame:</h1>
-            <h3>julii1295@gmail.com</h3>
-            <a href="https://www.facebook.com/alex.rio20/" rel="noopener" target="_blank">
-                <img src="assets/img/facebook.png" alt="Imagen de red social Facebook"></a>
-            <!-- <a href="https://twitter.com/julialexes" target="_blank"><img src="assets/img/network/twitter.svg" alt="Imagen de red social Twitter" title="Mi perfil en Twitter"></a> -->
-            <a href="https://wa.me/c/573174503604" rel="noopener" target="_blank">
-                <img src="assets/img/whatsapp.png" alt="Imagen de red social de whatsapp" title="Mi cuenta de whatsapp">
-            </a>
-        </div>
-
-        <div class="fuentes">
-            <h3>Fuentes:</h3>
-            <p>
-                Icons made by
-                <a href="https://www.freepik.com" rel="noopener" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" rel="noopener" target="_blank" title="Flaticon">www.flaticon.com
-                </a>
-            </p>
-        </div>
-
-    </footer>
 </body>
 
 </html>

@@ -456,7 +456,7 @@ h2:hover {
 /* ------------------------------- */
 
 .contenido .accesorios .accesorio {
-    height: 446px;
+    height: 370px;
     padding: 10px;
     margin-bottom: 50px;
     display: flex;
@@ -574,13 +574,22 @@ li {
     align-items: center;
 }
 
-.deslizador-menu {
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador-menu {
     text-align: center;
 }
 
-.deslizador-menu li {
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador-menu li {
     display: inline-block;
     height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images ul.deslizador-menu {}
+
+.mi_trabajo .accesorios .accesorio .accesorio-tipo .accesorio-images .deslizador-menu li a {
+    border-radius: 50%;
+    background-color: transparent;
 }
 
 

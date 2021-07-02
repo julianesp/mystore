@@ -931,12 +931,12 @@ footer .fuentes p {
     }
     /* despliegue de enlaces de pago  */
     .contenido .accesorios .accesorio .accesorio-tipo a:hover {}
-    .contenido .mi_trabajo {
+    /* .contenido .mi_trabajo {
         margin: 100px 80px;
     }
     .contenido .mi_trabajo {
         margin-top: 150px;
-    }
+    } */
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
         width: 200px;
         height: 200px;

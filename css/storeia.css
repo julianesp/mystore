@@ -330,20 +330,21 @@ h2:hover {
 .contenido .presentacion {
     justify-content: center;
     position: relative;
-    height: 250px;
+    height: 170px;
     margin: 0 auto;
     object-fit: cover;
 }
 
 .contenido .presentacion .slider {
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     overflow: hidden;
 }
 
 .contenido .presentacion .slider .slides {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    /* height: 180px; */
+    /* height: auto; */
     display: flex;
 }
 
@@ -354,17 +355,23 @@ h2:hover {
 .contenido .presentacion .slider .slides .slide {
     width: 100%;
     transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenido .presentacion .slider .slides .slide img {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    /* width: 100%; */
+    /* height: auto; */
 }
 
 .contenido .presentacion .slider .slides .navigation-manual {
     width: 100%;
     position: absolute;
-    margin-top: 230px;
+    margin-top: 190px;
     display: flex;
     justify-content: center;
 }
@@ -411,7 +418,7 @@ h2:hover {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 230px;
+    margin-top: 190px;
     animation-name: deslizar;
     animation-duration: 1.5s;
 }
@@ -479,7 +486,7 @@ h2:hover {
     display: grid;
     grid-template-rows: 40px 200px 60px;
     align-items: center;
-    min-width: 200px;
+    min-width: 160px;
     width: 250px;
     height: 234px;
     margin-left: 10px;
@@ -820,21 +827,29 @@ footer .fuentes p {
     margin: 0;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 320px) {
     .contenido .presentacion .slider .slides .navigation-manual {
-        margin-top: 250px;
+        margin-top: 190px;
     }
     .contenido .presentacion .slider .slides .navigation-auto {
-        margin-top: 250px;
+        margin-top: 190px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .contenido .presentacion .slider .slides .slide img {
+        max-height: 230px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .contenido .presentacion .slider .slides .navigation-manual {
         margin-top: 270px;
+        margin-bottom: 500px;
     }
     .contenido .presentacion .slider .slides .navigation-auto {
         margin-top: 270px;
+        margin-bottom: 500px;
     }
     .contenido .presentacion .slider .slides .slide img {
         height: 250px;
@@ -918,6 +933,9 @@ footer .fuentes p {
     .contenido .accesorios .accesorio .accesorio-tipo a:hover {}
     .contenido .mi_trabajo {
         margin: 100px 80px;
+    }
+    .contenido .mi_trabajo {
+        margin-top: 150px;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
         width: 200px;

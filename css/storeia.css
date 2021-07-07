@@ -856,12 +856,7 @@ footer .fuentes p {
         /* object-fit: cover; */
     }
     .contenido .mi_trabajo {
-        margin-top: 100px;
-        margin-left: 35px;
-        margin-right: 35px;
-    }
-    .contenido .accesorios .accesorio {
-        /* justify-content: center; */
+        margin: 0 80px;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
         justify-content: center;
@@ -929,14 +924,6 @@ footer .fuentes p {
         display: flex;
         align-items: center;
     }
-    /* despliegue de enlaces de pago  */
-    .contenido .accesorios .accesorio .accesorio-tipo a:hover {}
-    /* .contenido .mi_trabajo {
-        margin: 100px 80px;
-    }
-    .contenido .mi_trabajo {
-        margin-top: 150px;
-    } */
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
         width: 200px;
         height: 200px;

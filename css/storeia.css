@@ -827,6 +827,8 @@ footer .fuentes p {
     margin: 0;
 }
 
+
+/* 
 @media screen and (min-width: 320px) {
     .contenido .presentacion .slider .slides .navigation-manual {
         margin-top: 190px;
@@ -834,13 +836,15 @@ footer .fuentes p {
     .contenido .presentacion .slider .slides .navigation-auto {
         margin-top: 190px;
     }
-}
+} */
 
+
+/* 
 @media screen and (min-width: 420px) {
     .contenido .presentacion .slider .slides .slide img {
         max-height: 230px;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     .contenido .presentacion .slider .slides .navigation-manual {

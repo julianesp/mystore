@@ -827,6 +827,13 @@ footer .fuentes p {
     margin: 0;
 }
 
+footer .social-desa a {
+    position: fixed;
+    bottom: -450px;
+    left: 1px;
+    height: 100vh;
+}
+
 
 /* 
 @media screen and (min-width: 320px) {

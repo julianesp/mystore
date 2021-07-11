@@ -837,12 +837,21 @@ footer .social-desa .redes {
     display: flex;
     flex-direction: column;
     position: fixed;
-    bottom: -380px;
+    bottom: -500px;
     left: 1px;
     height: 100vh;
+    animation-name: retraso;
+    animation-duration: 3s;
 }
 
-footer .social-desa .redes a {}
+@keyframes retraso {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
 /* 

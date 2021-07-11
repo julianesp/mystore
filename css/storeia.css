@@ -768,6 +768,10 @@ footer .info-desa h3 img {
     width: 40px;
 }
 
+footer .social-desa {
+    display: block;
+}
+
 footer .social-desa h1 {
     color: #f3ff3b;
     font-size: 1.5rem;
@@ -778,8 +782,10 @@ footer .social-desa h1 {
 }
 
 footer .social-desa a img {
-    width: 50px;
-    margin: 0 20px;
+    width: 40px;
+    /* margin: 0 20px; */
+    margin-left: 10px;
+    padding-top: 20px;
     transform: scale();
 }
 
@@ -827,12 +833,16 @@ footer .fuentes p {
     margin: 0;
 }
 
-footer .social-desa a {
+footer .social-desa .redes {
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    bottom: -450px;
+    bottom: -380px;
     left: 1px;
     height: 100vh;
 }
+
+footer .social-desa .redes a {}
 
 
 /* 

@@ -837,9 +837,8 @@ footer .social-desa .redes {
     display: flex;
     flex-direction: column;
     position: fixed;
-    bottom: -500px;
+    top: 500px;
     left: 1px;
-    height: 100vh;
     animation-name: retraso;
     animation-duration: 3s;
 }

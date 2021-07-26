@@ -889,6 +889,9 @@ footer .social-desa .redes {
     .contenido .mi_trabajo {
         margin: 0 80px;
     }
+    .contenido .mi_trabajo .accesorios {
+        margin-top: 70px;
+    }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows {
         justify-content: center;
     }

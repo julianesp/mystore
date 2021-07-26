@@ -967,20 +967,20 @@ footer .social-desa .redes {
 } */
 
 @media screen and (min-width: 768px) {
-    .contenido .presentacion .slider .slides .navigation-manual {
+    /* .contenido .presentacion .slider .slides .navigation-manual {
         margin-top: 270px;
         margin-bottom: 500px;
     }
     .contenido .presentacion .slider .slides .navigation-auto {
         margin-top: 270px;
         margin-bottom: 500px;
-    }
+    } */
     .contenido .presentacion .slider .slides .slide img {
         height: 250px;
         /* object-fit: cover; */
     }
     .contenido .mi_trabajo {
-        margin: 0 80px;
+        /* margin: 0 80px; */
     }
     .contenido .mi_trabajo .accesorios {
         margin-top: 70px;
@@ -1042,6 +1042,10 @@ footer .social-desa .redes {
         margin: 0;
         padding: 0;
     }
+    .contenido {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
     .contenido .logo {
         width: 0;
         height: 58px;
@@ -1050,6 +1054,9 @@ footer .social-desa .redes {
         z-index: 30;
         display: flex;
         align-items: center;
+    }
+    .contenido .contenido__anuncios {
+        border: 1px solid #000;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
         width: 200px;

@@ -362,12 +362,101 @@ h2:hover {
 
 .contenido .presentacion .slider .slides .slide img {
     width: 100%;
-    min-width: 300px;
-    max-width: 900px;
+    min-width: 320px;
+    max-width: 700px;
     /* width: 100%; */
     /* height: auto; */
 }
 
+
+/* --------- control de anuncios ---------- */
+
+.contenido .presentacion .slider .slides .first .navigation-manual {
+    bottom: -30px;
+    width: 100%;
+    position: absolute;
+    /* margin-top: 210px; */
+    display: flex;
+    justify-content: center;
+}
+
+.contenido .presentacion .slider .slides .first .navigation-manual .manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+}
+
+.contenido .presentacion .slider .slides .first .navigation-manual .manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contenido .presentacion .slider .slides .first .navigation-manual .manual-btn:hover {
+    background: #40d3dc;
+}
+
+.contenido .presentacion .slider .slides .first #radio1:checked~.first {
+    margin-left: 0;
+}
+
+.contenido .presentacion .slider .slides .first #radio2:checked~.first {
+    margin-left: -100%;
+}
+
+.contenido .presentacion .slider .slides .first #radio3:checked~.first {
+    margin-left: -200%;
+}
+
+.contenido .presentacion .slider .slides .first #radio4:checked~.first {
+    margin-left: -300%;
+}
+
+
+/* css para navegacion automática */
+
+.contenido .presentacion .slider .slides .first .navigation-auto {
+    bottom: -30px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 210px; */
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contenido .presentacion .slider .slides .first .navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.contenido .presentacion .slider .slides .first .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contenido .presentacion .slider .slides .first #radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40d3dc;
+}
+
+
+/* ---------- avisos --------- */
+
+
+/* 
 .contenido .presentacion .slider .slides .navigation-manual {
     width: 100%;
     position: absolute;
@@ -411,7 +500,7 @@ h2:hover {
 }
 
 
-/* css para navegacion automática */
+
 
 .contenido .presentacion .slider .slides .navigation-auto {
     width: 100%;
@@ -457,7 +546,7 @@ h2:hover {
 
 #radio4:checked~.navigation-auto .auto-btn4 {
     background: #40d3dc;
-}
+} */
 
 
 /* ------------------------------- */

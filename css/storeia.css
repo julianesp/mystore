@@ -1012,13 +1012,10 @@ footer .social-desa .redes {
     }
     .header {
         background: linear-gradient(70deg, #6fc0f9 7%, #0a96f7 20%);
-        /* position: absolute; */
-        /* display: flex;
-        align-items: flex-start; */
+        /* para mover el header */
+        position: absolute;
         flex-direction: row;
-        /* top: 0; */
         right: 0;
-        /* background-color: transparent; */
         justify-content: flex-end;
         height: max-content;
         padding-right: 80px;
@@ -1044,7 +1041,7 @@ footer .social-desa .redes {
     }
     .contenido {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 85% 15%;
     }
     .contenido .logo {
         width: 0;
@@ -1055,8 +1052,15 @@ footer .social-desa .redes {
         display: flex;
         align-items: center;
     }
-    .contenido .contenido__anuncios {
-        border: 1px solid #000;
+    .contenido .contenido__comercio .contenido__anuncios {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        /* border: 1px solid #000; */
+        margin-top: 58px;
+        padding: 10px;
+        position: absolute;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
         width: 200px;

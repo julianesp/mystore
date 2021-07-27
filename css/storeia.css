@@ -327,6 +327,13 @@ h2:hover {
 
 /* ------------------------------- */
 
+.contenido .contenido__comercio .contenido__anuncios {
+    display: none;
+}
+
+
+/* ------------------------------- */
+
 .contenido .presentacion {
     justify-content: center;
     position: relative;
@@ -587,11 +594,21 @@ h2:hover {
 }
 
 .contenido .accesorios .accesorio .accesorio-tipo h3 {
+    font-family: "Oswald", sans-serif;
     line-height: 40px;
+    background: rgb(194, 184, 184);
+    color: #fff;
+    letter-spacing: 1px;
     height: 40px;
     font-size: 0.8em;
+    font-weight: 200;
     margin: 0;
     text-align: center;
+    transition: .5s;
+}
+
+.contenido .accesorios .accesorio .accesorio-tipo h3:hover {
+    font-size: 1em;
 }
 
 .contenido .accesorios .accesorio .accesorio-tipo img {
@@ -979,9 +996,6 @@ footer .social-desa .redes {
         height: 250px;
         /* object-fit: cover; */
     }
-    .contenido .mi_trabajo {
-        /* margin: 0 80px; */
-    }
     .contenido .mi_trabajo .accesorios {
         margin-top: 70px;
     }
@@ -1063,11 +1077,11 @@ footer .social-desa .redes {
         position: absolute;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
-        width: 200px;
+        width: 150px;
         height: 200px;
     }
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
-        width: 200px;
+        width: 150px;
         height: 200px;
         position: relative;
     }
@@ -1091,5 +1105,8 @@ footer .social-desa .redes {
         object-fit: fill;
         margin: 0;
         padding: 0;
+    }
+    .contenido .mi_trabajo .formateo .programas img {
+        max-width: 130px;
     }
 }

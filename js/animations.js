@@ -17,7 +17,7 @@ burgerMenu.addEventListener("click", hideShow);
 
 function hideShow() {
     if (header.classList.contains("is-active")) {
-        header.classList.remove("is-active");
+        header.classList.remove("is-active");        
     } else {
         header.classList.add("is-active");
     }

@@ -1054,8 +1054,8 @@ footer .social-desa .redes {
         padding: 0;
     }
     .contenido {
-        display: grid;
-        grid-template-columns: 15% 85%;
+        /* display: grid; */
+        /* grid-template-columns: 15% 85%; */
     }
     .contenido .logo {
         width: 0;
@@ -1099,6 +1099,9 @@ footer .social-desa .redes {
     .contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas p:hover {
         opacity: 1;
         transition: all 0.5s ease-out;
+    }
+    .contenido .presentacion .slider .slides {
+        display: flex;
     }
     .contenido .presentacion .slider .slides .slide img {
         object-fit: fill;

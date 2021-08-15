@@ -583,7 +583,7 @@ h2:hover {
     grid-template-rows: 40px 200px 60px;
     align-items: center;
     min-width: 160px;
-    width: 250px;
+    /* width: 250px; */
     height: 234px;
     margin-left: 10px;
     /* margin: auto 5px; */

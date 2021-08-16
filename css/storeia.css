@@ -1086,4 +1086,11 @@ footer .social-desa .redes {
     .contenido .mi_trabajo .formateo .programas img {
         max-width: 130px;
     }
+    .contenido .accesorios .accesorio {
+        justify-content: center;
+        overflow-x: auto;
+    }
+    .contenido .accesorios .accesorio .accesorio-tipo {
+        width: 180px;
+    }
 }

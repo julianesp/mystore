@@ -1087,8 +1087,10 @@ footer .social-desa .redes {
         max-width: 130px;
     }
     .contenido .accesorios .accesorio {
-        justify-content: center;
-        overflow-x: auto;
+        display: flex;
+        /* justify-content: center; */
+        /* margin: 0 200px; */
+        margin-left: 250px;
     }
     .contenido .accesorios .accesorio .accesorio-tipo {
         width: 180px;

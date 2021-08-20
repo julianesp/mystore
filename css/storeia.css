@@ -337,21 +337,23 @@ h2:hover {
 .contenido .presentacion {
     justify-content: center;
     position: relative;
-    /* height: 170px; */
+    height: 300px;
+    border: 2px solid black;
     margin: 0 auto;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenido .presentacion .slider {
     width: 100%;
-    /* height: 250px; */
+    height: inherit;
     overflow: hidden;
 }
 
 .contenido .presentacion .slider .slides {
     width: 100%;
-    height: 180px;
-    /* height: auto; */
+    height: inherit;
     /* display: flex; */
 }
 
@@ -361,6 +363,8 @@ h2:hover {
 
 .contenido .presentacion .slider .slides .slide {
     width: 100%;
+    /* height: inherit; */
+    height: 300px;
     transition: 2s;
     display: flex;
     justify-content: center;
@@ -369,10 +373,11 @@ h2:hover {
 
 .contenido .presentacion .slider .slides .slide img {
     width: 100%;
+    height: inherit;
     min-width: 320px;
     max-width: 700px;
-    /* width: 100%; */
-    /* height: auto; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -1015,7 +1020,7 @@ footer .social-desa .redes {
         padding-right: 80px;
     }
     .header #menu-h ul {
-        margin: 0;
+        margin: 0 0 0 50px;
     }
     .header #menu-h ul li a {
         width: 100px;

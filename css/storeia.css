@@ -616,9 +616,16 @@ h2:hover {
     font-size: 1em;
 }
 
+
+/* ocultando al segundo hijo */
+
+.contenido .accesorios .accesorio .accesorio-tipo p:nth-child(2) {
+    display: none;
+}
+
 .contenido .accesorios .accesorio .accesorio-tipo img {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     justify-self: center;
 }
 
@@ -629,34 +636,21 @@ h2:hover {
     padding: 10px;
     color: #fff;
     font-weight: 500;
-    transition: .5;
-    animation-name: deslizar;
-    animation-duration: 2s;
+    transition: .6s;
 }
 
-
-/*
-@keyframes deslizar {
-    from {
-        transform: scale(.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}*/
-
 .contenido .accesorios .accesorio .accesorio-tipo p:hover {
-    background-color: rgba(255, 131, 51, .5);
-    transition: .5;
+    background-color: rgba(34, 153, 84, .9);
+    transition: .6s;
 }
 
 .contenido .accesorios .accesorio .accesorio-tipo a {
     line-height: 40px;
     font-size: 1em;
     text-align: center;
+    transition: .6s;
     background: linear-gradient(-180deg, #6fc0f9 10%, #0a96f7 100%);
     padding: 0.5em 0.5em;
-    margin: 5px;
     text-decoration: none;
     border: none;
     border-radius: 10px;
@@ -665,13 +659,15 @@ h2:hover {
     cursor: pointer;
     /* para quitar el color del borde cuando se da click */
     outline: none;
-    transition: 0.2s;
     will-change: transform;
 }
 
+
+/* opacando boton de comprar */
+
 .contenido .accesorios .accesorio .accesorio-tipo a:hover {
-    color: #f3ff3b;
-    font-weight: bolder;
+    transition: .6s;
+    background: linear-gradient(-180deg, #6fc0f9 100%, #0a96f7 50%);
 }
 
 .contenido .accesorios .accesorio .accesorio-tipo a:active {
@@ -1110,7 +1106,6 @@ footer .social-desa .redes {
         opacity: 1;
         transition: all 0.5s ease-out;
     }
-    .contenido .presentacion .slider .slides {}
     .contenido .presentacion .slider .slides .slide img {
         object-fit: fill;
         margin: 0;
